@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Step Introductions in Procedures &#8212; unsolicited2  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="RACI Chart for API Documentation" href="apidoc_racidiagram.html" />
+    <link rel="prev" title="Technical Writer Job Description" href="twriter_description.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="step-introductions-in-procedures">
+<h1>Step Introductions in Procedures<a class="headerlink" href="#step-introductions-in-procedures" title="Permalink to this headline">¶</a></h1>
+<p><em>Step introductions</em>, also known as <em>procedure headings</em> or <em>procedure platform statements</em>, are short sentence fragments that use a gerund or an imperative verb phrase. The step introduction precedes a list of steps for a procedure. Technical writers use them to set off a task or list of steps. Readers use them to quickly locate what they need to do in an article, document, white paper or tutorial.</p>
+<p>The following are examples of step introductions:</p>
+<ul class="simple">
+<li><p>To change the display resolution, follow these steps</p></li>
+<li><p>To install a <strong>.deb</strong> file:</p></li>
+<li><p>To remove unnecessary fonts</p></li>
+</ul>
+<p>Step introductions may end with a colon or without a colon depending on the style guide used by the writer. The <em>4th Edition of Microsoft Manual of Style</em> encourages the use of a colon as punctuation, as does the documentation style guide for <strong>SUSE</strong> and <strong>OpenSUSE</strong>. Most knowledgebase articles on the Internet also follow this rule. However, other writing guidelines and publications do not adhere to this practice strictly. Consult the technical editor or a company official style guide if you are not sure about punctuations on a step introduction.</p>
+<p>Depending on the style guide, technical writers add the imperative phrases “perform the following the steps” or “follow these steps” or “do the following” after the sentence fragment describing the task. Other writing guidelines prefer a shorter step introduction.</p>
+<p>Procedure headings and step introductions are immediately followed by a numbered list. However, if a task or procedure consists of only one step, the procedure heading can be used to introduce a single bullet point.</p>
+<div class="topic">
+<p class="topic-title first">Single step procedure example</p>
+<p>To launch YaST2 Expert Partitioner:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>From the KDE desktop, press ALT+F2 then search for Partitioner.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<p>When writing in a <strong>DITA</strong> environment, a step introduction can be placed within the <code class="docutils literal notranslate"><span class="pre">&lt;context&gt;</span></code> tag. <em>DITA Best Practices</em> from IBM Press recommends that the step introduction should not be found within the <code class="docutils literal notranslate"><span class="pre">&lt;shortdesc&gt;</span></code> tag, which focuses on the overview of the procedure or benefits and limitations of a task. <strong>DITA 1.2</strong> uses the <code class="docutils literal notranslate"><span class="pre">&lt;stepsection&gt;</span></code> element to mark the step introduction.</p>
+<p>The following is an example of &lt;stepsection&gt; used with a step introduction:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">task</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Syncing</span> <span class="n">files</span> <span class="n">between</span> <span class="n">hard</span> <span class="n">drives</span> <span class="n">using</span> <span class="n">Grsync</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">shortdesc</span><span class="o">&gt;</span><span class="n">Grsync</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">sync</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">folders</span> <span class="n">between</span> <span class="n">storage</span> <span class="n">devices</span> <span class="ow">and</span> <span class="n">across</span> <span class="n">networks</span><span class="o">.&lt;/</span><span class="n">shortdesc</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">taskbody</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">steps</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">stepsection</span><span class="o">&gt;</span><span class="n">To</span> <span class="n">sync</span> <span class="n">files</span> <span class="n">using</span> <span class="n">Grsync</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">stepsection</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">step</span><span class="o">&gt;&lt;</span><span class="n">cmd</span><span class="o">&gt;</span><span class="n">Launch</span> <span class="n">Grsync</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">KDE</span> <span class="n">Kickoff</span> <span class="n">menu</span><span class="o">.&lt;/</span><span class="n">cmd</span><span class="o">&gt;&lt;/</span><span class="n">step</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">steps</span><span class="o">&gt;</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>The step introduction is disregarded in some style guides if the task is simple or the title already describes the procedure perfectly. In some authoring software such as <strong>Adobe FrameMaker</strong>, the default XSL stylesheet automatically adds a label or section heading before the steps. The label or section would add text such as “Procedure”, “Tasks” or “Steps” just before the procedure list and makes a step introduction unnecessary.</p>
+<p>A non-technical audience may find the step introduction annoying and repetitive particularly if the title of the article or tutorial uses the same words as the step introduction.</p>
+<div class="topic">
+<p class="topic-title first">Step introduction with the same title as section or tutorial</p>
+<p><strong>Launching LXTerminal in LXDE</strong></p>
+<p>To launch LXTerminal in LXDE:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>ALT+F2</strong> and type <code class="docutils literal notranslate"><span class="pre">LXTerminal</span></code>. Press <strong>Enter</strong>.</p></li>
+</ol>
+<p>…</p>
+</div>
+<p>The step introduction should be used consistently across documentation. Always consult the section on writing procedures in an official and approved style guide before using a step introduction in tasks or procedures.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">unsolicited2</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="twriter_description.html">Technical Writer Job Description</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Step Introductions in Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidoc_racidiagram.html">RACI Chart for API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes_creating.html">Creating Customer Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writingpublishingsphinx.html">Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="twriter_description.html" title="previous chapter">Technical Writer Job Description</a></li>
+      <li>Next: <a href="apidoc_racidiagram.html" title="next chapter">RACI Chart for API Documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Scrawl.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/step_introduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
