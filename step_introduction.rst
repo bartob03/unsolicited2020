@@ -46,11 +46,11 @@ A non-technical audience may find the step introduction annoying and repetitive 
 
 .. topic:: Step introduction with the same title as section or tutorial
 
-    Launching LXTerminal in LXDE
+    **Launching LXTerminal in LXDE**
 
     To launch LXTerminal in LXDE:
     
-    1. Click ALT+F2 and type LXTerminal. Press Enter.
+    1. Click **ALT+F2** and type ``LXTerminal``. Press **Enter**.
 
     …
 
