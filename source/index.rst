@@ -15,12 +15,5 @@ Offered But Unsolicited
    apidoc_racidiagram
    releasenotes_creating
    writingpublishingsphinx
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   msproject2016_float
+   retext

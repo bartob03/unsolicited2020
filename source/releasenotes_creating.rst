@@ -45,7 +45,7 @@ CRNs can contain any of the following information:
 - Compatibility information
 - Software or hardware requirement changes
 - 3rd party software components
-- - Software changes, improvements, and enhancements
+- Software changes, improvements, and enhancements
 - Brief patch installation steps
 - Relevant source code
 - Testing process and test environment

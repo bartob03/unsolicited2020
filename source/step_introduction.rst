@@ -21,7 +21,7 @@ Procedure headings and step introductions are immediately followed by a numbered
 
    To launch YaST2 Expert Partitioner:
 
-    - From the KDE desktop, press ALT+F2 then search for Partitioner.
+    - From the KDE desktop, press **ALT+F2** then search for **Partitioner**.
 
 
 When writing in a **DITA** environment, a step introduction can be placed within the ``<context>`` tag. *DITA Best Practices* from IBM Press recommends that the step introduction should not be found within the ``<shortdesc>`` tag, which focuses on the overview of the procedure or benefits and limitations of a task. **DITA 1.2** uses the ``<stepsection>`` element to mark the step introduction.
@@ -38,7 +38,7 @@ The following is an example of <stepsection> used with a step introduction:
         <stepsection>To sync files using Grsync:</stepsection>
             <step><cmd>Launch Grsync from the KDE Kickoff menu.</cmd></step>
       </steps>
-    ...   
+    ...
 
 The step introduction is disregarded in some style guides if the task is simple or the title already describes the procedure perfectly. In some authoring software such as **Adobe FrameMaker**, the default XSL stylesheet automatically adds a label or section heading before the steps. The label or section would add text such as "Procedure", "Tasks" or "Steps" just before the procedure list and makes a step introduction unnecessary.
 
@@ -49,7 +49,7 @@ A non-technical audience may find the step introduction annoying and repetitive 
     **Launching LXTerminal in LXDE**
 
     To launch LXTerminal in LXDE:
-    
+
     1. Click **ALT+F2** and type ``LXTerminal``. Press **Enter**.
 
     …

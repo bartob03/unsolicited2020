@@ -34,7 +34,7 @@ For additional details, refer to the official `Sphinx Documentation <https://www
 Understanding the ``sphinx-quickstart`` command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ```sphinx-quickstart`` command is executed within the ``docs`` folder prior to creating **RST** files.
+The ``sphinx-quickstart`` command is executed within the ``docs`` folder prior to creating **RST** files.
 
 Although the default options are acceptable, take note of the following options:
 
@@ -42,7 +42,7 @@ Although the default options are acceptable, take note of the following options:
 - ``Project name`` - The project name appears in several places in the output document so ensure that this is the correct project name.
 - ``Author name(s)`` - The script will not run unless text is entered for this option.
 - ``Name of your master document`` - The master document is the main page for the output and is named **index.rst** by default.
-- ``githubpages`` - This option creats a .nojekyll file used for preventing **Jekyll** options if the final output will be hosted in GitHub pages.
+- ``githubpages`` - This option creats a **.nojekyll** file used for preventing **Jekyll** options if the final output will be hosted in GitHub pages.
 - ``Create makefile`` - This option makes it easy to run the make html script in Windows.
 
 Publishing to PDF
