@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>ReText for Markdown (Linux) &#8212; Offered But Unsolicited  documentation</title>
+    <title>Determining Confluence Page Value &#8212; Offered But Unsolicited  documentation</title>
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,8 +14,7 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Determining Confluence Page Value" href="confluence_pagevalue.html" />
-    <link rel="prev" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float" href="msproject2016_float.html" />
+    <link rel="prev" title="ReText for Markdown (Linux)" href="retext.html" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -31,10 +30,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="confluence_pagevalue.html" title="Determining Confluence Page Value"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="msproject2016_float.html" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float"
+          <a href="retext.html" title="ReText for Markdown (Linux)"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>
@@ -45,13 +41,41 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="retext-for-markdown-linux">
-<h1>ReText for Markdown (Linux)<a class="headerlink" href="#retext-for-markdown-linux" title="Permalink to this headline">¶</a></h1>
-<p>If you’re writing <strong>.md</strong> files, reference documentation, or just notes for code or software, you are more than likely using an integrated editor, a commercial web service such as <strong>Atlassian Confluence</strong>, or just a plain text editor on your workstation. If you’re getting started in writing technical documentation, have your own independent projects, or not interested in using or learning markup, you can use third-party editors like <strong>ReText</strong>, which is available for Linux distributions.</p>
-<p>Text editors such as ReText allow you to work separately from your IDE daily driver or CMS. You can certainly work directly in <strong>GitHub</strong> and write reference notes and comments for code, since there are plenty of <strong>Markdown</strong> dialects available, but applications such as ReText help you stay productive if you prefer not to work in a collaborative working environment.</p>
-<img alt="_images/retext_linux.png" src="_images/retext_linux.png" />
-<p>ReText includes basic formatting used in Markdown, reStructured Text, and <strong>Textile</strong>. The editor has a preview pane and supports most types of text encoding. Even if you’re not familiar with Markdown, you should be able to complete short text documentation easily. Although the formatting options in the toolbar don’t include all of Markdown formatting, you can use accepted Markdown markup directly on the editor.</p>
-<p>Once you’re done, you can save the file to <strong>.mkd</strong>, export to HTML, ODT, or PDF, or just copy and paste the completed text to the final publishing medium or service.</p>
+  <div class="section" id="determining-confluence-page-value">
+<h1>Determining Confluence Page Value<a class="headerlink" href="#determining-confluence-page-value" title="Permalink to this headline">¶</a></h1>
+<p><strong>Confluence</strong> pages are regularly assessed by the developer team and by a <em>team approver</em>.</p>
+<p>The <em>team approver</em> role is an optional role for each Scrum or developer team. The member assigned as a team approver checks if a Confluence page is usable, or classified as for internal/team use only.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <em>technical writer</em> does not necessarily take on the <em>team approver</em> role. Ideally, the person taking on the role should be part of the developer team, although the task can be taken up by an external staff member.</p>
+</div>
+<p>Confluence pages can be classified as <em>Controlled</em> or <em>Uncontrolled</em> pages.</p>
+<div class="section" id="controlled-pages">
+<h2>Controlled pages<a class="headerlink" href="#controlled-pages" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p><strong>Reference pages</strong></p>
+<p>These Confluence pages are for end-users, stakeholders, and customers. These pages are also used to answer questions and inquiries from other developer teams. These pages are identified by the team approver, manager, architect or owner.</p>
+</li>
+<li><p><strong>Presentation pages</strong></p>
+<p>These pages are for introducing team developments and does not necessarily carry technical information. These pages are reviewed by the team approver.</p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="uncontrolled-pages">
+<h2>Uncontrolled pages<a class="headerlink" href="#uncontrolled-pages" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p><strong>For archive/removal</strong></p>
+<p>These pages are redundant and has no value to the developer team or future end-users. These pages are identified by the team approver or by lead developers/architects.</p>
+</li>
+<li><p><strong>Team use only</strong></p>
+<p>These pages are for internal team use only and not made available during presentations.</p>
+</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 
 
@@ -60,16 +84,22 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Determining Confluence Page Value</a><ul>
+<li><a class="reference internal" href="#controlled-pages">Controlled pages</a></li>
+<li><a class="reference internal" href="#uncontrolled-pages">Uncontrolled pages</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="msproject2016_float.html"
-                        title="previous chapter">Microsoft 2016 Basics: PERT Diagram and Slack/Float</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="confluence_pagevalue.html"
-                        title="next chapter">Determining Confluence Page Value</a></p>
+  <p class="topless"><a href="retext.html"
+                        title="previous chapter">ReText for Markdown (Linux)</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/retext.rst.txt"
+      <li><a href="_sources/confluence_pagevalue.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -94,10 +124,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="confluence_pagevalue.html" title="Determining Confluence Page Value"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="msproject2016_float.html" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float"
+          <a href="retext.html" title="ReText for Markdown (Linux)"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>

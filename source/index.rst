@@ -7,7 +7,7 @@ Offered But Unsolicited
 ========================================
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
    :caption: Contents:
 
    twriter_description
@@ -17,3 +17,5 @@ Offered But Unsolicited
    writingpublishingsphinx
    msproject2016_float
    retext
+   confluence_pagevalue
+   githubpages_javadoc
