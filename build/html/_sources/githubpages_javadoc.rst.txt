@@ -1,4 +1,4 @@
-Using GitHub Pages for Javadoc files
+Using GitHub Pages for Javadoc Files
 ========================================
 
 **GitHub Pages** can be used for hosting **Javadoc** files. No additional steps are required to set up the GitHub repository to publish the HTML files.
@@ -21,5 +21,5 @@ To set up GitHub pages:
    - GitHub Pages are public by default, so ensure that the Javadocs to be published are for public viewing.
 
    - GitHub Pages uses the **index.html** file in the *Master branch* in the output HTML as the main page of the GitHub Pages site. To change the path to ``/docs`` from repository **Settings > GitHub Pages > Source**.
-   
+
    - The GitHub Pages URL for the published Javadoc can be found under repository **Settings > GitHub Pages**.

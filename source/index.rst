@@ -19,3 +19,5 @@ Offered But Unsolicited
    retext
    confluence_pagevalue
    githubpages_javadoc
+   diaeditor_wbs
+   pdftables_word
