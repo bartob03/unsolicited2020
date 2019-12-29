@@ -21,3 +21,5 @@ Offered But Unsolicited
    githubpages_javadoc
    diaeditor_wbs
    pdftables_word
+   tw_word_pdf-tabs
+   tw_pages_sectionsfront
