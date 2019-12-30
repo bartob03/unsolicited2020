@@ -23,3 +23,6 @@ Offered But Unsolicited
    pdftables_word
    tw_word_pdf-tabs
    tw_pages_sectionsfront
+   tw_word_toclinks
+   tw_sphinx_windows-setup
+   design_cdr_glyph-font

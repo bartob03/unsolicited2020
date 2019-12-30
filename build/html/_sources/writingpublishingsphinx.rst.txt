@@ -13,7 +13,7 @@ Sphinx uses .rst files for publishing documentation and can be installed on Wind
 
 .. note::
 
-  The steps in this article were tested on an Ubuntu machine.
+  The steps in this article were tested on an `Ubuntu <https://www.ubuntu.com>`_ machine.
 
 The basic operations are described as follows.
 
