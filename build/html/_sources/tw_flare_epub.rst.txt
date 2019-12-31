@@ -3,6 +3,10 @@ Tips on Using MadCap Flare to Produce EPUB Output
 
 Using **MadCap Flare** for producing **EPUB** output is a bit overkill, considering that you can produce **EPUB** from text editors, open source software such as **LibreOffice**, **Sigil**, and **Calibre**, as well as value-add applications such as **Pages** for **macOS** or **iBooks Author**. However, if you already own a license for **MadCap Flare**, then there's no reason not to use the **EPUB** support included with the application.  Moreover, Flare has considerably more flexibility in terms of formatting EPUBs when compared with creating EPUBs using **Adobe InDesign** or **Adobe FrameMaker**.
 
+You no longer need an ebook reader like the **Kobo Glo ** to enjoy the technical benefits of an **EPUB** file, but reading from a dedicated ebook reader is arguably healthier for you.
+
+Although ebook readers are no longer as popular as it used to be, the **EPUB** format is still very much in use due to its advantages over PDF. The **XHTML** markup is also so simple, veteran users can take advantage of all the features included with Flare without worrying about output validation and compatibility with mobile apps and ebook applications.
+
 This article uses **MadCap Flare 11**. Flare 11 includes a **Print** template for **Book** and **eBook Basic** and **Advanced** templates, but this tutorial starts from scratch and uses the Empty template instead. The **EPUB** output was tested in **Apple iBooks**, the **Kobo Glo** app for **Android** and **Windows**, **Calibre** for **Linux**, a **Kobo Glo** ebook reader, and the **Simple EPUB Reader Google Chrome** app.
 
 1. If you're starting from scratch in Flare, and selected the **Empty Template**,  the Flare project includes several folders and files that may be unnecessary, such as **Advanced, Conditional Text,** and **Glossaries**. If the eventual output is a steamy novel or thriller, then the **Skins** and **Variables** folder are pretty much unused.
@@ -20,7 +24,7 @@ This article uses **MadCap Flare 11**. Flare 11 includes a **Print** template fo
 
 3. Although headers and footers, running headers and footers, and page numbers are somewhat redundant for EPUB output, you can add them using the default page layout file included with an **Empty Flare** project.
 
-   Most EPUB readers, including the **Kindle, FBReader,** and **iBooks** apps, ignore headers, footers, and page numbers. Page numbering is assigned based on the display size and how the app handles text reflowing.
+   Most EPUB readers, including the Kindle, FBReader, and iBooks apps, ignore headers, footers, and page numbers. Page numbering is assigned based on the display size and how the app handles text reflowing.
 
 4. If your EPUB includes images, specify the size of the image. To prevent any image clipping when viewed in smartphones or smaller tablets, specify the width by right-clicking the inserted image and then clicking **Image Properties > Size > Width**. You can select **Height** to **Automatic**.
 

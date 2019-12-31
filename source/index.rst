@@ -20,6 +20,15 @@ Offered But Unsolicited
    retext
    confluence_pagevalue
    githubpages_javadoc
+   design_cdr_glyph-font
+   diaeditor_wbs
+   flare_dita
+   pdftables_word
+   tw_flare_epub
+   tw_pages_sectionsfront
+   tw_sphinx_windows-setup
+   tw_word_pdf-tabs
+   tw_word_toclinks
 
 .. contents:: Articles
    :depth: 3

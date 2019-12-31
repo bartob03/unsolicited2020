@@ -10,6 +10,7 @@ Offered But Unsolicited
    :titlesonly:
    :caption: Contents:
 
+   self
    twriter_description
    step_introduction
    apidoc_racidiagram
@@ -19,10 +20,20 @@ Offered But Unsolicited
    retext
    confluence_pagevalue
    githubpages_javadoc
-   diaeditor_wbs
-   pdftables_word
-   tw_word_pdf-tabs
-   tw_pages_sectionsfront
-   tw_word_toclinks
-   tw_sphinx_windows-setup
    design_cdr_glyph-font
+   diaeditor_wbs
+   flare_dita
+   pdftables_word
+   tw_flare_epub
+   tw_pages_sectionsfront
+   tw_sphinx_windows-setup
+   tw_word_pdf-tabs
+   tw_word_toclinks
+
+.. contents:: Articles
+   :depth: 3
+
+// add the property ``:glob:`` and the item ``folder-name/*`` to add all contents of a folder.
+// use ``self`` to refer to the page with the toctree directive. ``.. contents`` is for the left navigation tab.
+// for all documents ``*``
+// You add a toctree to main headings like Linux for child pages!!! It makes sense!!
