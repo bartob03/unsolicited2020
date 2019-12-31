@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Microsoft 2016 Basics: PERT Diagram and Slack/Float &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ReText for Markdown (Linux)" href="retext.html" />
+    <link rel="prev" title="Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs" href="writingpublishingsphinx.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="retext.html" title="ReText for Markdown (Linux)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="writingpublishingsphinx.html" title="Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="microsoft-2016-basics-pert-diagram-and-slack-float">
+<h1>Microsoft 2016 Basics: PERT Diagram and Slack/Float<a class="headerlink" href="#microsoft-2016-basics-pert-diagram-and-slack-float" title="Permalink to this headline">¶</a></h1>
+<p>If you’re using <strong>Microsoft Project 2016 Professional</strong>, a network diagram is automatically set up for you once you enter Task Names, Duration, and Predecessors in the Gantt Chart view.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>MS Project uses the term <em>Slack</em>, not <em>Float</em>, which may confuse Project Management professionals, who are accustomed to the term <em>Float</em>, rather than <em>Slack</em>. In addition, Project uses the term <em>Predecessor</em> rather than <em>Dependencies</em>, another term often found in textbooks.</p>
+</div>
+<p>The default <em>Network Diagram</em> that MS Project Professional creates may not necessarily have the same appearance as PERT diagram examples taught in PMP, but the logic is the same and includes the duration and the task number (which is based on the sequence of tasks you list in the <strong>Gantt Chart</strong>). Moreover, you can edit the appearance of the Network Diagram to include any, or all details from the Gantt Chart view.</p>
+<img alt="_images/project-pertchart1.png" src="_images/project-pertchart1.png" />
+<div class="section" id="viewing-the-pert-chart-of-a-project">
+<h2>Viewing the PERT chart of a project<a class="headerlink" href="#viewing-the-pert-chart-of-a-project" title="Permalink to this headline">¶</a></h2>
+<p>To view your Gantt chart’s corresponding PERT diagram, click <strong>View &gt; Network Diagram</strong>.</p>
+<p>Even if you didn’t select <strong>Critical Tasks</strong> from the Format ribbon in the Gantt Chart view, the <strong>Critical Path</strong> is highlighted in the Network Diagram as red.</p>
+</div>
+<div class="section" id="changing-work-time-duration-scale">
+<h2>Changing Work/Time duration scale<a class="headerlink" href="#changing-work-time-duration-scale" title="Permalink to this headline">¶</a></h2>
+<p>Although MS Project is used for large, complex projects, you can also use it to create simple Gantt diagrams for short-term tasks measured in hours and minutes. To do this, simply change the duration settings to Minutes or Hours before you begin creating a list of tasks.</p>
+<p>To change duration input to minutes:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>File &gt; Options &gt; Schedule</strong>.</p></li>
+<li><p>Select <strong>Minutes</strong> for the setting <strong>Duration is entered in</strong> and <strong>Work is entered in</strong>.</p></li>
+</ol>
+<img alt="_images/project-timescale2.png" src="_images/project-timescale2.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click <strong>OK</strong>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you already have a task list with a specified duration, changing this setting won’t revert the Duration values to minutes, so change the Duration setting before creating your tasks.</p>
+</div>
+<img alt="_images/project-timescale3.png" src="_images/project-timescale3.png" />
+</div>
+<div class="section" id="displaying-slack-in-the-gantt-chart-and-pert-diagram">
+<h2>Displaying Slack in the Gantt Chart and PERT diagram<a class="headerlink" href="#displaying-slack-in-the-gantt-chart-and-pert-diagram" title="Permalink to this headline">¶</a></h2>
+<p>You can display the <strong>Start/Finish/Total/Free Slack</strong> in both the <strong>Gantt Chart</strong> and <strong>PERT diagram</strong>.</p>
+<p>To display Slack information in Gantt Chart view:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Task &gt; Gantt Chart</strong>.</p></li>
+<li><p>Click <strong>Add New Column</strong>, and then type or select <strong>Start Slack, Finish Slack, Total Slack,</strong> or <strong>Free Slack</strong>.</p></li>
+</ol>
+<img alt="_images/slack-ganttchart.png" src="_images/slack-ganttchart.png" />
+<p>To display Slack information in the Network Diagram view:</p>
+<ol class="arabic simple">
+<li><p>Right-click any of the boxes, and then click <strong>Format Box</strong>.</p></li>
+<li><p>Click <strong>More Templates &gt; New</strong>.</p></li>
+</ol>
+<img alt="_images/slack-nd1.png" src="_images/slack-nd1.png" />
+<ol class="arabic simple" start="3">
+<li><p>Type a <code class="docutils literal notranslate"><span class="pre">Template</span> <span class="pre">Name</span></code>. In this example, <em>Slack Information</em> is used.</p></li>
+<li><p>Click a cell from the <strong>Choose cell</strong> box, and then select values that you want to appear on your Network Diagram from the list.</p></li>
+</ol>
+<p>In the following example, <strong>Late Start, Late Finish, Early Start, Early Finish, Duration</strong> and <strong>Total Slack</strong> are added to the cells.</p>
+<img alt="_images/slack-nd.png" src="_images/slack-nd.png" />
+<ol class="arabic simple" start="5">
+<li><p>Click <strong>OK</strong>. The new template is added to the list of the <strong>Data Templates</strong> box.</p></li>
+<li><p>Click <strong>Close</strong>.</p></li>
+<li><p>To apply the template, select the <strong>Network Diagram</strong> boxes. Right-click and then click <strong>Format Box</strong>.</p></li>
+</ol>
+<img alt="_images/slack-nd2.png" src="_images/slack-nd2.png" />
+<ol class="arabic simple" start="8">
+<li><p>Select the <strong>Data Template</strong> you created from the list, and then click <strong>OK</strong>.</p></li>
+</ol>
+<p>Values on the Network Diagram boxes are updated. In the following example, <strong>Late Start, Late Finish, Early Start, Early Finish, Duration</strong> and <strong>Total Slack</strong> are added to the boxes.</p>
+<img alt="_images/slack-nd4.png" src="_images/slack-nd4.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Microsoft 2016 Basics: PERT Diagram and Slack/Float</a><ul>
+<li><a class="reference internal" href="#viewing-the-pert-chart-of-a-project">Viewing the PERT chart of a project</a></li>
+<li><a class="reference internal" href="#changing-work-time-duration-scale">Changing Work/Time duration scale</a></li>
+<li><a class="reference internal" href="#displaying-slack-in-the-gantt-chart-and-pert-diagram">Displaying Slack in the Gantt Chart and PERT diagram</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="writingpublishingsphinx.html"
+                        title="previous chapter">Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="retext.html"
+                        title="next chapter">ReText for Markdown (Linux)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/msproject2016_float.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="retext.html" title="ReText for Markdown (Linux)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="writingpublishingsphinx.html" title="Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>

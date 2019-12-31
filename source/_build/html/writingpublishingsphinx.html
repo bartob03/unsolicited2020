@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float" href="msproject2016_float.html" />
+    <link rel="prev" title="Creating Customer Release Notes" href="releasenotes_creating.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="msproject2016_float.html" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="releasenotes_creating.html" title="Creating Customer Release Notes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="writing-and-publishing-documentation-using-sphinx-restructuredtext-and-readthedocs">
+<h1>Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs<a class="headerlink" href="#writing-and-publishing-documentation-using-sphinx-restructuredtext-and-readthedocs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><em>ReStructuredText</em> (RST) is a lightweight markup language similar to <strong>Markdown</strong> and is ideal for writing technical documentation. <em>Sphinx</em> is a publishing engine that uses RST files for creating static websites for documentation. <a class="reference external" href="https://www.readthedocs.org">ReadTheDocs.org</a> is an online service that hosts documentation, and can build and publish directly from <strong>GitHub</strong> and <strong>BitBucket</strong>.</p>
+</div>
+<div class="section" id="running-basic-sphinx-commands">
+<h2>Running basic Sphinx commands<a class="headerlink" href="#running-basic-sphinx-commands" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx uses .rst files for publishing documentation and can be installed on Windows, Linux, and macOS via a software package or pip.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The steps in this article were tested on an <a class="reference external" href="https://www.ubuntu.com">Ubuntu</a> machine.</p>
+</div>
+<p>The basic operations are described as follows.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install Sphinx
+# Installs Sphinx.
+
+$ sphinx-quickstart
+# Run the quickstart script within a docs folder in a project folder. The quickstart option creates default files and folders such as index.rst and conf.py within the docs folder. The options can be later changed by editing the conf.py file.
+
+$ make html
+# The make html command generates HTML files in the build folder.
+</pre></div>
+</div>
+<p>For additional details, refer to the official <a class="reference external" href="https://www.sphinx-doc.org/en/1.7/contents.html">Sphinx Documentation</a></p>
+<div class="section" id="understanding-the-sphinx-quickstart-command">
+<h3>Understanding the <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> command<a class="headerlink" href="#understanding-the-sphinx-quickstart-command" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> command is executed within the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder prior to creating <strong>RST</strong> files.</p>
+<p>Although the default options are acceptable, take note of the following options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Separate</span> <span class="pre">source</span> <span class="pre">and</span> <span class="pre">build</span> <span class="pre">directories</span></code> - Separating the source and build directories helps identify which files for uploading for web hosting.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">name</span></code> - The project name appears in several places in the output document so ensure that this is the correct project name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Author</span> <span class="pre">name(s)</span></code> - The script will not run unless text is entered for this option.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">your</span> <span class="pre">master</span> <span class="pre">document</span></code> - The master document is the main page for the output and is named <strong>index.rst</strong> by default.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">githubpages</span></code> - This option creats a <strong>.nojekyll</strong> file used for preventing <strong>Jekyll</strong> options if the final output will be hosted in GitHub pages.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">makefile</span></code> - This option makes it easy to run the make html script in Windows.</p></li>
+</ul>
+</div>
+<div class="section" id="publishing-to-pdf">
+<h3>Publishing to PDF<a class="headerlink" href="#publishing-to-pdf" title="Permalink to this headline">¶</a></h3>
+<p>The output can be published to PDF using the command make <strong>latexpdf</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Additional <strong>LaTeX</strong> software dependencies are required depending on the operating system. For additional details, refer to <a class="reference external" href="https://www.sphinx-doc.org/en/1.7/builders.html#sphinx.builders.latex.LaTeXBuilder">Sphinx LaTeXBuilder</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="writing-using-restructuredtext-markup">
+<h2>Writing using ReStructuredText markup<a class="headerlink" href="#writing-using-restructuredtext-markup" title="Permalink to this headline">¶</a></h2>
+<p>ReStructuredText markup differs from Markdown and includes many directives for organizing and referencing documents. RST uses <em>docutils</em>, but additional directives can be used when publishing via Sphinx.</p>
+<p>Example of a RST directive: <code class="docutils literal notranslate"><span class="pre">contents</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span><span class="n">contents</span><span class="p">::</span> <span class="n">Table</span> <span class="n">of</span> <span class="n">Contents</span>
+</pre></div>
+</div>
+<p>The contents directive creates a toc based on the headings found on the page and rendered in HTML.</p>
+<p>Example of Sphinx directive: <code class="docutils literal notranslate"><span class="pre">seealso</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">seealso</span><span class="p">::</span>
+
+<span class="n">Sphinx</span> <span class="n">main</span> <span class="n">site</span>
+  <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">sphinx</span><span class="o">-</span><span class="n">doc</span><span class="o">.</span><span class="n">org</span>
+
+<span class="n">Sphinx</span> <span class="n">ReStructuredText</span> <span class="n">Docutils</span> <span class="n">Directives</span>
+  <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">docutils</span><span class="o">.</span><span class="n">sourceforge</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">ref</span><span class="o">/</span><span class="n">rst</span><span class="o">/</span><span class="n">directives</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>For a list of directives supported by docutils, refer to <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html">reStructuredText Directives</a>.</p></li>
+<li><p>For a list of directives supported by <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">Directives</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="working-with-tables">
+<h3>Working with tables<a class="headerlink" href="#working-with-tables" title="Permalink to this headline">¶</a></h3>
+<p>Creating tables manually in ReStructuredText is not always ideal. One solution is to use the <code class="docutils literal notranslate"><span class="pre">csv-table</span></code> directive, which displays <strong>.csv</strong> files into the document.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">csv</span><span class="o">-</span><span class="n">table</span><span class="p">::</span> <span class="n">Table</span> <span class="n">Title</span>
+ <span class="p">:</span><span class="n">file</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">CSV</span> <span class="n">file</span> <span class="n">path</span> <span class="ow">and</span> <span class="n">name</span><span class="o">&gt;</span>
+ <span class="p">:</span><span class="n">widths</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">30</span>
+ <span class="p">:</span><span class="n">header</span><span class="o">-</span><span class="n">rows</span><span class="p">:</span> <span class="mi">1</span>
+
+<span class="c1"># The widths option is used to define the width of the column.</span>
+</pre></div>
+</div>
+<p>An alternative is to use the <code class="docutils literal notranslate"><span class="pre">list-table</span></code> directive, which makes writing the contents of the table fairly straightforward.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="nb">list</span><span class="o">-</span><span class="n">table</span><span class="p">::</span> <span class="n">Title</span>
+ <span class="p">:</span><span class="n">widths</span><span class="p">:</span> <span class="mi">25</span> <span class="mi">25</span> <span class="mi">50</span>
+ <span class="p">:</span><span class="n">header</span><span class="o">-</span><span class="n">rows</span><span class="p">:</span> <span class="mi">1</span>
+
+ <span class="o">*</span> <span class="o">-</span> <span class="n">Heading</span> <span class="n">row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">1</span>
+   <span class="o">-</span> <span class="n">Heading</span> <span class="n">row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">2</span>
+   <span class="o">-</span> <span class="n">Heading</span> <span class="n">row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">3</span>
+ <span class="o">*</span> <span class="o">-</span> <span class="n">Row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">1</span>
+   <span class="o">-</span>
+   <span class="o">-</span> <span class="n">Row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">3</span>
+ <span class="o">*</span> <span class="o">-</span> <span class="n">Row</span> <span class="mi">2</span><span class="p">,</span> <span class="n">column</span> <span class="mi">1</span>
+   <span class="o">-</span> <span class="n">Row</span> <span class="mi">2</span><span class="p">,</span> <span class="n">column</span> <span class="mi">2</span>
+   <span class="o">-</span> <span class="n">Row</span> <span class="mi">2</span><span class="p">,</span> <span class="n">column</span> <span class="mi">3</span>
+</pre></div>
+</div>
+<p>Note that each cell can contain structured markup, such as markup that indicates literal text.</p>
+</div>
+<div class="section" id="editors-and-tools-for-rst">
+<h3>Editors and Tools for RST<a class="headerlink" href="#editors-and-tools-for-rst" title="Permalink to this headline">¶</a></h3>
+<p>Users don’t need to use a dedicated tool for writing RST. However, the following editors include writing aides for previewing and writing RST:</p>
+<ul class="simple">
+<li><p><strong>Visual Studio Code</strong></p></li>
+<li><p><strong>ReText</strong> (Linux) - ReText supports previewing RST using the python-docutils packages.</p></li>
+<li><p><strong>Notepad ++</strong></p></li>
+<li><p><strong>Atom</strong> (macOS, Windows, Linux) - Atom packages are available for <code class="docutils literal notranslate"><span class="pre">ReStructuredText</span> <span class="pre">Preview</span> <span class="pre">Pandoc</span></code>, <code class="docutils literal notranslate"><span class="pre">linter-spell-rst</span></code>, <code class="docutils literal notranslate"><span class="pre">linter-rst</span></code>, <code class="docutils literal notranslate"><span class="pre">rst-snippets</span></code> and <code class="docutils literal notranslate"><span class="pre">language-restructuredtext</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="publishing-the-sphinx-project-to-readthedocs">
+<h2>Publishing the Sphinx project to ReadtheDocs<a class="headerlink" href="#publishing-the-sphinx-project-to-readthedocs" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.readthedocs.org">Readthedocs.org</a> supports Sphinx builds via GitHub.</p>
+<p>To publish a Sphinx project hosted on GitHub to Readthedocs.org:</p>
+<ul class="simple">
+<li><p>Log into or sign up for Read the Docs</p></li>
+<li><p>Click <strong>My Projects &gt; Import a Project</strong>.</p></li>
+<li><p>Enter the GitHub project details (<code class="docutils literal notranslate"><span class="pre">git&#64;github.com/git-username/project-name.git</span></code>), and then click <strong>Create</strong>.</p></li>
+<li><p>Click the project name once added, and then click <strong>Build version</strong>.</p></li>
+<li><p>Click <strong>View your documentation</strong> or <strong>View Docs</strong> once the build is complete.</p></li>
+</ul>
+<div class="section" id="applying-the-readthedocs-default-theme">
+<h3>Applying the ReadtheDocs default theme<a class="headerlink" href="#applying-the-readthedocs-default-theme" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> specified in the <strong>conf.py</strong> file determines which theme Sphinx uses when building the documentation. To use the <strong>Readthedocs</strong> theme, change the value of <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> to <code class="docutils literal notranslate"><span class="pre">default</span></code>.</p>
+<p>If the output won’t be hosted on ReadtheDocs.org, or the user prefers to review the build locally with the Readthedocs theme applied, the theme can be installed via <code class="docutils literal notranslate"><span class="pre">pip</span></code> and applied to the HTML build.</p>
+<p>To install and apply the <strong>Readthedocs</strong> theme to the HTML build:</p>
+<ul class="simple">
+<li><p>Install the theme using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code></p></li>
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> value in the <strong>conf.py</strong> file to <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="adding-custom-css-to-the-theme">
+<h3>Adding custom CSS to the theme<a class="headerlink" href="#adding-custom-css-to-the-theme" title="Permalink to this headline">¶</a></h3>
+<p>Custom themes in the <code class="docutils literal notranslate"><span class="pre">_static</span></code> folder override applied themes.</p>
+<p>To add custom CSS, perform the following steps:</p>
+<ol class="arabic simple">
+<li><p>Ensure that the <code class="docutils literal notranslate"><span class="pre">html_static_path</span> <span class="pre">=</span> <span class="pre">['_static']</span></code> line in the <strong>conf.py</strong> file is uncommented.</p></li>
+<li><p>Specify the path of the <strong>.css</strong> file relative to the <code class="docutils literal notranslate"><span class="pre">_static</span></code> folder.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``html_css_files = [
+    &#39;bstyle.css&#39;,
+]``
+</pre></div>
+</div>
+<p>The same process can be applied for adding <strong>Javascript</strong> files (<code class="docutils literal notranslate"><span class="pre">html_js_files</span></code>).</p>
+</div>
+<div class="section" id="editing-the-table-of-contents-tree">
+<h3>Editing the Table of Contents tree<a class="headerlink" href="#editing-the-table-of-contents-tree" title="Permalink to this headline">¶</a></h3>
+<p>The toctree directive is used to structure the table of contents on the left panel of the page.</p>
+<p>The default index.html file, which serves as the landing page, doesn’t appear on the TOC tree unless additional sections/headings are present on the index.html file. Files specified in the toctree directive adds items to the output navigation tree in addition to the sections included on the landing page. External links can be added using the label name &lt;<code class="docutils literal notranslate"><span class="pre">URL</span></code>&gt; as shown in the following example.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Site</span> <span class="n">Map</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+
+   <span class="n">glossary</span>
+   <span class="n">reference</span>
+   <span class="n">Swagger</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">bartob03</span><span class="o">/</span><span class="n">docs</span><span class="o">-</span><span class="n">only</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the writer prefers to only have a main TOC tree in the landing page and have a different page for the start of the documentation, specify a different filename for the Name of your master document when running <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>. For example, specify <strong>main.rst</strong> as the master document then add a separate item for index in the <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Writing and publishing documentation using Sphinx, ReStructuredText , and ReadTheDocs</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#running-basic-sphinx-commands">Running basic Sphinx commands</a><ul>
+<li><a class="reference internal" href="#understanding-the-sphinx-quickstart-command">Understanding the <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> command</a></li>
+<li><a class="reference internal" href="#publishing-to-pdf">Publishing to PDF</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#writing-using-restructuredtext-markup">Writing using ReStructuredText markup</a><ul>
+<li><a class="reference internal" href="#working-with-tables">Working with tables</a></li>
+<li><a class="reference internal" href="#editors-and-tools-for-rst">Editors and Tools for RST</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#publishing-the-sphinx-project-to-readthedocs">Publishing the Sphinx project to ReadtheDocs</a><ul>
+<li><a class="reference internal" href="#applying-the-readthedocs-default-theme">Applying the ReadtheDocs default theme</a></li>
+<li><a class="reference internal" href="#adding-custom-css-to-the-theme">Adding custom CSS to the theme</a></li>
+<li><a class="reference internal" href="#editing-the-table-of-contents-tree">Editing the Table of Contents tree</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="releasenotes_creating.html"
+                        title="previous chapter">Creating Customer Release Notes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="msproject2016_float.html"
+                        title="next chapter">Microsoft 2016 Basics: PERT Diagram and Slack/Float</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/writingpublishingsphinx.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="msproject2016_float.html" title="Microsoft 2016 Basics: PERT Diagram and Slack/Float"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="releasenotes_creating.html" title="Creating Customer Release Notes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>

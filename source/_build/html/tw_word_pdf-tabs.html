@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating Navigation Notebook Tabs for PDFs from Word &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="creating-navigation-notebook-tabs-for-pdfs-from-word">
+<h1>Creating Navigation Notebook Tabs for PDFs from Word<a class="headerlink" href="#creating-navigation-notebook-tabs-for-pdfs-from-word" title="Permalink to this headline">¶</a></h1>
+<p>Although it’s somewhat redundant to add “hotspots” in <strong>PDFs</strong>, some technical writers use visual navigation aides in their publications because it’s attractive and is easier to use on tablets and 2-in-1 laptops than text hyperlinks where you have to zoom in.</p>
+<img alt="_images/ubo_134.png" src="_images/ubo_134.png" />
+<p>You don’t need <strong>Microsoft Publisher, InDesign,</strong> or <strong>CorelDraw</strong> to produce PDFs with visual navigation cues. <strong>Microsoft Word</strong> has long had the ability to add these fairly basic components to your Word document and retain them once they are exported to PDF.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Image hotspots and interactive links in PDFs have been around as long as HTML 1.x. As noted, they can be useful for PDFs if the document is delivered and consumed via touch screen devices. For my part, I still prefer ordinary text hyperlinks, but I understand the resurgence of its use considering that today’s generation of users think everything on a screen is designed to be tapped by a finger.</p>
+</div>
+<p>This article uses <strong>Microsoft Word 2016</strong> to produce a document with classic “notebook tabs” (similar to the <em>Sony NEX</em> manual shown previously) that supplement the <strong>Bookmarks</strong> and the <strong>Table of Contents</strong> of the final output PDF.</p>
+<p>To create a PDF with clickable notebook tabs:</p>
+<ol class="arabic">
+<li><p>For the purpose of this article, a page border is added to assist layout. The page border will be visible in the final PDF output.</p>
+<p>Click <strong>Design &gt; Page Borders</strong> to add a page border.</p>
+</li>
+<li><p>Adjust the margins of the document.</p>
+<p>Since this example has the notebook tabs on the right, the <strong>Right Margin</strong> was adjusted to 0.17” which is the smallest margin a standard Word document will support.</p>
+<p>Click <strong>Layouts &gt; margins &gt; Custom Margins</strong> to adjust the margin values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can certainly force Word to have a smaller margin but this may push the objects and text outside the page borders in the resulting PDF.</p>
+</div>
+</li>
+<li><p>Add the notebook tabs.</p>
+<ul class="simple">
+<li><p>Click <strong>Insert &gt; Shapes</strong> to add shapes to the document. Click the handles to rotate them in the proper direction.</p></li>
+</ul>
+<p>For this article, the shapes that will be used as notebook tabs are aligned to the page border.</p>
+<ul class="simple">
+<li><p>To duplicate a shape, select the shape, and then click <strong>CTRL+D</strong>.</p></li>
+<li><p>To align the shapes, select the shapes, and then click <strong>Layout &gt; Align &gt; Distribute Vertically</strong> and if needed, <strong>Align &gt; Align Right</strong>.</p></li>
+</ul>
+<img alt="_images/ubo_137.png" class="align-center" src="_images/ubo_137.png" />
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p>Create a <strong>Paragraph</strong> style which allows for space between the text and the notebook tabs.</p>
+<p>For this example, the <strong>Normal</strong> paragraph style’s right <strong>Ruler marker</strong> was dragged to 6.5. With the ruler marker on 6.5, the text won’t overlap with the added shapes.</p>
+<img alt="_images/ubo_138.png" src="_images/ubo_138.png" />
+</li>
+<li><p>Add and format the text inside the notebook tabs. If needed, use large text sizes to ensure that the tabs can be tapped in the output PDF when viewed on a tablet or 2-in-1 PC.</p>
+<p>For this example, <em>Start, Middle,</em> and <em>End</em> were added inside the notebook tabs.</p>
+</li>
+<li><p>Add the hyperlinks to the text inside the notebook tabs.</p>
+<p>Select and right-click the text.  Click <strong>Hyperlink &gt; Place</strong> in this Document. For this example, there are <strong>Heading 1</strong> text for <em>Start, Middle,</em> and <em>End</em> in the document.</p>
+<img alt="_images/ubo_140.png" src="_images/ubo_140.png" />
+<p>If needed, change the format of the links. Once exported to PDF, the final appearance of the links on the Word document appears on the PDF as well.</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<blockquote>
+<div><p>Try not to test the links in Word since the colors will change and the changed color will appear on the output PDF.</p>
+</div></blockquote>
+<img alt="_images/ubo_141.png" src="_images/ubo_141.png" />
+</div>
+<ol class="arabic" start="6">
+<li><p>If needed, select the notebook tabs and then paste them on other pages of the document.</p>
+<p>You can group the notebook tabs by selecting the shapes and click <strong>Group</strong> on the <strong>Drawing Tools &gt; Format</strong> tab.</p>
+</li>
+<li><p>Export the document as PDF. Click <strong>File &gt; Create PDF/XPS</strong>.</p>
+<p>If you want the notebook tabs to be the primary navigation method on the PDF, click <strong>Options</strong> and clear the <strong>Create bookmarks using Headings</strong> checkbox. This prevents Word from creating a navigation bookmark tree for the PDF.</p>
+</li>
+<li><p>Open the PDF in a PDF viewer such as <strong>Adobe Acrobat</strong> and test the hyperlinks to the different parts of the document.</p>
+<p>The notebook tab links created in Word in this article were tested to work with <strong>Xodo PDF Reader for Android</strong> and Adobe Reader for <strong>Windows 7/10, Android,</strong> and <strong>Windows 10 Mobile</strong>.</p>
+</li>
+</ol>
+<div class="section" id="timelines">
+<h2>Timelines<a class="headerlink" href="#timelines" title="Permalink to this headline">¶</a></h2>
+<p>You can use the text hyperlink as a visual navigation on PDFs in a variety of designs, such as in timelines. The same principles apply. By adding shapes and making sure they don’t intrude in the text, you can creatively employ the document links to navigate through a long PDF.</p>
+<p>In the following example, a company timeline illustration clicks to a different page describing the event for a particular year. Note that the Text Art inside the spheres are large enough so readers can easily tap on them on 5”-14” tablets, smartphones, and 2-in-1 PCs like the <strong>Lenovo Yoga</strong> and <strong>Surface Pro 4</strong>.</p>
+<img alt="_images/ubo_144.png" src="_images/ubo_144.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Creating Navigation Notebook Tabs for PDFs from Word</a><ul>
+<li><a class="reference internal" href="#timelines">Timelines</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tw_word_pdf-tabs.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>
