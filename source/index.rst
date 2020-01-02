@@ -29,6 +29,8 @@ Offered But Unsolicited
    tw_sphinx_windows-setup
    tw_word_pdf-tabs
    tw_word_toclinks
+   tw_doclifecycle
+   tw_frame_images-word
 
 .. contents:: Articles
    :depth: 3
