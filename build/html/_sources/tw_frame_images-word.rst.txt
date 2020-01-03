@@ -17,7 +17,7 @@ To adjust the tab stops to align images in an imported Word document:
 
 4. Select text that is tagged as *Heading 2* or *Heading 1* in the document or select *Heading 1* or *Heading 2* from the list in **Paragraph Designer**.
 
-5. Adjust the tab stops using the markers on the ruler or by inputting values in the Tab Stops box in Paragraph Designer. If needed, perform the same steps for the Body Text Paragraph Tag.
+5. Adjust the tab stops using the markers on the ruler or by inputting values in the **Tab Stops** box in **Paragraph Designer**. If needed, perform the same steps for the **Body Text Paragraph** tag.
 
    .. tip::
 

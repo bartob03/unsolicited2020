@@ -31,6 +31,8 @@ Offered But Unsolicited
    tw_word_toclinks
    tw_doclifecycle
    tw_frame_images-word
+   cloud_drupal_azure
+   tw_apidoc_postman
 
 .. contents:: Articles
    :depth: 3
