@@ -33,6 +33,10 @@ Offered But Unsolicited
    tw_frame_images-word
    cloud_drupal_azure
    tw_apidoc_postman
+   design_indesign_anchoredobject
+   design_indesign_highlightfonts
+   design_indesign_openissue
+   tw_doc_requirediagrams
 
 .. contents:: Articles
    :depth: 3
