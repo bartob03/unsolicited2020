@@ -26,7 +26,6 @@ Offered But Unsolicited
    pdftables_word
    tw_flare_epub
    tw_pages_sectionsfront
-   tw_sphinx_windows-setup
    tw_word_pdf-tabs
    tw_word_toclinks
    tw_doclifecycle
