@@ -41,11 +41,3 @@ Offered But Unsolicited
    tw_redoc_html
    tw_consumer_tw
    tw_proofreaders
-
-.. contents:: Articles
-   :depth: 3
-
-// add the property ``:glob:`` and the item ``folder-name/*`` to add all contents of a folder.
-// use ``self`` to refer to the page with the toctree directive. ``.. contents`` is for the left navigation tab.
-// for all documents ``*``
-// You add a toctree to main headings like Linux for child pages!!! It makes sense!!
