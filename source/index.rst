@@ -39,6 +39,8 @@ Offered But Unsolicited
    tw_doc_requirediagrams
    tools_grafana_setup
    tw_redoc_html
+   tw_consumer_tw
+   tw_proofreaders
 
 .. contents:: Articles
    :depth: 3
