@@ -1,4 +1,4 @@
-Determining Confluence Page Value
+Determining Confluence page value
 ==========================================
 
 **Confluence** pages are regularly assessed by the developer team and by a *team approver*.

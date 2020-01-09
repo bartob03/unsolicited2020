@@ -37,6 +37,8 @@ Offered But Unsolicited
    design_indesign_highlightfonts
    design_indesign_openissue
    tw_doc_requirediagrams
+   tools_grafana_setup
+   tw_redoc_html
 
 .. contents:: Articles
    :depth: 3

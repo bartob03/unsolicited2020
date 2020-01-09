@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Using ReDoc for creating HTML OpenAPI documentation &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Setting up Grafana" href="tools_grafana_setup.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tools_grafana_setup.html" title="Setting up Grafana"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-redoc-for-creating-html-openapi-documentation">
+<h1>Using ReDoc for creating HTML OpenAPI documentation<a class="headerlink" href="#using-redoc-for-creating-html-openapi-documentation" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/Rebilly/ReDoc">ReDoc</a> is used for formatting and rendering hosted <strong>OpenAPI</strong> files as <strong>HTML</strong> output. Users have the option to customize or add content to the <strong>HTML</strong> output as needed. <strong>ReDoc</strong> can be deployed on <strong>GitHub</strong>, as a <strong>React</strong> component, or via <strong>Docker</strong> and supports well-formed and <strong>Swagger</strong>-compliant <strong>.json</strong> and <strong>.yaml</strong> files.</p>
+<img alt="_images/redoc_1.png" src="_images/redoc_1.png" />
+<p>This article uses the following local environment and dependencies:</p>
+<ul class="simple">
+<li><p>Fedora 29 Workstation</p></li>
+<li><p>node.js 12.3.1</p></li>
+<li><p>npm 6.9.0</p></li>
+<li><p>ReDoc 2.x</p></li>
+</ul>
+<div class="section" id="setting-up-redoc">
+<h2>Setting up ReDoc<a class="headerlink" href="#setting-up-redoc" title="Permalink to this headline">¶</a></h2>
+<p>To set up <strong>ReDoc</strong> using <code class="docutils literal notranslate"><span class="pre">npm</span></code>:</p>
+<ol class="arabic simple">
+<li><p>Install dependencies as needed.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">i</span> <span class="n">react</span> <span class="n">react</span><span class="o">-</span><span class="n">dom</span> <span class="n">mobx</span><span class="o">@^</span><span class="mf">4.2</span><span class="o">.</span><span class="mi">0</span> <span class="n">styled</span><span class="o">-</span><span class="n">components</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install the <code class="docutils literal notranslate"><span class="pre">redoc</span></code> package.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">redoc</span> <span class="o">--</span><span class="n">save</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-a-formatted-page-from-an-openapi-url">
+<h2>Creating a formatted page from an OpenAPI URL<a class="headerlink" href="#creating-a-formatted-page-from-an-openapi-url" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an HTML page with the necessary formatting to allow for an adaptive design.</p></li>
+</ol>
+<p>This example uses the following markup in the &lt;head&gt; tags.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">meta</span> <span class="n">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;viewport&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;width=device-width, initial-scale=1&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700&quot;</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+     <span class="n">body</span> <span class="p">{</span>
+       <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+       <span class="n">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+     <span class="p">}</span>
+   <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Add the source URL for the <strong>OpenAPI</strong> specification using the <code class="docutils literal notranslate"><span class="pre">&lt;redoc&gt;</span></code> tag in the body of the HTML file.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">redoc</span> <span class="n">spec</span><span class="o">-</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;path of OpenAPI specification&#39;</span><span class="o">&gt;&lt;/</span><span class="n">redoc</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Add the <strong>ReDoc</strong> script for rendering the page.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js&quot;</span><span class="o">&gt;</span> <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Open the web page to check the layout.</p></li>
+</ol>
+<img alt="_images/redoc_2.png" src="_images/redoc_2.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Using ReDoc for creating HTML OpenAPI documentation</a><ul>
+<li><a class="reference internal" href="#setting-up-redoc">Setting up ReDoc</a></li>
+<li><a class="reference internal" href="#creating-a-formatted-page-from-an-openapi-url">Creating a formatted page from an OpenAPI URL</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tools_grafana_setup.html"
+                        title="previous chapter">Setting up Grafana</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tw_redoc_html.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tools_grafana_setup.html" title="Setting up Grafana"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.2.
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-DIA Editor and Work Breakdown Structure (WBS) Graphics
+DIA Editor and Work Breakdown Structure (WBS) graphics
 ========================================================
 
 The *Work Breakdown Structure* (WBS) is one method of providing a visual representation of project tasks. **PMBOK** and **Project Management** courses generally recommend the WBS as part of the planning stage of an information project. The WBS can be used as an early outline of minor and major tasks and phases of the project, and can be directly tied to the budgeting and time estimating phases of project planning.
@@ -21,7 +21,7 @@ Some of the more useful tips when quickly creating a graphic for use with WBS ar
 .. image:: images/dia-bezier.png
 
 
-3. To quickly edit the text within a shape, click the **Text Edit** tool, and then click any drawn shape with text. In addition, if the last tool you selected was the Text Edit tool, you can press the **Space Bar** after drawing a shape to immediately enter text.
+3. To quickly edit the text within a shape, click the **Text Edit** tool, and then click any drawn shape with text. In addition, if the last tool you selected was the **Text Edit** tool, you can press the **Space Bar** after drawing a shape to immediately enter text.
 
 .. image:: images/text-edit.png
 
