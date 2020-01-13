@@ -32,7 +32,7 @@ This article uses **MadCap Flare 11**. Flare 11 includes a **Print** template fo
 
    The TOC Proxy that Flare automatically creates is unnecessary for **EPUBs** for obvious reasons. To remove them, double-click the **EPUB Target** in **Project Organizer**, and then click **Advanced**. Uncheck **Generate TOC Proxy**.
 
-   If you don't need an **Index** or **Glossary** for your erotic thriller clear the **Generate Index Proxy** and **Glossary Proxy** boxes also. 
+   If you don't need an **Index** or **Glossary** for your erotic thriller, clear the **Generate Index Proxy** and **Glossary Proxy** boxes also. 
 
    .. image:: images/flare12.png
    
