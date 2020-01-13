@@ -22,7 +22,7 @@ To create a glyph in **CorelDraw X5** and then export it to a font:
 
 Most designers already have preset guidelines on their CorelDraw templates to ensure their character or glyph does not exceed a certain amount of space when typed. Today, creating a glyph is more flexible because screens have a higher resolution and text consumption is done on a screen or using a digital document (such as PDF or EPUB) than on print. The usage of the glyph, whether for web, print, or PDF, plays a part in the design, but in general it's easier to check whether the glyph will look good in HTML, SVG, or PDF.
 
-.. image:: images/ubo2021.png
+.. image:: images/ubo2021.PNG
 
 
 2. Once the design is complete, select all the vector objects and click **Arrange > Combine**. Depending on how you designed your glyph, you may need to use **Shaping tools** such as **Weld, Trim, Intersect,** and **Simplify** to make sure the design looks the way you intended. In short, the glyph needs to be a contiguous object without "holes".
@@ -37,7 +37,7 @@ Most designers already have preset guidelines on their CorelDraw templates to en
 
    Select the **Selected only** option, and then click **Export**.
 
-   .. image:: images/ubo2022.png
+   .. image:: images/ubo2022.PNG
 
 
 5. Input a *Family name* for the font.  Mac OSX, Linux, and Windows will use this name to identify the font.
@@ -59,7 +59,7 @@ Most designers already have preset guidelines on their CorelDraw templates to en
 
 The **Baseline** is particularly important since it affects alignment with neighboring characters. The following screenshot shows how a lower **Baseline** changes the alignment of a glyph with *Calibre* text in **Microsoft Word 2010**. The resulting alignment will also appear when the Word document is exported to PDF.
 
-.. image:: images/ubo2023.png
+.. image:: images/ubo2023.PNG
 
 6. Click **OK**.
 
@@ -70,7 +70,7 @@ The **Baseline** is particularly important since it affects alignment with neigh
 	Characters with an exported design will appear in slight bold. If you're creating a full set of font characters rather than 1 or 2 symbols/glyphs, you export roughly more than 80 characters.
 
 
-.. image:: images/ubo2024.png
+.. image:: images/ubo2024.PNG
 
 
 8. Test the glyph by installing the TTF in Linux, Windows, and MacOSX and using the font in **Word, Pages,** and even in programs such as **Okular, Adobe Reader, Scribus** and **Inkscape**. If needed, export the glyph as SVG or HTML5 if you need to use the design in web pages. In addition, embed the glyph to an EPUB file or PDF document and view the glyph using smartphones, ereaders, and tablets with varying screen sizes.
