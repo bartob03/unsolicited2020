@@ -30,7 +30,7 @@ To set up Drupal 8:
 
    By default, **Azure Database for MySQL** is selected as the **Database Provider**. User and password settings for the database are entered on the Database blade and required before creating the Drupal 8 app. Inputting database information does not automatically create a MySQL, MariaDB, PostgreSQL, or SQLite database. An SQL database on Azure should be set up before creating the **Drupal App Service**.
 
-   .. image:: images/drupal01.png
+   .. image:: images/drupal01.PNG
 
 
    For this example, **MySQL In App** is selected, which means that MySQL is managed as part of the application, rather than through the Azure portal.
@@ -54,7 +54,7 @@ Reviewing MySQL in App settings
 
 To verify **MySQL In App** settings and database paths, click **App Service >** ``Drupal app name`` **> MySQL In App**.
 
-.. image:: images/drupal02.png
+.. image:: images/drupal02.PNG
 
 
 Using phpMyAdmin
@@ -66,7 +66,7 @@ To launch **phpMyAdmin** for the database, click **App Service >** ``Drupal app 
 
 As an alternative, users can access **phpMyAdmin** using the URL ``https://<app service>.scm.azurewebsites.net/phpmyadmin``.
 
-.. image:: images/drupal03.png
+.. image:: images/drupal03.PNG
 
 
 Using Kudu to access database files
@@ -76,7 +76,7 @@ The database string, including the password, can also be viewed in plain text by
 
 To view **MySQL** files using **Kudu**, click **Advanced tools > Go > Debug console > CMD**.
 
-.. image:: images/drupal04.png
+.. image:: images/drupal04.PNG
 
 
 Launching the Drupal interactive installer
