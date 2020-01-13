@@ -35,7 +35,7 @@ Creating a formatted page from an OpenAPI URL
 
 1. Create an HTML page with the necessary formatting to allow for an adaptive design.
 
-This example uses the following markup in the <head> tags.
+This example uses the following markup in the ``<head>`` tags.
 
 ::
 
