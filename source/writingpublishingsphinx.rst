@@ -190,4 +190,4 @@ The default index.html file, which serves as the landing page, doesn't appear on
 
 .. note::
 
-	If the writer prefers to only have a main TOC tree in the landing page and have a different page for the start of the documentation, specify a different filename for the Name of your master document when running ``sphinx-quickstart``. For example, specify **main.rst** as the master document then add a separate item for index in the ``toctree`` directive.
+	If the writer prefers to only have a main TOC tree in the landing page and have a different page for the start of the documentation, specify a different filename for the *Name* of your master document when running ``sphinx-quickstart``. For example, specify *main.rst* as the master document then add a separate item for index in the ``toctree`` directive.
