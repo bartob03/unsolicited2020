@@ -18,7 +18,7 @@ Users of **Adobe Reader** or third-party PDF viewers are no doubt accustomed to 
 
 .. note::
 
-	The entries shown in the **Navigation Pane** in Word doesn't necessarily reflect what bookmarks will appear on your output PDF file. The **Navigation Pane** includes all levels of a Word document based on the **Heading** styles you use. You can view the **Navigation Pane** by clicking the **View tab > Navigation Pane**.
+	The entries shown in the **Navigation Pane** in Word don't necessarily reflect what bookmarks will appear on your output PDF file. The **Navigation Pane** includes all levels of a Word document based on the **Heading** styles you use. You can view the **Navigation Pane** by clicking the **View tab > Navigation Pane**.
 
 4. Increase the number of levels that appear on the TOC using the **Show levels** setting or click **Options** and modify the TOC level as needed. The TOC levels selected determines the depth of the document tree that appears on the PDF output's **Bookmark** pane. Click **OK**.
 
