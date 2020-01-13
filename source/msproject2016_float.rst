@@ -17,7 +17,7 @@ Viewing the PERT chart of a project
 
 To view your Gantt chart's corresponding PERT diagram, click **View > Network Diagram**.
 
-Even if you didn't select **Critical Tasks** from the Format ribbon in the Gantt Chart view, the **Critical Path** is highlighted in the Network Diagram as red.
+Even if you didn't select **Critical Tasks** from the **Format** ribbon in the **Gantt Chart** view, the **Critical Path** is highlighted in the Network Diagram as red.
 
 Changing Work/Time duration scale
 -----------------------------------
