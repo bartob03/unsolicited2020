@@ -49,7 +49,7 @@ The Flare DITA preview uses Flare styles.
 
 The Flare PDF output preview is almost similar in formatting except for issues with the text box border.
 
-Apart from the added Glossary definition and an overly long text box border, there isn't much difference in formatting between the **PDF/HTML** output and the DITA output. Note, however, that the preview for a DITA target is misleading and only applies to publishing the DITA file from Flare.
+Apart from the added ``Glossary`` definition and an overly long text box border, there isn't much difference in formatting between the **PDF/HTML** output and the DITA output. Note, however, that the preview for a DITA target is misleading and only applies to publishing the DITA file from Flare.
 
 If you're satisfied with how the DITA preview looks, you can build the DITA output for the whole project as you would with any Flare project.
 
