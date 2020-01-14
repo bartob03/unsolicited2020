@@ -1,4 +1,4 @@
-Tips on Using MadCap Flare to Produce EPUB Output
+Tips on using MadCap Flare to produce EPUB output
 ====================================================
 
 Using **MadCap Flare** for producing **EPUB** output is a bit overkill, considering that you can produce **EPUB** from text editors, open source software such as **LibreOffice**, **Sigil**, and **Calibre**, as well as value-add applications such as **Pages** for **macOS** or **iBooks Author**. However, if you already own a license for **MadCap Flare**, then there's no reason not to use the **EPUB** support included with the application.  Moreover, Flare has considerably more flexibility in terms of formatting EPUBs when compared with creating EPUBs using **Adobe InDesign** or **Adobe FrameMaker**.
