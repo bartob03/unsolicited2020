@@ -1,4 +1,4 @@
-Technical Writing and Consumer Electronics
+Technical writing and consumer electronics
 ================================================
 
 Most veteran technical communicators understand the benefits of topic-based writing and its relationship with structured authoring, particularly when it comes to product lines and electronics available in the market today. Some of them may even understand the tools that work in the backend such as XSLT transformations, single-source publishing and XML toolchains. With practice and experience, it is easy to get too comfortable with writing tasks, concepts, reference topics and short descriptions. Unfortunately, when you've written, reused and updated dozens of manuals and release versions of documentation for consumer electronics, you can easily forget a basic and important element to consider when writing: your audience.
