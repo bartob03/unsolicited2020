@@ -1,4 +1,4 @@
-The Document Life Cycle Continues
+The Document Life Cycle continues
 =====================================
 
 Some technical writers and editors believe that once an article, topic or document is published, the document's life ends there. However, there is much that happens behind the scenes that are invisible to the writer, but relevant to what is called the document or publication life cycle.
