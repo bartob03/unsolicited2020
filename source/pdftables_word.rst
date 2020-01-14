@@ -1,4 +1,4 @@
-Importing Tables from PDFs using Word 2016
+Importing tables from PDFs using Word 2016
 =================================================
 
 In some cases you can copy tables from a PDF and paste them directly to an Excel worksheet. On the other hand, depending on what application was used to publish the PDF, pasted table content from a PDF will lose the table structure.
