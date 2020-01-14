@@ -1,4 +1,4 @@
-Word 2016 TOC, Hyperlinks, and PDFs
+Word 2016 TOC, hyperlinks, and PDFs
 ========================================
 
 Users of **Adobe Reader** or third-party PDF viewers are no doubt accustomed to using the **Bookmarks/Document** tree pane for clicking chapters and sections of a PDF document. However, if you want your readers to also have clickable links on the table of contents itself once a Word document is exported to PDF, perform the following steps on the Word document before you export the **.docx** file to PDF:
