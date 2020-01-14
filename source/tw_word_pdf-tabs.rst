@@ -1,4 +1,4 @@
-Creating Navigation Notebook Tabs for PDFs from Word
+Creating navigation notebook tabs for PDFs from Word
 =======================================================
 
 Although it's somewhat redundant to add "hotspots" in **PDFs**, some technical writers use visual navigation aides in their publications because it's attractive and is easier to use on tablets and 2-in-1 laptops than text hyperlinks where you have to zoom in.
