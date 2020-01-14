@@ -85,7 +85,7 @@ Example of Sphinx directive: ``seealso``
 Working with tables
 ~~~~~~~~~~~~~~~~~~~~~
 
-Creating tables manually in ReStructuredText is not always ideal. One solution is to use the ``csv-table`` directive, which displays **.csv** files into the document.
+Creating tables manually in ReStructuredText is not always ideal. One solution is to use the ``csv-table`` directive, which renders **.csv** files into tables in the document.
 
 ::
 
