@@ -1,4 +1,4 @@
-Using GitHub Pages for Javadoc Files
+Using GitHub Pages for Javadoc files
 ========================================
 
 **GitHub Pages** can be used for hosting **Javadoc** files. No additional steps are required to set up the repository to publish the HTML files.
