@@ -40,3 +40,5 @@ Offered But Unsolicited
    tw_redoc_html
    tw_consumer_tw
    tw_proofreaders
+   ts_onedrive_error
+   fm_structure_templates
