@@ -67,11 +67,11 @@ To access the templates folder and add permissions:
 Modifying the Template
 --------------------------
 
-Using the original machinery task template, the Short Description text had a background color of light grey. We will modify the machinery task template to remove the background color.
+Using the original machinery task template, the ``Short Description`` text had a background color of light grey. We will modify the machinery task template to remove the background color.
 
 To edit the template:
 
-1. Using the path listed in the structapps file, open the FrameMaker template. In this example, the file machineryTask.template is used.
+1. Using the path listed in the ``structapps`` file, open the FrameMaker template. In this example, the file ``machineryTask.template`` is used.
 
 2. Since ``Short Description`` is a paragraph tag, click **Ctrl+M** to open the **Paragraph Designer**.
 

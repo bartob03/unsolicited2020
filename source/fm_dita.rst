@@ -1,9 +1,7 @@
 Getting started with a DITA topic in FrameMaker 10
 ====================================================
 
-..contents::
-
-Most of Adobe's products, such as **Photoshop** and **InDesign**, are intuitive and fairly easy to learn. **FrameMaker**, however, can be a challenge even to the most dedicated XML or Adobe enthusiast. Lynda.com has a fairly good overview of using FrameMaker for unstructured documents but if you plan to start with structured FrameMaker and DITA then it's a good idea to try out the included DITA templates.
+Most of Adobe's products, such as **Photoshop** and **InDesign**, are intuitive and fairly easy to learn. **FrameMaker**, however, can be a challenge even to the most dedicated XML or Adobe enthusiast. Lynda.com has a fairly good overview of using FrameMaker for unstructured documents, but if you plan to start with structured FrameMaker and DITA then it's a good idea to try out the included DITA templates.
 
 If you are just getting started with DITA then I recommend a really well written article by Hussein Shafie entitled `DITA for the Impatient <http://www.xmlmind.com/tutorials.html>`_.
 

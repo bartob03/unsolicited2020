@@ -43,3 +43,5 @@ Offered But Unsolicited
    ts_onedrive_error
    fm_structure_templates
    fm_dita
+   tw_acro_initialview
+   ts_acro_error
