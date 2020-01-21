@@ -12,6 +12,7 @@ Offered But Unsolicited
 
    self
    twriter_description
+   api_guidelines
    step_introduction
    apidoc_racidiagram
    releasenotes_creating

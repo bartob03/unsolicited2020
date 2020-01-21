@@ -171,6 +171,10 @@ To add custom CSS, perform the following steps:
 
 The same process can be applied for adding **Javascript** files (``html_js_files``).
 
+.. note::
+
+	Create a ``_static`` folder under the ``source`` folder if it does not exist.
+
 Editing the Table of Contents tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
