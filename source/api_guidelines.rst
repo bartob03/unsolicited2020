@@ -1,5 +1,5 @@
 
-API Documentation Guidelines
+API documentation guidelines
 ===================================
 
 .. contents:: Table of Contents
@@ -275,7 +275,7 @@ Additional features
 API Reference
   Place the contents in tables and use headings to structure the content.
 
-  Generated text from document generators can be used directly in this section. If generated documentation (e.g. Postman, Spring API) is hosted on a different site, add the link to either Additional documentation, Appendix, References, Related Links, or Resources.
+  Generated text from document generators can be used directly in this section. If generated documentation (e.g. Postman, Spring API) is hosted on a different site, add the link to either *Additional documentation, Appendix, References, Related Links,* or *Resources*.
 
   Components: Methods, actions, parameters, entities, options, queries, return value, data types, interfaces, endpoints, resources definition, field, errors, message format, base URL, handlers, parameter names, possible values, and exception descriptions, code breakdown
 
@@ -315,7 +315,7 @@ FAQs
   This section may be used as an alternative to *Resolving errors and issues*.
 
 Glossary
-  *Glossary* is not the same as Basic concepts.
+  *Glossary* is not the same as *Basic concepts*.
 
   *Glossary* is always placed in a separate page from the main API reference document, especially if it's lengthy and detailed.
 

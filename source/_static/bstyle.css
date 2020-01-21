@@ -1,3 +1,7 @@
-ul li, ol li {
-     line-height:150%;
+ul li, ol li, dt dd {
+     line-height:170%;
+}
+
+dt {
+  font-weight: bold;
 }

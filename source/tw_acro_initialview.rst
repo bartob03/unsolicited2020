@@ -15,7 +15,7 @@ In **Adobe Acrobat Pro 9** and later versions, you can customize the **Initial V
 Navigation tab, Page Layout, and Magnification
 ------------------------------------------------
 
-The **Navigation** tab lets you customize if the **Pages, Layers,** and **Bookmarks** panel are displayed (in later versions of Acrobat more panels can be displayed on opening the PDF). If your document or book, for example, has a long table of contents you would probably want to select the **Bookmarks Panel** and **Page **option. This is especially important for long user guides, short story anthologies, dissertations, manuals, and technical documents. For a 2-3 page resume or curriculum vitae, you would probably just select Page - this prevents the HR recruiter from being distracted by any unnecessary panels.
+The **Navigation** tab lets you customize if the **Pages, Layers,** and **Bookmarks** panel are displayed (in later versions of Acrobat more panels can be displayed on opening the PDF). If your document or book, for example, has a long table of contents you would probably want to select the **Bookmarks Panel and Page** option. This is especially important for long user guides, short story anthologies, dissertations, manuals, and technical documents. For a 2-3 page resume or curriculum vitae, you would probably just select Page - this prevents the HR recruiter from being distracted by any unnecessary panels.
 
 .. figure:: images/adobe_pdf2.png
     :align: center
