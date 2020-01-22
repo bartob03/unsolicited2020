@@ -19,6 +19,7 @@ Offered But Unsolicited
    writingpublishingsphinx
    msproject2016_float
    retext
+   fm_inlineimage
    confluence_pagevalue
    githubpages_javadoc
    design_cdr_glyph-font
@@ -28,6 +29,7 @@ Offered But Unsolicited
    tw_flare_epub
    tw_pages_sectionsfront
    tw_word_pdf-tabs
+   fm_tables
    tw_word_toclinks
    tw_doclifecycle
    tw_frame_images-word
