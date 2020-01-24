@@ -28,10 +28,12 @@ Offered But Unsolicited
    pdftables_word
    tw_flare_epub
    tw_pages_sectionsfront
+   fm_admonitions
    tw_word_pdf-tabs
    fm_tables
    tw_word_toclinks
    tw_doclifecycle
+   indesign_toc
    tw_frame_images-word
    cloud_drupal_azure
    tw_apidoc_postman
