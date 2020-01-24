@@ -10,11 +10,13 @@ Troubleshooting Table of Contents in Adobe InDesign
 
     The bang icon indicates an error in one of the Book entries.
 
+
+.. topic:: Updating the table of content
+
     In **Adobe InDesign CS4**, click **Layout** then **Table of Contents**. If the **Update Table of Contents** option is not available, this means that major changes in pagination were made to your **Book** or **InDesign** document and you have to recreate the table of contents. If you don't recreate or refresh your table of contents, any PDF exported from your **Book** or **InDesign** file will not have working bookmarks or hyperlinks.
 
-.. image:: images/ind_toc2.png
-    :align: center
-
+    .. image:: images/ind_toc2.png
+        :align: center
 
 2. When exporting an **InDesign** file or **Book** to PDF, select the **Bookmarks, Hyperlinks and Interactive Elements** options on the **General** window. Selecting the **Bookmarks** option instructs **InDesign** to create a list of bookmarks based on specified styles and the document's table of contents. Selecting the **Hyperlinks** option enables hyperlinks on the table of contents text itself.
 
