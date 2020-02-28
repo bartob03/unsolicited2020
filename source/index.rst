@@ -53,3 +53,5 @@ Offered But Unsolicited
    tw_style_guide
    tw_pm65_html
    acro_okular_properties
+   fm_align_numbers
+   asciidoc_working

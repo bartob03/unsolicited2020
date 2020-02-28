@@ -12,6 +12,7 @@ To check the PDF producer in **Acrobat Reader**:
 3. On the **Description** tab, the **Application** and **PDF Producer** items indicate which applications/utilities were involved in creating the PDF.
 
 .. image:: images/pdf-properties.png
+    :align: center
 
 Unfortunately, complete PDF properties are only available on desktop versions of Adobe Reader and currently can't be viewed from the **iOS** app release.
 
@@ -24,5 +25,6 @@ To check the PDF producer in **Okular**:
 3. On the **Properties** tab, the **Creator** and **Producer** items indicate which applications were used to create the PDF.
 
 .. image:: images/pdf-properties2.png
+    :align: center
 
 Checking which PDF engine was used to create a PDF is a great way to learn about which industry standard applications are popular with today's software and hardware manufacturers. The *Sony DOStudio* manual documentation, for example, was exported from **MadCap Flare** while AMD's developer guides use an earlier version of **Adobe FrameMaker**. Lenovo, on the other hand, alternately uses **Adobe InDesign CS3** and **XPP XML Publishing** depending on their product line.
