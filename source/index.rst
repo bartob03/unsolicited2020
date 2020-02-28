@@ -52,3 +52,4 @@ Offered But Unsolicited
    ts_acro_error
    tw_style_guide
    tw_pm65_html
+   acro_okular_properties
