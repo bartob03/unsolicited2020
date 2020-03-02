@@ -55,3 +55,4 @@ Offered But Unsolicited
    acro_okular_properties
    fm_align_numbers
    asciidoc_working
+   lyx_word
