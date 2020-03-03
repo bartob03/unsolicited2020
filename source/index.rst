@@ -56,3 +56,4 @@ Offered But Unsolicited
    fm_align_numbers
    asciidoc_working
    lyx_word
+   tellico_bibtex
