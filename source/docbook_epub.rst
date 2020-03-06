@@ -33,7 +33,7 @@ Take note that this example uses **Docbook 5.0** though the steps using earlier 
 
 With *914b.xml* as the Docbook XML file and the Docbook XML stylesheets stored in the default openSUSE ``/usr`` folder, run the following command in a terminal:
 
-```xsltproc /usr/share/xml/docbook/stylesheet/nwalsh5/1.76.1/epub/docbook.xsl 914b.xml``
+``xsltproc /usr/share/xml/docbook/stylesheet/nwalsh5/1.76.1/epub/docbook.xsl 914b.xml``
 
 The command will produce two folders:
 

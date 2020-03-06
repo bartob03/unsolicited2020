@@ -50,4 +50,4 @@ Once the LyXHTML is imported to Word, the Word document retains the hyperlinks, 
 
 .. note::
 
-	When opening LyXTML in Microsoft Word 2007/2010, do not select XML document in the options listed in the Convert File window or Word will report an error.
+	When opening LyXTML in Microsoft Word 2007/2010, do not select **XML document** in the options listed in the **Convert File** window or Word will report an error.
