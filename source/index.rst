@@ -57,3 +57,6 @@ Offered But Unsolicited
    asciidoc_working
    lyx_word
    tellico_bibtex
+   index_xmladd
+   docbook_epub
+   extract_vector_cdr
