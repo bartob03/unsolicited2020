@@ -60,5 +60,6 @@ Offered But Unsolicited
    smartart_break
    word_webview
    index_xmladd
+   acro_access
    docbook_epub
    extract_vector_cdr
