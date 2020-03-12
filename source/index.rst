@@ -63,3 +63,5 @@ Offered But Unsolicited
    acro_access
    docbook_epub
    extract_vector_cdr
+   lyx_bookmarks_toc
+   ill_cdr_export_objects
