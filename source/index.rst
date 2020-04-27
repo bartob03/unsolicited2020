@@ -28,10 +28,12 @@ Offered But Unsolicited
    pdftables_word
    tw_flare_epub
    tw_pages_sectionsfront
+   fm_admonitions
    tw_word_pdf-tabs
    fm_tables
    tw_word_toclinks
    tw_doclifecycle
+   indesign_toc
    tw_frame_images-word
    cloud_drupal_azure
    tw_apidoc_postman
@@ -48,3 +50,18 @@ Offered But Unsolicited
    fm_dita
    tw_acro_initialview
    ts_acro_error
+   tw_style_guide
+   tw_pm65_html
+   acro_okular_properties
+   fm_align_numbers
+   asciidoc_working
+   lyx_word
+   tellico_bibtex
+   smartart_break
+   word_webview
+   index_xmladd
+   acro_access
+   docbook_epub
+   extract_vector_cdr
+   lyx_bookmarks_toc
+   ill_cdr_export_objects

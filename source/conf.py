@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Offered But Unsolicited'
-copyright = '2019, Scrawl'
+copyright = '2020, Scrawl'
 author = 'Scrawl'
 
 

@@ -1,1 +1,62 @@
 build/
+
+    GET /read/detectConflicts/{sourceBranchUUID}/{parentBranchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/detectConflictsOnFeatures/{sourceBranchUUID}/{parentBranchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getDatasetDate/{west},{north},{east},{south} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getDatasetDate/{west},{north},{east},{south}/{branchId} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getFeatureById/{featureUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getFeatureById/{featureUUID},{transactionUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getFeatureById/{featureUUID},{version},{branchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getFeatureGeometryById/{featureUUID},{version},{branchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getFeatureStatistics (Consumes: application/json;charset=UTF-8,Produces: application/json;charset=UTF-8)
+    GET /read/getFeatures/{west},{north},{east},{south} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getFeaturesBeforeAfterTransactionWithManyFilters (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getFeaturesByIds (Consumes: application/json;charset=UTF-8,Produces: application/json;charset=UTF-8)
+    POST /read/getFeaturesByTopoRelationForManyFeatures (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getFeaturesIds (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getFeaturesWithManyFilters (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getLanguagesForFeatures (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getModifiedFeatures (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getNearestFeatures/{lon},{lat}/{radius} (params: bbox[String], featureTypeFilter[String]) (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getNonSpatialObjectById/{nsoUUID},{version},{branchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getObjects/{version},{branchUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/getSpeedRestrictionPresets (params: branchId[String]) (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getTransactionById/{transactionUUID} (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    GET /read/getTransactionById/{transactionUUID}/filter (Consumes: application/json,Produces: application/json;charset=UTF-8)
+	
+	     POST /read/v2/getFeatures (Consumes: application/json,Produces: application/json;charset=UTF-8)
+    POST /read/v2/getFeaturesIds (Consumes: application/json,Produces: application/json;charset=UTF-8)
+	
+	http://live-tico-cpp-r2.service.eu-west-1-mapsco.maps-contentops.amiefarm.com/coredb-main-ws/read/detectConflicts/%7BsourceBranchUUID%7D/%7BparentBranchUUID%7D
+	
+	(n.d.).
+	
+	De Krook becomes the new base for the BlueHealth Innovation Center 
+	
+https://www.ghentlibrary.com
+
+http://libraryranking.com/review/bibliotheek-de-krook-gent/
+
+https://www.ala.org/ala/pio/campaign/prtools/marketing_wkbk.pdf
+
+https://visit.gent.be/en/calendar/van-eyck-de-krook
+
+http://www.ghentdesignfactory.be/facilities/de-krook/
+
+https://www.ugent.be/techtransfer/en/news-events/news/bhic.htm
+
+https://visit.gent.be/en/calendar/van-eyck-de-krook
+
+
+(“Barcelona to Ban Burqa,” 2010)
+
+
+==========
+During a business trip to Ghent, Belgium, I was fortunate enough to have time to visit the De Krook library in Ghent. Ghent is small, but thriving city with numerous public libraries. De Krook is well-known internationally for its unique architectural design, which is actually part of the marketing strategy behind the stakeholders and the local government when they planned the library. Ghent can be described as a university town, with several educational institutions sprinkled around the area, and De Krook has a symbiotic relationship not only with the students, but with the numerous businesses that have grown around Ghent.
+
+De Krook's initial and continuing marketing efforts check off several of the methods listed in the article by Alman (2018). The following table lists some of the examples of strategies, methods, and media outlets that the administrators of De Krook have used to promote their services:
+
+
+
+ 
+

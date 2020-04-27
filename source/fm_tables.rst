@@ -9,7 +9,7 @@ Despite improvements to table support in most applications, working with **Excel
 **FrameMaker's** table handling has advantages over **Adobe InDesign's** WYSIWYG approach, but learning **Table Designer** and **FrameMaker's** different interface can be trying for new users. This series of articles will discuss one way to import and format Excel articles for use in **Adobe FrameMaker 10**.
 
 Preparing the Excel table
----------------------------
+-------------------------------
 
 This example makes use of a **Microsoft Excel 2007** table with numbers, text, and columns of varying widths.
 
@@ -24,7 +24,7 @@ A quick way to remove table formatting is to select all the table cells, copy, a
 
 
 Preparing FrameMaker
----------------------
+-------------------------
 
 Before starting work with tables in **FrameMaker**, change the display units of the ruler. **Since FrameMaker** isn't a WYSIWYG application, you will have to manually input values for the table column widths and rows.
 
@@ -44,7 +44,7 @@ To change the **Ruler** display units:
 When working with **Excel** tables, you would need both the **Paragraph Designer** and **Table Designer** tabs so you can open them before importing the **Excel** file.
 
 Importing the plain Excel table
---------------------------------
+------------------------------------
 
 To import the **Excel** table:
 
@@ -77,7 +77,7 @@ The table will appear on your main **Body Flow** after the paragraph mark if you
 
 
 Editing the Table of Contents, columns and text
-----------------------------------------------
+----------------------------------------------------
 
 To make the table fit the document window in **FrameMaker**, you would have to edit the text size, cell margins, and columns of the table. In this example, the table contains technical information that isn't as necessary for most readers so a compromise between text size and column size was needed. However, check with your technical editor before making any direct edits to the text.
 
@@ -96,7 +96,7 @@ You can select the non-visible portions of the table once they appear on the doc
 .. image:: images/fm_table6.png
 
 Resizing the columns
-----------------------
+--------------------------
 
 If a significant portion of the table is still not visible, resize the columns to remove excess white space. You can shrink the column size tightly around the text or specify exact values for the columns.
 
@@ -127,7 +127,7 @@ To specify exact measurements of the column width:
 
 
 Refining the Cell Margins using Paragraph Designer
----------------------------------------------------
+-------------------------------------------------------
 
 If you used the **To width of Selected Cells' Contents** option in the **Resize Selected Columns** window, you might find the text too closely spaced from cell to cell. To quickly add "cell padding" to make text readable, use the **Paragraph Designer**.
 
