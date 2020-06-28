@@ -1,36 +1,72 @@
 
-<!DOCTYPE html>
+
+<!doctype html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
     <title>Creating a glyph for a font in CorelDraw X5 &#8212; Offered But Unsolicited  documentation</title>
-    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<!--[if lte IE 6]>
-<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
-<![endif]-->
-
+    <link rel="next" title="DIA Editor and Work Breakdown Structure (WBS) graphics" href="diaeditor_wbs.html" />
+    <link rel="prev" title="Using GitHub Pages for Javadoc files" href="githubpages_javadoc.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
   </head><body>
-
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="diaeditor_wbs.html" title="DIA Editor and Work Breakdown Structure (WBS) graphics"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="githubpages_javadoc.html" title="Using GitHub Pages for Javadoc files"
+             accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>
-    </div>  
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="githubpages_javadoc.html"
+                        title="previous chapter">Using GitHub Pages for Javadoc files</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="diaeditor_wbs.html"
+                        title="next chapter">DIA Editor and Work Breakdown Structure (WBS) graphics</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/design_cdr_glyph-font.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
 
     <div class="document">
       <div class="documentwrapper">
@@ -57,10 +93,10 @@
 </ul>
 </li>
 </ol>
-<p>Most designers already have preset guidelines on their CorelDraw templates to ensure their character or glyph does not exceed a certain amount of space when typed. Today, creating a glyph is more flexible because screens have a higher resolution and text consumption is done on a screen or using a digital document (such as PDF or EPUB) than on print. The usage of the glyph, whether for web, print, or PDF, plays a part in the design, but in general it’s easier to check whether the glyph will look good in HTML, SVG, or PDF.</p>
-<img alt="_images/ubo2021.png" src="_images/ubo2021.png" />
+<p>Most designers already have preset guidelines on their CorelDraw templates to ensure their character or glyph does not exceed a certain amount of space when typed. Today, creating a glyph is more flexible because screens have a higher resolution and text consumption is done on a screen or using a digital document (such as PDF or EPUB). The usage of the glyph, whether for web, print, or PDF, plays a part in the design. In general it’s easier to check whether the glyph will look good in HTML, SVG, or PDF.</p>
+<img alt="_images/ubo2021.PNG" src="_images/ubo2021.PNG" />
 <ol class="arabic simple" start="2">
-<li><p>Once the design is complete, select all the vector objects and click <strong>Arrange &gt; Combine</strong>. Depending on how you designed your glyph, you may need to use the Shaping tools such as Weld, Trim, Intersect, and Simplify to make sure the design looks the way you intended. In short, the glyph needs to be a contiguous object without “holes”.</p></li>
+<li><p>Once the design is complete, select all the vector objects and click <strong>Arrange &gt; Combine</strong>. Depending on how you designed your glyph, you may need to use <strong>Shaping tools</strong> such as <strong>Weld, Trim, Intersect,</strong> and <strong>Simplify</strong> to make sure the design looks the way you intended. In short, the glyph needs to be a contiguous object without “holes”.</p></li>
 <li><p>Although you can certainly export the glyph later on as a standalone SVG, HTML5 object, or bitmap, if you’re going to export it to a font file for easy distribution, convert the design to Black and White by clicking <strong>Bitmap &gt; Mode &gt; Black and White</strong>.</p></li>
 </ol>
 <div class="admonition note">
@@ -68,11 +104,11 @@
 <p>This step is entirely optional since font file color support is limited. However, it’s one way to check if there are any issues with the vector object.</p>
 </div>
 <ol class="arabic" start="4">
-<li><p>To export the design to a font file, use the Pick tool to click the vector object, and then click <strong>File &gt; Export</strong>. Select <strong>TTF - True Type Font</strong> as the file type and input a File name.</p>
+<li><p>To export the design to a font file, use the <strong>Pick tool</strong> to click the vector object, and then click <strong>File &gt; Export</strong>. Select <strong>TTF - True Type Font</strong> as the file type and input a filename.</p>
 <p>Select the <strong>Selected only</strong> option, and then click <strong>Export</strong>.</p>
-<img alt="_images/ubo2022.png" src="_images/ubo2022.png" />
+<img alt="_images/ubo2022.PNG" src="_images/ubo2022.PNG" />
 </li>
-<li><p>Input a Family name for the font.  Mac OSX, Linux, and Windows will use this name to identify the font.</p>
+<li><p>Input a <em>Family name</em> for the font.  Mac OSX, Linux, and Windows will use this name to identify the font.</p>
 <p>Input the following values:</p>
 <ul class="simple">
 <li><p><em>Grid</em> - represents the general area occupied by the glyph.</p></li>
@@ -87,10 +123,10 @@
 <p>As always, the output and usage of the glyph will determine what values you will input. If your target audience will be using a high-resolution device such as today’s ultraportables (e.g. Dell XPS 13) or mid-range tablets (Samsung Galaxy Tab or iPad Mini), you can start with higher values and work downwards.</p>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>In the <strong>True Type Export</strong> window, adjust the <strong>Character Width, Design size,</strong> and <strong>Baseline</strong>. In the <strong>Character Block</strong> table, select the character set and any of the characters that you want users who will be receiving this font to press to use the symbol. For example, Prince probably would’ve wanted the letter P or F (“The artist Formerly known as … “) for his artist symbol.</p></li>
+<li><p>In the <strong>True Type Export</strong> window, adjust the <strong>Character Width, Design size,</strong> and <strong>Baseline</strong>. In the <strong>Character Block</strong> table, select the character set and any of the characters that you want users who will be receiving this font to press to use the symbol.</p></li>
 </ol>
 <p>The <strong>Baseline</strong> is particularly important since it affects alignment with neighboring characters. The following screenshot shows how a lower <strong>Baseline</strong> changes the alignment of a glyph with <em>Calibre</em> text in <strong>Microsoft Word 2010</strong>. The resulting alignment will also appear when the Word document is exported to PDF.</p>
-<img alt="_images/ubo2023.png" src="_images/ubo2023.png" />
+<img alt="_images/ubo2023.PNG" src="_images/ubo2023.PNG" />
 <ol class="arabic simple" start="6">
 <li><p>Click <strong>OK</strong>.</p></li>
 <li><p>If you want more than one customized glyph on the font, perform the same steps on the same TTF file. When you click <strong>Export</strong>, click <strong>Yes</strong> to replace the font file. Adjust the values in the <strong>True Type Export</strong> window as before, but select a different character from the character block.</p></li>
@@ -99,9 +135,9 @@
 <p class="admonition-title">Note</p>
 <p>Characters with an exported design will appear in slight bold. If you’re creating a full set of font characters rather than 1 or 2 symbols/glyphs, you export roughly more than 80 characters.</p>
 </div>
-<img alt="_images/ubo2024.png" src="_images/ubo2024.png" />
+<img alt="_images/ubo2024.PNG" src="_images/ubo2024.PNG" />
 <ol class="arabic simple" start="8">
-<li><p>Test the glyph by installing the TTF in <strong>Linux, Windows,</strong> and <strong>MacOSX</strong> and using the font in <strong>Word, Pages,</strong> and even in programs such as <strong>Okular, Adobe Reader, Scribus</strong> and <strong>Inkscape</strong>. If needed, export the glyph as SVG or HTML5 if you need to use the design in web pages. In addition, embed the glyph to an EPUB file or PDF document and view the glyph using smartphones, ereaders, and tablets with varying screen sizes.</p></li>
+<li><p>Test the glyph by installing the TTF in Linux, Windows, and MacOSX and using the font in <strong>Word, Pages,</strong> and even in programs such as <strong>Okular, Adobe Reader, Scribus</strong> and <strong>Inkscape</strong>. If needed, export the glyph as SVG or HTML5 if you need to use the design in web pages. In addition, embed the glyph to an EPUB file or PDF document and view the glyph using smartphones, ereaders, and tablets with varying screen sizes.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -113,27 +149,6 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/design_cdr_glyph-font.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
       <div class="clearer"></div>
     </div>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -142,12 +157,18 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="diaeditor_wbs.html" title="DIA Editor and Work Breakdown Structure (WBS) graphics"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="githubpages_javadoc.html" title="Using GitHub Pages for Javadoc files"
+             >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Scrawl.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
     </div>
   </body>
 </html>

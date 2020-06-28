@@ -1,0 +1,197 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Setting up Grafana &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using ReDoc for creating HTML OpenAPI documentation" href="tw_redoc_html.html" />
+    <link rel="prev" title="Document requirements and review workflow" href="tw_doc_requirediagrams.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tw_redoc_html.html" title="Using ReDoc for creating HTML OpenAPI documentation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tw_doc_requirediagrams.html" title="Document requirements and review workflow"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Setting up Grafana</a><ul>
+<li><a class="reference internal" href="#grafana-on-fedora">Grafana on Fedora</a></li>
+<li><a class="reference internal" href="#grafana-on-azure">Grafana on Azure</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tw_doc_requirediagrams.html"
+                        title="previous chapter">Document requirements and review workflow</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tw_redoc_html.html"
+                        title="next chapter">Using ReDoc for creating HTML OpenAPI documentation</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tools_grafana_setup.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="setting-up-grafana">
+<h1>Setting up Grafana<a class="headerlink" href="#setting-up-grafana" title="Permalink to this headline">¶</a></h1>
+<p><strong>Grafana</strong> is an open-source data visualization tool that accepts different data sources.</p>
+<div class="section" id="grafana-on-fedora">
+<h2>Grafana on Fedora<a class="headerlink" href="#grafana-on-fedora" title="Permalink to this headline">¶</a></h2>
+<p>The steps described in this section apply to <a class="reference external" href="https://getfedora.org">Fedora 29 Workstation</a>.</p>
+<p>To set up Grafana on Fedora, perform the following steps:</p>
+<ol class="arabic">
+<li><p>Add the Grafana repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ touch /etc/yum.repos.d/grafana.repo
+
+ $ nano /etc/yum.repos.d/grafana.repo
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">grafana</span><span class="p">]</span>
+ <span class="n">name</span><span class="o">=</span><span class="n">grafana</span>
+ <span class="n">baseurl</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packages</span><span class="o">.</span><span class="n">grafana</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">oss</span><span class="o">/</span><span class="n">rpm</span>
+ <span class="n">repo_gpgcheck</span><span class="o">=</span><span class="mi">1</span>
+ <span class="n">enabled</span><span class="o">=</span><span class="mi">1</span>
+ <span class="n">gpgcheck</span><span class="o">=</span><span class="mi">1</span>
+ <span class="n">gpgkey</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packages</span><span class="o">.</span><span class="n">grafana</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">gpg</span><span class="o">.</span><span class="n">key</span>
+ <span class="n">sslverify</span><span class="o">=</span><span class="mi">1</span>
+ <span class="n">sslcacert</span><span class="o">=/</span><span class="n">etc</span><span class="o">/</span><span class="n">pki</span><span class="o">/</span><span class="n">tls</span><span class="o">/</span><span class="n">certs</span><span class="o">/</span><span class="n">ca</span><span class="o">-</span><span class="n">bundle</span><span class="o">.</span><span class="n">crt</span>
+</pre></div>
+</div>
+</li>
+<li><p>Update the repository and install Grafana, as well as additional fonts for rendering text.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ dnf update
+$ dnf install grafana fontconfig freetype* urw-fonts
+</pre></div>
+</div>
+</li>
+<li><p>Start the Grafana service, check the status, and set server to start on boot.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ /sbin/chkconfig --add grafana-server
+$ systemctl daemon-reload
+$ systemctl start grafana-server
+$ systemctl status grafana-server
+$ systemctl enable grafana-server.service
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Access <a class="reference external" href="http://localhost:3000/">http://localhost:3000/</a> and log in using the default username and password.</p>
+<blockquote>
+<div><p>Username: admin</p>
+<p>Password: admin</p>
+</div></blockquote>
+</li>
+<li><p>Update the user password.</p></li>
+</ol>
+<p>The following table lists the default paths for <strong>Red Hat</strong> and <strong>Fedora</strong> based installs of <strong>Grafana</strong>.</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Grafana paths</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Logs</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/var/log/grafana</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SQLite database</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/var/lib/grafana/grafana.db</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuration file</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/etc/grafana/grafana.ini</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Systemd environment file</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/etc/sysconfig/grafana-server</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grafana-on-azure">
+<h2>Grafana on Azure<a class="headerlink" href="#grafana-on-azure" title="Permalink to this headline">¶</a></h2>
+<p><strong>Grafana</strong> is available on <strong>Microsoft Azure</strong> as a dedicated service, a container, or a <strong>Bitnami</strong> service.</p>
+<p>To set up <strong>Grafana</strong> on <strong>Azure</strong>, users would require an existing or new <strong>Virtual Machine</strong> or <strong>Resource Group</strong>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tw_redoc_html.html" title="Using ReDoc for creating HTML OpenAPI documentation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tw_doc_requirediagrams.html" title="Document requirements and review workflow"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

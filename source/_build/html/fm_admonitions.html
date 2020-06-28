@@ -1,0 +1,207 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formatting admonitions in unstructured FrameMaker &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Creating navigation notebook tabs for PDFs from Word" href="tw_word_pdf-tabs.html" />
+    <link rel="prev" title="Sections and Front Matter in Pages for MacOS" href="tw_pages_sectionsfront.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tw_word_pdf-tabs.html" title="Creating navigation notebook tabs for PDFs from Word"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tw_pages_sectionsfront.html" title="Sections and Front Matter in Pages for MacOS"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Formatting admonitions in unstructured FrameMaker</a><ul>
+<li><a class="reference internal" href="#admonition-paragraphs">Admonition paragraphs</a></li>
+<li><a class="reference internal" href="#admonition-paragraphs-with-icons">Admonition paragraphs with icons</a></li>
+<li><a class="reference internal" href="#admonition-blocks-lists">Admonition blocks/lists</a></li>
+<li><a class="reference internal" href="#admonition-blocks-separated-by-upper-and-bottom-lines">Admonition blocks separated by upper and bottom lines</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tw_pages_sectionsfront.html"
+                        title="previous chapter">Sections and Front Matter in Pages for MacOS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tw_word_pdf-tabs.html"
+                        title="next chapter">Creating navigation notebook tabs for PDFs from Word</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/fm_admonitions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="formatting-admonitions-in-unstructured-framemaker">
+<h1><a class="toc-backref" href="#id3">Formatting admonitions in unstructured FrameMaker</a><a class="headerlink" href="#formatting-admonitions-in-unstructured-framemaker" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#formatting-admonitions-in-unstructured-framemaker" id="id3">Formatting admonitions in unstructured FrameMaker</a></p>
+<ul>
+<li><p><a class="reference internal" href="#admonition-paragraphs" id="id4">Admonition paragraphs</a></p></li>
+<li><p><a class="reference internal" href="#admonition-paragraphs-with-icons" id="id5">Admonition paragraphs with icons</a></p></li>
+<li><p><a class="reference internal" href="#admonition-blocks-lists" id="id6">Admonition blocks/lists</a></p></li>
+<li><p><a class="reference internal" href="#admonition-blocks-separated-by-upper-and-bottom-lines" id="id7">Admonition blocks separated by upper and bottom lines</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Admonition text are sections of a document that add/explain details about a particular chapter or part. They are generally formatted as a separate block of text and categorized as either Note, Important, Caution, Warning and Tip, although the captions/conventions vary according to the author and publication style guide. They generally break the flow of text and can be distracting when used too often, though they are indispensable for highly complex work such as documentation for developers and engineering specifications. Admonition blocks/lists can include a colorful customized icon like those found in the excellent <a class="reference external" href="http://www.getfedora.org">Fedora Project documentation</a>, or a black and white icon such as those found in Wiley books.</p>
+<p>Document generators such as <strong>Asciidoc</strong> and <strong>XML/XSLT</strong> tool chains using <strong>Docbook, xsltproc, SAX</strong> and <strong>DITA</strong> take care of formatting and adding the icon but in unstructured <strong>Adobe FrameMaker</strong>, writers will have to create a paragraph or table style specifically for admonition paragraphs, blocks, or lists. Creating admonitions in WYSIWYG applications such as <strong>Adobe InDesign</strong> and <strong>CorelDraw</strong> is easy since all you need is to <strong>Place</strong> the icon image next to a resized text frame. However, unless you anchor the icon to a text frame (which isn’t really recommended for image-intensive documentations), managing the flow of text in <strong>InDesign</strong> can be tricky. <strong>InDesign</strong>, in contrast, relies on anchored objects for managing text and images, though users who are accustomed to <strong>InDesign</strong>’s click and drag approach may find <strong>InDesign</strong>’s roundabout approach frustrating at first.</p>
+<div class="section" id="admonition-paragraphs">
+<h2><a class="toc-backref" href="#id4">Admonition paragraphs</a><a class="headerlink" href="#admonition-paragraphs" title="Permalink to this headline">¶</a></h2>
+<p>Admonition paragraphs are nothing more than text formatted/positioned differently from the main text flow. Admonition paragraphs focus on one technical point only and shouldn’t be too long. To create an admonition paragraph with a caption:</p>
+<ol class="arabic simple">
+<li><p>With your insertion point in the paragraph you want to format, click the <strong>Commands</strong> button and then <strong>New Format</strong> in <strong>Paragraph Designer</strong>.</p></li>
+<li><p>In the <strong>New Format</strong> window, enter a <strong>Tag name</strong> and click <strong>Create</strong>.</p></li>
+<li><p>Click the <strong>Basic</strong> button and enter <code class="docutils literal notranslate"><span class="pre">0.5&quot;</span></code> on <strong>Left indent</strong>. Most writers prefer text blocks to be flush to the right like most of the text but if you prefer to isolate the paragraph completely, add <code class="docutils literal notranslate"><span class="pre">0.5&quot;</span></code> on the <strong>Right indent</strong> also.</p></li>
+<li><p>Enter a point value in the <strong>Above Pgf</strong> and <strong>Below Pgf</strong> items. This adds white space between the note and the rest of the text and breaks up long narratives.</p></li>
+<li><p>Click <strong>Update All</strong> or <strong>Apply</strong>.</p></li>
+</ol>
+<p>If you prefer to add formatting to the Note/Important/Warning/Caution caption, create a separate <strong>Character</strong> tag using the <strong>Character Designer</strong>.</p>
+</div>
+<div class="section" id="admonition-paragraphs-with-icons">
+<h2><a class="toc-backref" href="#id5">Admonition paragraphs with icons</a><a class="headerlink" href="#admonition-paragraphs-with-icons" title="Permalink to this headline">¶</a></h2>
+<p>Small icons highlight the section and attract the reader’s attention. However, they are often unnecessary in more serious documents. They are acceptable for consumer user manuals, however, since they make the documentation friendlier to readers and more colorful.</p>
+<div class="figure align-center" id="id1">
+<img alt="_images/fm_ad1.png" src="_images/fm_ad1.png" />
+<p class="caption"><span class="caption-text">Admonition example from the Samsung S4 manual.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>To add an icon to an admonition paragraph:</p>
+<ol class="arabic simple">
+<li><p>Place the insertion point at the beginning of the paragraph.</p></li>
+<li><p>Click <strong>File &gt; Import</strong>. Navigate to the image file and select either <strong>Import By Reference</strong> or <strong>Copy Into Document</strong>.</p></li>
+<li><p>Click <strong>Import</strong>.</p></li>
+<li><p>Using your mouse pointer, select the image frame.</p></li>
+<li><p>Click <strong>Special &gt; Anchored Frame</strong>.</p></li>
+<li><p>In the <strong>Anchored Frame</strong> pod, change the <strong>Anchoring Position</strong> to <strong>Run into Paragraph</strong>. Change <strong>Alignment</strong> to <strong>Left</strong>.</p></li>
+</ol>
+<img alt="_images/fm_ad2.png" class="align-center" src="_images/fm_ad2.png" />
+<ol class="arabic simple" start="7">
+<li><p>Using your mouse pointer, select the image inside the frame. Hold down <strong>SHIFT</strong> and drag the handles to resize the icon. Select the frame and resize the frame as well.</p></li>
+<li><p>If you want to retain the paragraph’s alignment, resize the image frame so the text aligns as before. Since the text runs around the image, adjusting the tabs won’t help so adjusting the image frame is a good workaround to achieve an aligned text.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To reuse the icon and the resized image frame, just select the image frame using the mouse pointer, copy, and then paste on to the next admonition paragraph.</p>
+</div>
+<img alt="_images/fm_ad3.png" class="align-center" src="_images/fm_ad3.png" />
+</div>
+<div class="section" id="admonition-blocks-lists">
+<h2><a class="toc-backref" href="#id6">Admonition blocks/lists</a><a class="headerlink" href="#admonition-blocks-lists" title="Permalink to this headline">¶</a></h2>
+<p>Admonition blocks/lists work the same way as any bulleted list in <strong>FrameMaker</strong> - just add the left and right indents to separate them from the flow of the text. The text for “Notes:” should have its own <strong>Character</strong> tag while the bulleted list would have its own <strong>Paragraph</strong> tag. Use <strong>Tabs</strong> to keep the bulleted list aligned.</p>
+<p>If there’s already an instance of the icon for the admonition, just copy and paste it on the insertion point. Again, you might have to resize the image frame to retain the list’s alignment.</p>
+</div>
+<div class="section" id="admonition-blocks-separated-by-upper-and-bottom-lines">
+<h2><a class="toc-backref" href="#id7">Admonition blocks separated by upper and bottom lines</a><a class="headerlink" href="#admonition-blocks-separated-by-upper-and-bottom-lines" title="Permalink to this headline">¶</a></h2>
+<p>Some manuals and documentation use lines or boxes to separate the text from the flow. This is extremely easy to set up in <strong>InDesign</strong> or <strong>Microsoft Word</strong> using <strong>Paragraph Rules</strong>, an option missing in <strong>Framemaker 10</strong>.</p>
+<div class="figure align-center" id="id2">
+<img alt="_images/fm_ad4.png" src="_images/fm_ad4.png" />
+<p class="caption"><span class="caption-text">Screenshot from a Netopia modem manual.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>You can draw lines using the <strong>Graphics Toolbar</strong> in <strong>FrameMaker</strong> but it won’t be anchored with the text. As a workaround, you can use the <strong>Table Designer</strong> instead to create the “box” for your admonition.</p>
+<p>To create a <strong>Table</strong> tag specifically for admonition blocks:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Table</strong> and then <strong>Insert Table.</strong></p></li>
+<li><p>In the <strong>Insert Table</strong> window, input <code class="docutils literal notranslate"><span class="pre">1</span></code> for <strong>Columns</strong> and <code class="docutils literal notranslate"><span class="pre">1</span></code> for <strong>Body Rows</strong>. Remove any <strong>Heading Rows</strong>. Click <strong>Insert</strong>.</p></li>
+</ol>
+<img alt="_images/fm_ad6.png" class="align-center" src="_images/fm_ad6.png" />
+<ol class="arabic simple" start="3">
+<li><p>Place the insertion point inside the table cell.</p></li>
+<li><p>In <strong>Table Designer</strong>, click the <strong>Commands &gt; New Format</strong>. Input a name for your admonitions table tag. Click <strong>Create</strong>.</p></li>
+<li><p>Click the <strong>Basic</strong> button in <strong>Table Designer</strong>. Input <strong>Left</strong> and <strong>Right Indents</strong>.</p></li>
+<li><p>In the <strong>Title</strong> item, select <strong>No Title</strong>.</p></li>
+<li><p>Click the <strong>Ruling button</strong> in <strong>Table Designer</strong>. In the <strong>Outside Ruling</strong> section, select <code class="docutils literal notranslate"><span class="pre">None</span></code> for <strong>Left</strong> and <strong>Right Ruling</strong>. Click <strong>Update All</strong> or <strong>Apply</strong>.</p></li>
+<li><p>Click the <strong>Table</strong> menu and select <strong>Format &gt; Resize Columns</strong>.</p></li>
+</ol>
+<img alt="_images/fm_ad7.png" class="align-center" src="_images/fm_ad7.png" />
+<ol class="arabic simple" start="9">
+<li><p>In the <strong>Resize Selected Columns</strong> window, input a value in the <strong>To Width</strong> box.</p></li>
+<li><p>Type the text or list inside the table. You can also add an icon if needed, customize the shading, or lines of the table.</p></li>
+</ol>
+<p>The newly created table tag will now appear as an option whenever you need to insert a table for admonitions.</p>
+<p>The screenshot below displays the PDF result of the different ways of formatting admonition blocks with or without icons or lines.</p>
+<img alt="_images/fm_ad8.png" class="align-center" src="_images/fm_ad8.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tw_word_pdf-tabs.html" title="Creating navigation notebook tabs for PDFs from Word"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tw_pages_sectionsfront.html" title="Sections and Front Matter in Pages for MacOS"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

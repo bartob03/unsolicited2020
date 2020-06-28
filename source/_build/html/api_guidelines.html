@@ -1,0 +1,527 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>API documentation guidelines &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Step introductions in procedures" href="step_introduction.html" />
+    <link rel="prev" title="Technical Writer job description" href="twriter_description.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="step_introduction.html" title="Step introductions in procedures"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="twriter_description.html" title="Technical Writer job description"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">API documentation guidelines</a><ul>
+<li><a class="reference internal" href="#writing-guide">Writing guide</a><ul>
+<li><a class="reference internal" href="#documentation-methods">Documentation methods</a></li>
+<li><a class="reference internal" href="#conceptual-procedural-reference-information">Conceptual + Procedural + Reference information</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#documentation-structure">Documentation structure</a><ul>
+<li><a class="reference internal" href="#information-map-for-api-documentation">Information map for API documentation</a></li>
+<li><a class="reference internal" href="#list-of-api-documentation-sections">List of API documentation sections</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#appendix">Appendix</a><ul>
+<li><a class="reference internal" href="#general-rules-when-describing-api-code">General rules when describing API code</a></li>
+<li><a class="reference internal" href="#general-guidelines-for-writing-api-reference-content-and-comments">General guidelines for writing API reference content and comments</a></li>
+<li><a class="reference internal" href="#sample-documentation-output">Sample documentation output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="twriter_description.html"
+                        title="previous chapter">Technical Writer job description</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="step_introduction.html"
+                        title="next chapter">Step introductions in procedures</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api_guidelines.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="api-documentation-guidelines">
+<h1><a class="toc-backref" href="#id2">API documentation guidelines</a><a class="headerlink" href="#api-documentation-guidelines" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#api-documentation-guidelines" id="id2">API documentation guidelines</a></p>
+<ul>
+<li><p><a class="reference internal" href="#writing-guide" id="id3">Writing guide</a></p>
+<ul>
+<li><p><a class="reference internal" href="#documentation-methods" id="id4">Documentation methods</a></p></li>
+<li><p><a class="reference internal" href="#conceptual-procedural-reference-information" id="id5">Conceptual + Procedural + Reference information</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#documentation-structure" id="id6">Documentation structure</a></p>
+<ul>
+<li><p><a class="reference internal" href="#information-map-for-api-documentation" id="id7">Information map for API documentation</a></p></li>
+<li><p><a class="reference internal" href="#list-of-api-documentation-sections" id="id8">List of API documentation sections</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#appendix" id="id9">Appendix</a></p>
+<ul>
+<li><p><a class="reference internal" href="#general-rules-when-describing-api-code" id="id10">General rules when describing API code</a></p></li>
+<li><p><a class="reference internal" href="#general-guidelines-for-writing-api-reference-content-and-comments" id="id11">General guidelines for writing API reference content and comments</a></p></li>
+<li><p><a class="reference internal" href="#sample-documentation-output" id="id12">Sample documentation output</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="writing-guide">
+<h2><a class="toc-backref" href="#id3">Writing guide</a><a class="headerlink" href="#writing-guide" title="Permalink to this headline">¶</a></h2>
+<p>The following sections focus on style and approaches to documenting API.</p>
+<div class="section" id="documentation-methods">
+<h3><a class="toc-backref" href="#id4">Documentation methods</a><a class="headerlink" href="#documentation-methods" title="Permalink to this headline">¶</a></h3>
+<p>API documentation can be written using either of the methods:</p>
+<ul class="simple">
+<li><p>Tell don’t teach method</p></li>
+<li><p>Teach don’t tell method</p></li>
+<li><p>Hybrid method</p></li>
+</ul>
+<p>The following table describes the characteristics of the three methods.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Documentation method</p></th>
+<th class="head"><p>Sample components</p></th>
+<th class="head"><p>Characteristics</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Tell don’t teach</em></p></td>
+<td><p>List of API error codes</p>
+<p>List of message body schemas</p>
+<p>List of interfaces</p>
+<p>List of references</p>
+<p>Practical use cases with minimal text</p>
+</td>
+<td><p>Fact-based.</p>
+<p>Minimal writing and prose.</p>
+<p>Easy to navigate and find specific information.</p>
+<p>Easy to design, write, and maintain.</p>
+<p>Developer, architect, and user focused. Minimal influence from management and technical writer.</p>
+<p>Assumes user/audience has a level of technical skill or basic understanding of API usage.</p>
+<p>Composed of bullet points and tables.</p>
+<p>Selective documentation (does not document everything and does not include frameworks and models).</p>
+<p>Focuses on just using the API, not on concepts or principles.</p>
+<p>Includes advanced functionality and complex troubleshooting.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><em>Teach don’t tell</em></p></td>
+<td><p>Tutorials and Quick Start sections</p>
+<p>Step-by-step lists for specific activities</p>
+<p>Models, diagrams, and process flows</p>
+<p>Detailed API descriptions</p>
+<p>Use cases with use case descriptions</p>
+</td>
+<td><p>Tailored learning experience for users of all levels.</p>
+<p>Includes non-technical audience.</p>
+<p>Comprehensive documentation.</p>
+<p>Requires significant editorial review and feedback.</p>
+<p>Focuses on basic tasks with minimum level of effort.</p>
+<p>Prescriptive and easy to follow.</p>
+<p>May contain unnecessary or redundant information.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><em>Hybrid method</em></p></td>
+<td></td>
+<td><p>Combination of Tell don’t teach/Teach don’t tell methods.</p>
+<p>Requires significant reviews from technical and non-technical users.</p>
+<p>Difficult to maintain.</p>
+<p>Product Owner, Technical Writer, testers and quality staff play a bigger part.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conceptual-procedural-reference-information">
+<h3><a class="toc-backref" href="#id5">Conceptual + Procedural + Reference information</a><a class="headerlink" href="#conceptual-procedural-reference-information" title="Permalink to this headline">¶</a></h3>
+<p>API documentation is generally composed of <em>15% conceptual text</em> + <em>15% procedural content</em> + <em>70% reference information</em>.</p>
+<p>Conceptual text and procedural content can be omitted in some types of API documentation. For example, conceptual text is unnecessary if the API is self-explanatory. Procedural content can be skipped if existing documentation already covers the necessary tasks related to the API, or the tasks are generic.</p>
+<p>The following table describes the characteristics of conceptual, procedural, and reference content.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Conceptual (15% or lower)</p></th>
+<th class="head"><p>Procedural (15% or lower)</p></th>
+<th class="head"><p>Reference (70% or higher)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Content</p></td>
+<td><p>Ideas and principles, models, diagrams</p></td>
+<td><p>Simple, instructional language; screen captures if necessary</p></td>
+<td><p>Useful, referential content only</p></td>
+</tr>
+<tr class="row-odd"><td><p>Writing style</p></td>
+<td><p>Descriptive, explanatory</p></td>
+<td><p>Task-based</p>
+<p>Imperative</p>
+</td>
+<td><p>No prose, straightforward</p>
+<p>Minimal explanation</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Formatting and language</p></td>
+<td><p>Technical and/or simple prose</p></td>
+<td><p>Numbered lists broken into headings/sections</p></td>
+<td><p>Cross-reference links, tables, unordered lists</p></td>
+</tr>
+<tr class="row-odd"><td><p>Length</p></td>
+<td><p>Any length, depending on the audience</p></td>
+<td><p>Short, can include options and alternate steps</p></td>
+<td><p>Lengthy but easy to navigate</p></td>
+</tr>
+<tr class="row-even"><td><p>Example API sections</p></td>
+<td><p>Overview</p>
+<p>Basic concepts (architecture)</p>
+<p>Use cases</p>
+</td>
+<td><p>Deployment and configuration</p>
+<p>Instructions for implementing API</p>
+<p>Environment setup</p>
+</td>
+<td><p>Prerequisites</p>
+<p>API reference (methods, parameters)</p>
+<p>Version log</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Notes</p></td>
+<td><p>If conceptual sections are too long, move them to a different page or site from the API documentation.</p></td>
+<td><p>If the tasks or operations are repetitive, unnecessary, trivial, or lengthy, move procedural content to a different section or page such as <em>Appendix, References, FAQS,</em> or <em>Support</em>.</p></td>
+<td><p>Reference information is the primary content of API documentation since it is what developers and users need to use the API, regardless of skill level.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="documentation-structure">
+<h2><a class="toc-backref" href="#id6">Documentation structure</a><a class="headerlink" href="#documentation-structure" title="Permalink to this headline">¶</a></h2>
+<p>The following sections discuss the typical documentation structure for API, as well as the basic minimum parts required.</p>
+<div class="section" id="information-map-for-api-documentation">
+<h3><a class="toc-backref" href="#id7">Information map for API documentation</a><a class="headerlink" href="#information-map-for-api-documentation" title="Permalink to this headline">¶</a></h3>
+<p>The following diagram describes a sample outline/information map for API documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first two levels are recommended as per standard API documentation. However, the child headings are a guide and can be moved around as needed. The following table of API sections provide an overview of whether some parts are required or optional.</p>
+</div>
+<div class="figure align-center" id="id1">
+<img alt="_images/information_map.png" src="_images/information_map.png" />
+<p class="caption"><span class="caption-text">Basic information map for API documentation</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>For an editable version of the information map, click <a class="reference external" href="https://www.gloomaps.com/KwndvNWijQ">here</a>.</p>
+</div>
+<div class="section" id="list-of-api-documentation-sections">
+<h3><a class="toc-backref" href="#id8">List of API documentation sections</a><a class="headerlink" href="#list-of-api-documentation-sections" title="Permalink to this headline">¶</a></h3>
+<p>The following is a list of sections applicable for general API documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All sections are optional unless otherwise noted.</p>
+</div>
+<dl>
+<dt>Introduction</dt><dd><p>An <em>Introduction</em> section is only required if the API is independent of a group or family of products and related APIs. Add an <em>Introduction</em> only if necessary since the <em>Overview</em> section should provide most, if not everything, the reader needs.</p>
+</dd>
+<dt>API name</dt><dd><p>The <em>API name</em> should feature prominently at the top of the page and in the navigation panel.</p>
+<p>If it’s a short API document, the base URL can be included with the <em>API name</em>.</p>
+</dd>
+<dt>Overview</dt><dd><p>The <em>Overview</em> should briefly describe the purpose of the API. To reduce the length of the documentation, the writer can place the most important points in Overview as a bullet point list. In most cases, the <em>Overview</em> supplements the <em>API name</em>, especially if the API is not self-explanatory.</p>
+<p>Avoid using the heading Description since the whole document represents a collection of descriptions. The same applies to Context since the document should clearly explain when to use and what the API is used for.</p>
+<p>Alternative heading names: <em>Description, Features, About</em></p>
+</dd>
+<dt>Audience</dt><dd><p>The <em>Audience</em> section is often unnecessary. The <em>Audience</em> section, similar to the <em>Introduction</em> section, is only added for a group or family of products or related APIs.</p>
+</dd>
+<dt>Basic concepts/Context/Functional overview</dt><dd><p>The <em>Basic concepts</em> section is included if the API reference documentation is aimed at new users to the product, or to a non-technical audience. It can be placed in a separate document if necessary, or in the <em>Appendix</em>.</p>
+<p>If <em>Basic concepts</em> is added to the document, ensure that it doesn’t distract the user and it only includes items that are necessary for using or understanding the API.</p>
+<p><em>Basic concepts</em> should not include any content already described under <em>Overview</em>.</p>
+<p><em>Context</em> - A system content diagram plus narrative text to “set the scene”.</p>
+<p><em>Functional overview</em> - An overview of the software system which may include wireframes, UI mockups, screenshots, workflow diagrams, and business process diagrams.</p>
+<p>Project management/Developer perspective: <em>Principles</em> - A list of the development and architecture principles (e.g. coding conventions, patterns).</p>
+<p>Project management/Developer perspective: <em>Software architecture</em> - A description of the software architecture involved such as containers, components, and dynamic runtime behavior.</p>
+<p>This section may include a discussion on the relationship between the other APIs, and if appropriate, the API’s relationship with other API’s running on other BUs.</p>
+<p>Components: Term definitions, data/domain models, data flow and sequence diagrams, context, functional overview, principles</p>
+</dd>
+<dt>Quality attributes</dt><dd><p><em>Quality attributes</em> refer to a list of non-functional requirements such as performance, scalability, and security.</p>
+<p>This is not required for customers. If needed, set Quality attributes in a separate page.</p>
+</dd>
+<dt>Prerequisites/Constraints/Assumptions</dt><dd><p>The <em>Prerequisites</em> section is added if there are specific steps required in order for the reader to use or access the API.</p>
+<p>Obvious software requirements, such as Java or Python dependencies, shouldn’t be added here and should be placed in the <em>Appendix</em> if necessary. Include software requirements in Deployment and configuration if it’s absolutely necessary.</p>
+<p>Project Management perspective: <em>Constraints</em> refers to a list of environmental constraints such as timescale, budget, technology, team size/skills, etc. This isn’t necessary for API documentation. If the target audience requires Project Management information, set a separate page instead.</p>
+<p>Alternative heading: <em>Constraints and Assumptions</em></p>
+<p>Components: software requirements, constraints and assumptions, access privileges, dependencies, and development environment configuration, development environment description</p>
+</dd>
+<dt>Deployment and configuration</dt><dd><p><em>Deployment and configuration</em> can be placed under <em>Prerequisites</em> if it’s not too long. However, if the <em>Deployment and configuration</em> steps are composed of several detailed sections, consider moving the section to a different location separate from the main API reference page.</p>
+<p>This section can also include a map of the software infrastructure.</p>
+<p>Alternative headings: <em>Setting up, Administrator guide, Data management</em></p>
+<p>Components: Sections dedicated to configuring web services, AWS, Azure, Docker, Kubernetes, and testing environments, data models, entity relationship diagrams, data volumes, archiving and backup strategies</p>
+</dd>
+<dt>Code sample/live examples</dt><dd><p>Each code sample or link should be preceded by a brief, introductory paragraph. Code should be formatted properly.</p>
+<p>Components: Code blocks, links to live samples</p>
+</dd>
+<dt>Use cases</dt><dd><p>If the API’s purpose is not self-explanatory, or stakeholders require an explicit description of each business or functional use case, add the <em>Use cases</em> section. Otherwise, set <em>Use cases</em> on a different page.</p>
+<p><em>Use cases</em> is not the same as <em>Code sample/live examples</em>.</p>
+<p><em>Use cases</em> should not be placed under the <em>QuickStart/Tutorials/How-to</em> section.</p>
+<p>If the <em>Use cases</em> section is extremely detailed or composed of large diagrams, move the content to a different page separate from the API documentation.</p>
+<p>For the purpose of API documentation, avoid including Project Management and Business information under the Use cases section.</p>
+<p>Components: UML diagrams, process flow, or a detailed use case description</p>
+</dd>
+<dt>QuickStart/Tutorials/How-to/Getting started/Walkthrough</dt><dd><p><em>QuickStart/Tutorials/How-to/Getting</em> started sections are composed of instructions on how to set up, run, access, invoke, implement, and instantiate the API for specific, basic actions or operations only.</p>
+<p>There is little distinction between the use of the different headings, and the choice between <em>QuickStart, Tutorials,</em> and <em>How-to</em> is a matter of preference. For consistency, however, the whole reference site should stick to the use of one of the headings across different documentation.</p>
+<p>The steps listed in this section should be practical and should demonstrate the functionality of the API, rather than discuss complex concepts or illustrate advanced properties of the API.</p>
+<p><em>Use cases</em> should not be discussed in this section. However, Use cases can be used in place of Tutorials if the API has a singular or specific set of functions.</p>
+</dd>
+<dt>Additional features</dt><dd><p>The <em>Additional features</em> section is added only if the extra features are not assumed along with the main features of the API.</p>
+<p>This section can be placed in the <em>Appendix</em> or <em>API Reference</em> sections as to not distract from the main API reference text. It can be placed as a separate sub-section if the overall API document is not too long.</p>
+</dd>
+<dt>API Reference</dt><dd><p>Place the contents in tables and use headings to structure the content.</p>
+<p>Generated text from document generators can be used directly in this section. If generated documentation (e.g. Postman, Spring API) is hosted on a different site, add the link to either <em>Additional documentation, Appendix, References, Related Links,</em> or <em>Resources</em>.</p>
+<p>Components: Methods, actions, parameters, entities, options, queries, return value, data types, interfaces, endpoints, resources definition, field, errors, message format, base URL, handlers, parameter names, possible values, and exception descriptions, code breakdown</p>
+</dd>
+<dt>Monitoring and additional tools</dt><dd><p>Monitoring and additional tools can be moved to Appendix or Reference links, unless they are really necessary for using the API.</p>
+<p>Do not use the section Monitoring and additional tools, if the topic is already discussed under Deployment and configuration.</p>
+</dd>
+<dt>Operators, expression operators, functions</dt><dd><p>Content dedicated to operators and functions can be added in a separate location, or in the Appendix if necessary.</p>
+</dd>
+<dt>Resolving errors and issues</dt><dd><p>Content for this section can be placed in a separate location (e.g. Troubleshooting), a link under Additional documentation, broken down under FAQs, or a child topic under <em>Error codes</em> in the <em>API reference</em> section.</p>
+<p>Alternative headings: <em>Troubleshooting, Error handling</em></p>
+</dd>
+<dt>Additional documentation</dt><dd><p>Additional documentation can be added to either <em>Reference links</em> or the <em>Appendix</em> sections.</p>
+</dd>
+<dt>Versioning/Changelog/Release notes</dt><dd><p>This section may include legacy information or links to older documentation. This section can also be placed under Reference links or Appendix.</p>
+<p>If versioning information is already on an external source such as a ReadMe or Markdown file, or is automatically generated, then it isn’t necessary to repeat the information here.</p>
+<p>Depending on the final output format and audience of the document, <em>Versioning/Changelog/Release notes</em>  can be placed on a different page and linked under <em>References/Related links</em> or <em>Appendix</em>.</p>
+<p>Components: Decision logs, version information, additional notes, features, support information</p>
+</dd>
+<dt>References/Related links</dt><dd><p>This section may contain either internal or external links.</p>
+<p><em>References</em> or <em>Related links</em> is used for any content that needs to be placed on a different page that is relevant to the API, but not necessary to use the API. The links under this section can be separate pages for FAQs, Glossary, SDK, API reference, Downloads, Resources, Terms of use, and Support information.</p>
+<p>Alternative headings: <em>References, Related links, See also, Related content</em></p>
+</dd>
+<dt>FAQs</dt><dd><p>This section may be used as an alternative to <em>Resolving errors and issues</em>.</p>
+</dd>
+<dt>Glossary</dt><dd><p><em>Glossary</em> is not the same as <em>Basic concepts</em>.</p>
+<p><em>Glossary</em> is always placed in a separate page from the main API reference document, especially if it’s lengthy and detailed.</p>
+<p>If specific terms need to be defined, a <code class="docutils literal notranslate"><span class="pre">Note</span></code> admonition should be sufficient.</p>
+<p>Do not create a <em>Glossary</em> section for 2-5 items.</p>
+<p>Technical jargon should only be added to <em>Glossary</em> if it’s directly relevant to using the API.</p>
+<p>Terms that are generally well-known and understood in the industry, such as “API” and “server”, should not be included in the <em>Glossary</em>.</p>
+<p>Alternative heading: <em>Terminology</em></p>
+</dd>
+<dt>SDK API reference</dt><dd><p>This section should be placed on a separate page or as a link under <em>Additional documentation</em> or <em>References/Related links</em>.</p>
+</dd>
+<dt>Downloads/Resources</dt><dd><p>If the <em>Downloads/Resources</em> section is only composed of a few links, move the items to <em>Reference/Related links</em>.</p>
+<p>Alternative heading: <em>Resources, Related content</em></p>
+</dd>
+<dt>Terms of use/Legal restrictions</dt><dd><p><em>Terms of use</em> and <em>Legal restrictions</em> should be placed on a different page from the main API reference document unless restrictions are specific to that API only.</p>
+<p><em>Terms of use</em> can also be placed as a link under <em>Reference/Related links</em>.</p>
+</dd>
+<dt>Operation and Support</dt><dd><p><em>Operation and Support</em> refers to how the software is operated, supported, and monitored by the provider or administrator.</p>
+<p>Ideally, this section should include contact information of support staff or related customer-facing teams.</p>
+<p>Support information can be included with Versioning/Release notes information.</p>
+<p>Alternative headings: <em>Support information, Support, Help, Contact</em></p>
+</dd>
+<dt>Authentication and authorisation</dt><dd><p>This section contains information regarding Oauth, access tokens, client and server side authentication instructions.</p>
+</dd>
+<dt>Interactive console</dt><dd><p>Swagger, a console sandbox, and API explorer tools are examples of interactive documentation.</p>
+</dd>
+<dt>Appendix</dt><dd><p>The Appendix can be placed in a different page entirely if there is a substantial amount of information. The Appendix can also be a separate item under Additional Documentation, Resources, References, or Related Links, although it is generally considered a standalone item.</p>
+<p>Do not use an Appendix section if the links under Resources, References, or Related Links are already comprehensive.</p>
+<p>Components: Links or text for supplementary information specific to the API.</p>
+</dd>
+<dt>Best practices</dt><dd><p>Do not repeat any content found under <em>Deployment and configuration</em>, <em>Resolving errors and issues, QuickStart,</em> or <em>Walkthrough</em> here.</p>
+<p>Alternative headings: <em>Recommendations, Tips</em></p>
+</dd>
+<dt>Testing/Quality</dt><dd><p>Testing and quality documentation refers to descriptions, steps, plans, and options for testing API functionality. This can be included under Tutorials or Use Cases as needed.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="appendix">
+<h2><a class="toc-backref" href="#id9">Appendix</a><a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-rules-when-describing-api-code">
+<h3><a class="toc-backref" href="#id10">General rules when describing API code</a><a class="headerlink" href="#general-rules-when-describing-api-code" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Every class, interface, structure and member in the API must have a description.</p></li>
+<li><p>Every constant, field, and enum, if applicable, must have a description.</p></li>
+<li><p>Every method must have a description for each parameter, return value, and exception.</p></li>
+<li><p>There must always be code samples at the top of each unique page of description. The code samples must always be preceded by an introductory sentence or paragraph. The code samples must be comprehensive enough to be descriptive of all relevant operations.</p></li>
+</ul>
+</div>
+<div class="section" id="general-guidelines-for-writing-api-reference-content-and-comments">
+<h3><a class="toc-backref" href="#id11">General guidelines for writing API reference content and comments</a><a class="headerlink" href="#general-guidelines-for-writing-api-reference-content-and-comments" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Always write in present tense. For example, write “Retrieves an aerial image.”</p></li>
+<li><p>Use verbs when writing the method description. For example, write “Sets the label of a point of interest.”</p></li>
+<li><p>Capitalize the first word of the description and terminate the statement or phrase with a full stop.</p></li>
+<li><p>Use “The” or “A”.</p></li>
+<li><p>Be as brief as possible.</p></li>
+<li><p>Use monosopace/literal/code tags to format API items and components. These include status codes, values, methods, and function names.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">&lt;var&gt;</span></code> tag (HTML) or underscores (Markdown) when formatting variables.</p></li>
+<li><p>Use two spaces per indent, not tabs when writing code samples.</p></li>
+<li><p>Use tables for field-values, error codes/exceptions, and parameters.</p></li>
+<li><p>Use inline comments in code.</p></li>
+<li><p>Use headings to break up sections and text. Limit headings to 3 or 4 levels.</p></li>
+<li><p>Add a brief introduction after each heading.</p></li>
+<li><p>Use sections and text that focus on actions, rather than concepts. Emphasize what can be done and how to do it.</p></li>
+<li><p>The outcome or output of a task or call should always be clear and unambiguous. An example should always be provided as much as possible.</p></li>
+<li><p>Use “Thrown when … ” or “If” when describing exceptions.</p></li>
+<li><p>When referring to deprecated code, always mention the version, as well as the replacement. For example, write “Deprecated. Replaced by getmap-aerial.”</p></li>
+</ul>
+</div>
+<div class="section" id="sample-documentation-output">
+<h3><a class="toc-backref" href="#id12">Sample documentation output</a><a class="headerlink" href="#sample-documentation-output" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Documentation type</p></th>
+<th class="head"><p>Publishing tool/method</p></th>
+<th class="head"><p>Hosting</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Readme.md (BitBucket/GitHub)</p></td>
+<td><p>Cloud versioning service</p></td>
+<td><p>BitBucket</p></td>
+<td><p>Markdown</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wiki site</p></td>
+<td><p>Wiki.js</p></td>
+<td><p>AWS</p></td>
+<td><p>Markdown</p></td>
+</tr>
+<tr class="row-even"><td><p>Readthedocs.org page</p></td>
+<td><p>Sphinx</p></td>
+<td><p>AWS</p></td>
+<td><p>ReStructuredText and automated pipeline</p></td>
+</tr>
+<tr class="row-odd"><td><p>Confluence pages</p></td>
+<td><p>Confluence</p></td>
+<td><p>Atlassian Confluence</p></td>
+<td><p>Plain Text, HTML, and Markdown. Can be exported to PDF and Word.</p></td>
+</tr>
+<tr class="row-even"><td><p>Developer Portal API doc</p></td>
+<td><p>Drupal and Swagger</p></td>
+<td><p>AWS</p></td>
+<td><p>Requires maintenance and customization</p></td>
+</tr>
+<tr class="row-odd"><td><p>Javadoc</p></td>
+<td><p>Java</p></td>
+<td><p>Any hosting service</p></td>
+<td><p>Java libraries only</p></td>
+</tr>
+<tr class="row-even"><td><p>MS Office documents</p></td>
+<td><p>Sharepoint</p></td>
+<td><p>Microsoft file formats, Sway presentations, HTML, XML</p></td>
+<td><p>Lacks flexibility</p></td>
+</tr>
+<tr class="row-odd"><td><p>Asciidoc to HTML</p></td>
+<td><p>Asciidoctor</p></td>
+<td><p>AWS</p></td>
+<td><p>Custom method using Docker, Git, and AWS</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="step_introduction.html" title="Step introductions in procedures"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="twriter_description.html" title="Technical Writer job description"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

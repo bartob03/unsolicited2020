@@ -1,0 +1,234 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Importing and working with Excel tables in FrameMaker &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Word 2016 TOC, hyperlinks, and PDFs" href="tw_word_toclinks.html" />
+    <link rel="prev" title="Creating navigation notebook tabs for PDFs from Word" href="tw_word_pdf-tabs.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tw_word_toclinks.html" title="Word 2016 TOC, hyperlinks, and PDFs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tw_word_pdf-tabs.html" title="Creating navigation notebook tabs for PDFs from Word"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Importing and working with Excel tables in FrameMaker</a><ul>
+<li><a class="reference internal" href="#preparing-the-excel-table">Preparing the Excel table</a></li>
+<li><a class="reference internal" href="#preparing-framemaker">Preparing FrameMaker</a></li>
+<li><a class="reference internal" href="#importing-the-plain-excel-table">Importing the plain Excel table</a></li>
+<li><a class="reference internal" href="#editing-the-table-of-contents-columns-and-text">Editing the Table of Contents, columns and text</a></li>
+<li><a class="reference internal" href="#resizing-the-columns">Resizing the columns</a></li>
+<li><a class="reference internal" href="#refining-the-cell-margins-using-paragraph-designer">Refining the Cell Margins using Paragraph Designer</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tw_word_pdf-tabs.html"
+                        title="previous chapter">Creating navigation notebook tabs for PDFs from Word</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tw_word_toclinks.html"
+                        title="next chapter">Word 2016 TOC, hyperlinks, and PDFs</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/fm_tables.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="importing-and-working-with-excel-tables-in-framemaker">
+<h1><a class="toc-backref" href="#id1">Importing and working with Excel tables in FrameMaker</a><a class="headerlink" href="#importing-and-working-with-excel-tables-in-framemaker" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#importing-and-working-with-excel-tables-in-framemaker" id="id1">Importing and working with Excel tables in FrameMaker</a></p>
+<ul>
+<li><p><a class="reference internal" href="#preparing-the-excel-table" id="id2">Preparing the Excel table</a></p></li>
+<li><p><a class="reference internal" href="#preparing-framemaker" id="id3">Preparing FrameMaker</a></p></li>
+<li><p><a class="reference internal" href="#importing-the-plain-excel-table" id="id4">Importing the plain Excel table</a></p></li>
+<li><p><a class="reference internal" href="#editing-the-table-of-contents-columns-and-text" id="id5">Editing the Table of Contents, columns and text</a></p></li>
+<li><p><a class="reference internal" href="#resizing-the-columns" id="id6">Resizing the columns</a></p></li>
+<li><p><a class="reference internal" href="#refining-the-cell-margins-using-paragraph-designer" id="id7">Refining the Cell Margins using Paragraph Designer</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Despite improvements to table support in most applications, working with <strong>Excel</strong> tables in applications like <strong>Adobe InDesign, FrameMaker</strong> and <strong>CorelDraw</strong> is less than ideal, especially if you are working on a deadline. In <strong>InDesign</strong>, most writers would import the <strong>Excel</strong> file as text and convert the content to a table and format the table and contents manually in a time consuming process. Other methods would involve converting the table/chart to a vector object in <strong>Adobe Illustrator</strong> or <strong>CorelDraw</strong> to take advantage of the flexibility of vector objects in page layout applications. The fastest way to import an <strong>Excel</strong> table to a document is to save the <strong>Excel</strong> table as a bitmap or PDF and <strong>Place/Import</strong> the PDF into <strong>FrameMaker</strong> or <strong>InDesign</strong>. Unfortunately, this method has similar limitations to converting the table to a vector object - the table loses its text properties and common text tasks such as copy and paste are no longer available once the document is exported to PDF for editing, review, or publication.</p>
+<p><strong>FrameMaker’s</strong> table handling has advantages over <strong>Adobe InDesign’s</strong> WYSIWYG approach, but learning <strong>Table Designer</strong> and <strong>FrameMaker’s</strong> different interface can be trying for new users. This series of articles will discuss one way to import and format Excel articles for use in <strong>Adobe FrameMaker 10</strong>.</p>
+<div class="section" id="preparing-the-excel-table">
+<h2><a class="toc-backref" href="#id2">Preparing the Excel table</a><a class="headerlink" href="#preparing-the-excel-table" title="Permalink to this headline">¶</a></h2>
+<p>This example makes use of a <strong>Microsoft Excel 2007</strong> table with numbers, text, and columns of varying widths.</p>
+<p>To facilitate importing to <strong>FrameMaker</strong>, remove all formatting and colors. To avoid symbol or font issues, the bullets in the last three columns were formatted using a generic font, as is the rest of the text.</p>
+<img alt="_images/fm_table1.png" src="_images/fm_table1.png" />
+<p>A quick way to remove table formatting is to select all the table cells, copy, and paste the cells in a new workbook using the <strong>Paste Special</strong> command. Select only <strong>Values</strong> and then save the workbook.</p>
+<img alt="_images/fm_table2.png" src="_images/fm_table2.png" />
+</div>
+<div class="section" id="preparing-framemaker">
+<h2><a class="toc-backref" href="#id3">Preparing FrameMaker</a><a class="headerlink" href="#preparing-framemaker" title="Permalink to this headline">¶</a></h2>
+<p>Before starting work with tables in <strong>FrameMaker</strong>, change the display units of the ruler. <strong>Since FrameMaker</strong> isn’t a WYSIWYG application, you will have to manually input values for the table column widths and rows.</p>
+<p>To change the <strong>Ruler</strong> display units:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>View &gt; Options</strong>.</p></li>
+<li><p>In the <strong>Display Units</strong> item, select your preferred unit of measurement.</p></li>
+<li><p>In the <strong>Rulers</strong> item, select your preferred unit of measurement.</p></li>
+<li><p>Click <strong>Set</strong>.</p></li>
+</ol>
+<img alt="_images/fm_table3.png" class="align-center" src="_images/fm_table3.png" />
+<p>When working with <strong>Excel</strong> tables, you would need both the <strong>Paragraph Designer</strong> and <strong>Table Designer</strong> tabs so you can open them before importing the <strong>Excel</strong> file.</p>
+</div>
+<div class="section" id="importing-the-plain-excel-table">
+<h2><a class="toc-backref" href="#id4">Importing the plain Excel table</a><a class="headerlink" href="#importing-the-plain-excel-table" title="Permalink to this headline">¶</a></h2>
+<p>To import the <strong>Excel</strong> table:</p>
+<ol class="arabic simple">
+<li><p>Place the insertion point to where you want the table to appear.</p></li>
+<li><p>Click <strong>File &gt; Import</strong>.</p></li>
+<li><p>Click <strong>File</strong>, then select the <strong>Excel 2007/2010</strong> file.</p></li>
+<li><p>Select <strong>Copy Into Document &gt; Import</strong>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you select the <strong>Import by Reference</strong> option, you would have to click the <strong>Convert</strong> button in the <strong>Text Inset Properties</strong> tab.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p><strong>FrameMaker</strong> will display the <strong>Unknown File Type</strong> window for <strong>.xlsx</strong> files. Select <strong>Microsoft Excel 2007</strong>, then click <strong>Convert</strong>.</p></li>
+</ol>
+<img alt="_images/fm_table4.png" src="_images/fm_table4.png" />
+<ol class="arabic simple" start="6">
+<li><p>In the <strong>Import Text Flow by Reference</strong> window, select <strong>Reformat as Plain Text &gt; Import</strong>.</p></li>
+</ol>
+<p>The table will appear on your main <strong>Body Flow</strong> after the paragraph mark if your <strong>Text Symbols</strong> are visible. Note that most <strong>Excel</strong> tables are often wider than a typical A4 or Letter-size document in <strong>FrameMaker</strong>. The table will be cut off with parts of it not visible. In most cases, you would have to modify the content of the table in addition to resizing the columns and text sizes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike <strong>InDesign</strong>, where you can toggle between views to display non-printing or hidden parts of the work page, you cannot see the missing portions of the table outside the <strong>FrameMaker</strong> document window.</p>
+</div>
+<img alt="_images/fm_table5.png" src="_images/fm_table5.png" />
+</div>
+<div class="section" id="editing-the-table-of-contents-columns-and-text">
+<h2><a class="toc-backref" href="#id5">Editing the Table of Contents, columns and text</a><a class="headerlink" href="#editing-the-table-of-contents-columns-and-text" title="Permalink to this headline">¶</a></h2>
+<p>To make the table fit the document window in <strong>FrameMaker</strong>, you would have to edit the text size, cell margins, and columns of the table. In this example, the table contains technical information that isn’t as necessary for most readers so a compromise between text size and column size was needed. However, check with your technical editor before making any direct edits to the text.</p>
+<p>To change text size and font using <strong>Paragraph Designer</strong>:</p>
+<ol class="arabic simple">
+<li><p>Place the insertion point inside the table. The text is automatically formatted using the default <strong>Paragraph</strong> tag if you followed the import steps described in the previous section.</p></li>
+<li><p>Create a new paragraph tag in <strong>Paragraph Designer</strong>. Click <strong>Commands &gt; New Format &gt; Create</strong>.</p></li>
+<li><p>Change the text size and font. For this example, a size value of 9.0 pts is used.</p></li>
+<li><p>Select the text/table cells and click <strong>Apply</strong>.</p></li>
+</ol>
+<p>You can select the non-visible portions of the table once they appear on the document window. You can also refine formatting of the text later for specific types of text. The objective at the moment is to “shrink” the table and allow the missing portion of the table to appear.</p>
+<img alt="_images/fm_table6.png" src="_images/fm_table6.png" />
+</div>
+<div class="section" id="resizing-the-columns">
+<h2><a class="toc-backref" href="#id6">Resizing the columns</a><a class="headerlink" href="#resizing-the-columns" title="Permalink to this headline">¶</a></h2>
+<p>If a significant portion of the table is still not visible, resize the columns to remove excess white space. You can shrink the column size tightly around the text or specify exact values for the columns.</p>
+<p>Before starting, change the view so that the <strong>Text Symbols</strong> are not visible by clicking <strong>View &gt; Text Symbols</strong>.</p>
+<p>To maximise column space:</p>
+<ol class="arabic simple">
+<li><p>Place your mouse pointer inside a cell in the column you want to edit.</p></li>
+<li><p>Click <strong>Table</strong> on the main toolbar, then <strong>Format &gt; Resize Columns</strong>.</p></li>
+</ol>
+<img alt="_images/fm_tableb1.png" class="align-center" src="_images/fm_tableb1.png" />
+<ol class="arabic simple" start="3">
+<li><p>In the <strong>Resize Selected Columns</strong> window, select <strong>To width of Selected Cells’ Contents</strong>.</p></li>
+</ol>
+<p>The column width will shrink tightly around the text. Note that you can modify the margins or the column size later.</p>
+<p>To specify exact measurements of the column width:</p>
+<ol class="arabic simple">
+<li><p>Place your mouse pointer inside a cell in the column you want to edit.</p></li>
+<li><p>Click <strong>Table &gt; Format &gt; Resize Columns</strong>.</p></li>
+<li><p>Specify a value in the <strong>To Width:</strong> item.</p></li>
+</ol>
+<img alt="_images/fm_tableb2.png" src="_images/fm_tableb2.png" />
+</div>
+<div class="section" id="refining-the-cell-margins-using-paragraph-designer">
+<h2><a class="toc-backref" href="#id7">Refining the Cell Margins using Paragraph Designer</a><a class="headerlink" href="#refining-the-cell-margins-using-paragraph-designer" title="Permalink to this headline">¶</a></h2>
+<p>If you used the <strong>To width of Selected Cells’ Contents</strong> option in the <strong>Resize Selected Columns</strong> window, you might find the text too closely spaced from cell to cell. To quickly add “cell padding” to make text readable, use the <strong>Paragraph Designer</strong>.</p>
+<p>To adjust <strong>Cell Margins</strong> using the <strong>Paragraph Designer</strong>:</p>
+<ol class="arabic simple">
+<li><p>Click the <strong>Table Cell</strong> button in <strong>Paragraph Designer</strong>. Select the <strong>Paragraph</strong> tag you used for the table text.</p></li>
+<li><p>Input margin values in the <strong>Cell Margin Top, Bottom, Left</strong> and <strong>Right</strong> items.</p></li>
+<li><p>Click <strong>Apply</strong> or <strong>Update All</strong>.</p></li>
+</ol>
+<img alt="_images/fm_tableb3.png" src="_images/fm_tableb3.png" />
+<p>Once all the columns are of the correct size and text within the cells are allotted enough space, check if all the contents of the <strong>Excel</strong> table are now visible. You may need to do a bit of trial and error especially if the content length for each cell varies.</p>
+<p>In the following screenshot, the first column’s all caps text has been changed, the headings have been shortened, and the columns resized to extremely conservative values.</p>
+<img alt="_images/fm_tableb4.png" src="_images/fm_tableb4.png" />
+<p>Now that all the columns of the Excel table are visible, you can now format the color, table headings, table lines and shading and merge cells.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tw_word_toclinks.html" title="Word 2016 TOC, hyperlinks, and PDFs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tw_word_pdf-tabs.html" title="Creating navigation notebook tabs for PDFs from Word"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

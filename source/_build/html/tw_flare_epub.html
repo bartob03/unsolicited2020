@@ -1,36 +1,72 @@
 
-<!DOCTYPE html>
+
+<!doctype html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Tips on Using MadCap Flare to Produce EPUB Output &#8212; Offered But Unsolicited  documentation</title>
-    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <title>Tips on using MadCap Flare to produce EPUB output &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
-<!--[if lte IE 6]>
-<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
-<![endif]-->
-
+    <link rel="next" title="Sections and Front Matter in Pages for MacOS" href="tw_pages_sectionsfront.html" />
+    <link rel="prev" title="Importing tables from PDFs using Word 2016" href="pdftables_word.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
   </head><body>
-
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tw_pages_sectionsfront.html" title="Sections and Front Matter in Pages for MacOS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pdftables_word.html" title="Importing tables from PDFs using Word 2016"
+             accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>
-    </div>  
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pdftables_word.html"
+                        title="previous chapter">Importing tables from PDFs using Word 2016</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tw_pages_sectionsfront.html"
+                        title="next chapter">Sections and Front Matter in Pages for MacOS</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tw_flare_epub.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
 
     <div class="document">
       <div class="documentwrapper">
@@ -38,10 +74,8 @@
           <div class="body" role="main">
             
   <div class="section" id="tips-on-using-madcap-flare-to-produce-epub-output">
-<h1>Tips on Using MadCap Flare to Produce EPUB Output<a class="headerlink" href="#tips-on-using-madcap-flare-to-produce-epub-output" title="Permalink to this headline">¶</a></h1>
+<h1>Tips on using MadCap Flare to produce EPUB output<a class="headerlink" href="#tips-on-using-madcap-flare-to-produce-epub-output" title="Permalink to this headline">¶</a></h1>
 <p>Using <strong>MadCap Flare</strong> for producing <strong>EPUB</strong> output is a bit overkill, considering that you can produce <strong>EPUB</strong> from text editors, open source software such as <strong>LibreOffice</strong>, <strong>Sigil</strong>, and <strong>Calibre</strong>, as well as value-add applications such as <strong>Pages</strong> for <strong>macOS</strong> or <strong>iBooks Author</strong>. However, if you already own a license for <strong>MadCap Flare</strong>, then there’s no reason not to use the <strong>EPUB</strong> support included with the application.  Moreover, Flare has considerably more flexibility in terms of formatting EPUBs when compared with creating EPUBs using <strong>Adobe InDesign</strong> or <strong>Adobe FrameMaker</strong>.</p>
-<p>You no longer need an ebook reader like the <strong>Kobo Glo ** to enjoy the technical benefits of an **EPUB</strong> file, but reading from a dedicated ebook reader is arguably healthier for you.</p>
-<p>Although ebook readers are no longer as popular as it used to be, the <strong>EPUB</strong> format is still very much in use due to its advantages over PDF. The <strong>XHTML</strong> markup is also so simple, veteran users can take advantage of all the features included with Flare without worrying about output validation and compatibility with mobile apps and ebook applications.</p>
 <p>This article uses <strong>MadCap Flare 11</strong>. Flare 11 includes a <strong>Print</strong> template for <strong>Book</strong> and <strong>eBook Basic</strong> and <strong>Advanced</strong> templates, but this tutorial starts from scratch and uses the Empty template instead. The <strong>EPUB</strong> output was tested in <strong>Apple iBooks</strong>, the <strong>Kobo Glo</strong> app for <strong>Android</strong> and <strong>Windows</strong>, <strong>Calibre</strong> for <strong>Linux</strong>, a <strong>Kobo Glo</strong> ebook reader, and the <strong>Simple EPUB Reader Google Chrome</strong> app.</p>
 <ol class="arabic">
 <li><p>If you’re starting from scratch in Flare, and selected the <strong>Empty Template</strong>,  the Flare project includes several folders and files that may be unnecessary, such as <strong>Advanced, Conditional Text,</strong> and <strong>Glossaries</strong>. If the eventual output is a steamy novel or thriller, then the <strong>Skins</strong> and <strong>Variables</strong> folder are pretty much unused.</p>
@@ -59,25 +93,15 @@
 </div>
 </li>
 <li><p>Although headers and footers, running headers and footers, and page numbers are somewhat redundant for EPUB output, you can add them using the default page layout file included with an <strong>Empty Flare</strong> project.</p>
-<p>Most EPUB readers, including the Kindle, FBReader, and iBooks apps, ignore headers, footers, and page numbers. Page numbering is assigned based on the display size and how the app handles text reflowing.</p>
+<p>Most EPUB readers, including the <strong>Kindle, FBReader,</strong> and <strong>iBooks</strong> apps, ignore headers, footers, and page numbers. Page numbering is assigned based on the display size and how the app handles text reflowing.</p>
 </li>
-</ol>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<ol class="arabic" start="4">
 <li><p>If your EPUB includes images, specify the size of the image. To prevent any image clipping when viewed in smartphones or smaller tablets, specify the width by right-clicking the inserted image and then clicking <strong>Image Properties &gt; Size &gt; Width</strong>. You can select <strong>Height</strong> to <strong>Automatic</strong>.</p>
 <p>If you are also producing a PDF output of your EPUB thriller/romance, click the <strong>Print Size</strong>, and specify the dimensions there also. <strong>EPUB</strong> output uses the <strong>Size</strong> settings, but <strong>PDFs</strong> use the <strong>Print Size</strong> image settings.</p>
 <img alt="_images/flare11.png" src="_images/flare11.png" />
 </li>
-</ol>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<ol class="arabic" start="5">
 <li><p>By default, Flare creates a table of contents and tacks it on to the beginning of any target output, including <strong>EPUBs</strong>.</p>
 <p>The TOC Proxy that Flare automatically creates is unnecessary for <strong>EPUBs</strong> for obvious reasons. To remove them, double-click the <strong>EPUB Target</strong> in <strong>Project Organizer</strong>, and then click <strong>Advanced</strong>. Uncheck <strong>Generate TOC Proxy</strong>.</p>
-<p>If you don’t need an <strong>Index</strong> or <strong>Glossary</strong> for your erotic thriller clear the <strong>Generate Index Proxy</strong> and <strong>Glossary Proxy</strong> boxes also.</p>
+<p>If you don’t need an <strong>Index</strong> or <strong>Glossary</strong> for your erotic thriller, clear the <strong>Generate Index Proxy</strong> and <strong>Glossary Proxy</strong> boxes also.</p>
 <img alt="_images/flare12.png" src="_images/flare12.png" />
 </li>
 <li><p>EPUB output in Flare doesn’t follow the structure of individual topic files. They are read all the way through, with no page breaks or section breaks based on the <strong>TOC</strong> (Chapter 1 text flows directly to Chapter 2). If you want to structure the EPUB in a similar way to PDFs, add <strong>Chapter Breaks</strong> for each topic or “chapter” of your book.</p>
@@ -115,27 +139,6 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/tw_flare_epub.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
       <div class="clearer"></div>
     </div>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -144,12 +147,18 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="tw_pages_sectionsfront.html" title="Sections and Front Matter in Pages for MacOS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pdftables_word.html" title="Importing tables from PDFs using Word 2016"
+             >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Scrawl.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
     </div>
   </body>
 </html>

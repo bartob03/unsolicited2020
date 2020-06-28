@@ -1,4 +1,4 @@
-Step Introductions in Procedures
+Step introductions in procedures
 ==================================
 
 *Step introductions*, also known as *procedure headings* or *procedure platform statements*, are short sentence fragments that use a gerund or an imperative verb phrase. The step introduction precedes a list of steps for a procedure. Technical writers use them to set off a task or list of steps. Readers use them to quickly locate what they need to do in an article, document, white paper or tutorial.

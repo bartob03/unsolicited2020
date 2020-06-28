@@ -1,0 +1,142 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Troubleshooting Table of Contents in Adobe InDesign &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Fixing misaligned images in an imported Word document in FrameMaker 11" href="tw_frame_images-word.html" />
+    <link rel="prev" title="The Document Life Cycle continues" href="tw_doclifecycle.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tw_frame_images-word.html" title="Fixing misaligned images in an imported Word document in FrameMaker 11"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tw_doclifecycle.html" title="The Document Life Cycle continues"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tw_doclifecycle.html"
+                        title="previous chapter">The Document Life Cycle continues</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tw_frame_images-word.html"
+                        title="next chapter">Fixing misaligned images in an imported Word document in FrameMaker 11</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/indesign_toc.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="troubleshooting-table-of-contents-in-adobe-indesign">
+<h1>Troubleshooting Table of Contents in Adobe InDesign<a class="headerlink" href="#troubleshooting-table-of-contents-in-adobe-indesign" title="Permalink to this headline">¶</a></h1>
+<p><strong>Adobe InDesign</strong> is exceptional at page layouts but when it comes to even basic document organization, <strong>FrameMaker</strong>, <strong>Microsoft Word 2010</strong> or open source <strong>LyX</strong> handle table of contents more efficiently. If the PDF’s bookmarks or table of contents hyperlinks aren’t working, try checking the following:</p>
+<ol class="arabic simple">
+<li><p>If you created a <strong>Book</strong> in <strong>InDesign</strong> to organize your <strong>.indd</strong> files, make sure that each document is saved separately especially if you deleted or added pages. Save the <strong>Book</strong> then “refresh” your table of contents.</p></li>
+</ol>
+<div class="figure align-center" id="id1">
+<img alt="_images/ind_toc1.png" src="_images/ind_toc1.png" />
+<p class="caption"><span class="caption-text">The bang icon indicates an error in one of the Book entries.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="topic">
+<p class="topic-title first">Updating the table of content</p>
+<p>In <strong>Adobe InDesign CS4</strong>, click <strong>Layout</strong> then <strong>Table of Contents</strong>. If the <strong>Update Table of Contents</strong> option is not available, this means that major changes in pagination were made to your <strong>Book</strong> or <strong>InDesign</strong> document and you have to recreate the table of contents. If you don’t recreate or refresh your table of contents, any PDF exported from your <strong>Book</strong> or <strong>InDesign</strong> file will not have working bookmarks or hyperlinks.</p>
+<img alt="_images/ind_toc2.png" class="align-center" src="_images/ind_toc2.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li><p>When exporting an <strong>InDesign</strong> file or <strong>Book</strong> to PDF, select the <strong>Bookmarks, Hyperlinks and Interactive Elements</strong> options on the <strong>General</strong> window. Selecting the <strong>Bookmarks</strong> option instructs <strong>InDesign</strong> to create a list of bookmarks based on specified styles and the document’s table of contents. Selecting the <strong>Hyperlinks</strong> option enables hyperlinks on the table of contents text itself.</p></li>
+</ol>
+<img alt="_images/ind_toc3.png" class="align-center" src="_images/ind_toc3.png" />
+<ol class="arabic simple" start="3">
+<li><p>If you’ve manually numbered the sections and chapters in your document, review the table of contents once it’s created. Proofreaders and editors normally review the content and skip the front matter. Check the chapter and section numbers if they are sequentially correct. This is especially important if text is moved often and paragraph threads were left unbroken. The text frame may have moved but InDesign will still follow the original arrangement. Unlike <strong>FrameMaker</strong>, <strong>InDesign</strong> will not inform the writer of numbering errors.</p></li>
+</ol>
+<img alt="_images/ind_toc4.png" class="align-center" src="_images/ind_toc4.png" />
+<ol class="arabic" start="4">
+<li><p>Generated table of contents in <strong>InDesign</strong> are just plain text and are subject to errors too. Even if you accurately defined the paragraph styles of entries in the table of contents, formatting errors can occur especially when the text includes symbols or special formatting such as superscript.</p>
+<p>In the screen capture below, the registered trademark symbol’s superscript formatting affected the preceding text and the leads, as well as the page number. Writers can safely select the text and remove the superscript formatting without affecting the functionality of the table of contents once exported to PDF.</p>
+</li>
+</ol>
+<img alt="_images/ind_toc5.png" class="align-center" src="_images/ind_toc5.png" />
+<ol class="arabic simple" start="5">
+<li><p>Writers can shorten the text entry of the generated TOC entry (which is based on the section heading style) if it is too long and ruins the consistency of the table of contents (See <code class="docutils literal notranslate"><span class="pre">3.2.1</span></code> on the previous screen capture). Like tip #4 this does not affect TOC functionality in the resulting PDF.</p></li>
+<li><p>If a new <strong>InDesign</strong> template doesn’t have working PDF bookmarks and TOC, the most common cause is that the <strong>Create PDF Bookmarks</strong> option wasn’t checked in the <strong>Table of Contents Style</strong> window.</p></li>
+</ol>
+<img alt="_images/ind_toc6.png" class="align-center" src="_images/ind_toc6.png" />
+<ol class="arabic simple" start="7">
+<li><p>If the <strong>InDesign</strong> document is very long and the table of content links in the PDF or bookmarks still don’t work, consider creating a new Table of Contents Style. TOCs are heavily dependent on styles and starting with a fresh set of parameters will make sure a working TOC is produced.</p></li>
+<li><p>Always check if your bookmarks and table of contents links are working after exporting to PDF.</p></li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tw_frame_images-word.html" title="Fixing misaligned images in an imported Word document in FrameMaker 11"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tw_doclifecycle.html" title="The Document Life Cycle continues"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

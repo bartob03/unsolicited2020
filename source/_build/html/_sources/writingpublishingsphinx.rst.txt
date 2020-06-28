@@ -85,7 +85,7 @@ Example of Sphinx directive: ``seealso``
 Working with tables
 ~~~~~~~~~~~~~~~~~~~~~
 
-Creating tables manually in ReStructuredText is not always ideal. One solution is to use the ``csv-table`` directive, which displays **.csv** files into the document.
+Creating tables manually in ReStructuredText is not always ideal. One solution is to use the ``csv-table`` directive, which renders **.csv** files into tables in the document.
 
 ::
 
@@ -171,6 +171,10 @@ To add custom CSS, perform the following steps:
 
 The same process can be applied for adding **Javascript** files (``html_js_files``).
 
+.. note::
+
+	Create a ``_static`` folder under the ``source`` folder if it does not exist.
+
 Editing the Table of Contents tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -190,4 +194,4 @@ The default index.html file, which serves as the landing page, doesn't appear on
 
 .. note::
 
-	If the writer prefers to only have a main TOC tree in the landing page and have a different page for the start of the documentation, specify a different filename for the Name of your master document when running ``sphinx-quickstart``. For example, specify **main.rst** as the master document then add a separate item for index in the ``toctree`` directive.
+	If the writer prefers to only have a main TOC tree in the landing page and have a different page for the start of the documentation, specify a different filename for the *Name* of your master document when running ``sphinx-quickstart``. For example, specify *main.rst* as the master document then add a separate item for index in the ``toctree`` directive.

@@ -1,0 +1,202 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Docbook and EPUB &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Extracting vector objects from a PDF using CorelDraw" href="extract_vector_cdr.html" />
+    <link rel="prev" title="Smoothening fonts in Adobe Reader using the Accessibility Setup Assistant" href="acro_access.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="extract_vector_cdr.html" title="Extracting vector objects from a PDF using CorelDraw"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="acro_access.html" title="Smoothening fonts in Adobe Reader using the Accessibility Setup Assistant"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Docbook and EPUB</a><ul>
+<li><a class="reference internal" href="#docbook-setup">Docbook Setup</a></li>
+<li><a class="reference internal" href="#xsltproc">XSLTPROC</a></li>
+<li><a class="reference internal" href="#epub-images">EPUB images</a></li>
+<li><a class="reference internal" href="#mimetype">Mimetype</a></li>
+<li><a class="reference internal" href="#compressing-and-renaming">Compressing and renaming</a></li>
+<li><a class="reference internal" href="#editing-in-sigil">Editing in Sigil</a></li>
+<li><a class="reference internal" href="#testing-in-okular-and-calibre">Testing in Okular and Calibre</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="acro_access.html"
+                        title="previous chapter">Smoothening fonts in Adobe Reader using the Accessibility Setup Assistant</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="extract_vector_cdr.html"
+                        title="next chapter">Extracting vector objects from a PDF using CorelDraw</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/docbook_epub.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="docbook-and-epub">
+<h1>Docbook and EPUB<a class="headerlink" href="#docbook-and-epub" title="Permalink to this headline">¶</a></h1>
+<p>For would-be <strong>Docbook</strong> writers and veteran Docbook users who are interested in using EPUB rather than PDF as their final output, the XSL stylesheets provided by the Docbook team can be <a class="reference external" href="http://docbook.sourceforge.net/">downloaded from Sourceforge</a> and provide a pretty good output for use with ebook readers. Used in conjunction with <strong>Sigil</strong>, you can easily create exceptional and well-supported EPUBs for a variety of devices.</p>
+<p>This brief tutorial reviews the basics of creating an EPUB from Docbook XML using the stylesheets and basic editing via Sigil.</p>
+<p>This article discusses the following:</p>
+<ul class="simple">
+<li><p>Docbook Setup</p></li>
+<li><p>XSLTPROC</p></li>
+<li><p>EPUB Images</p></li>
+<li><p>Mimetype</p></li>
+<li><p>Compressing and renaming</p></li>
+<li><p>Editing in Sigil</p></li>
+<li><p>Testing in <strong>Okular, Calibre, EPUBReader</strong> for <strong>Mozilla Firefox</strong></p></li>
+</ul>
+<div class="section" id="docbook-setup">
+<h2>Docbook Setup<a class="headerlink" href="#docbook-setup" title="Permalink to this headline">¶</a></h2>
+<p>OpenSUSE and Fedora users may already have the basic packages for working with Docbook including <strong>xsltproc</strong>, <strong>Docbook 5</strong>, and <strong>fo</strong>. Although users can download the latest stylesheets for Docbook through Sourceforge, Linux users can also install the software packages using their software manager.</p>
+<p>Before exporting to EPUB, go through the normal steps to validate your Docbook XML file. For this article, the pre-tasks involved the following:</p>
+<ol class="arabic simple">
+<li><p>Wrote a fictional technical document using <strong>Bluefish Editor</strong>.</p></li>
+<li><p>Validated the document using <strong>xmllint</strong> in <strong>Konsole</strong>.</p></li>
+<li><p>Placed PNG, SVG, and other image files in the same folder as the <strong>Docbook XML</strong> file.</p></li>
+</ol>
+</div>
+<div class="section" id="xsltproc">
+<h2>XSLTPROC<a class="headerlink" href="#xsltproc" title="Permalink to this headline">¶</a></h2>
+<p>Take note that this example uses <strong>Docbook 5.0</strong> though the steps using earlier versions are the same. In a terminal such as <strong>Yakuake</strong> or <strong>Konsole</strong>, input:</p>
+<p><code class="docutils literal notranslate"><span class="pre">xsltproc</span> <span class="pre">&lt;path</span> <span class="pre">and</span> <span class="pre">filename</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">epub</span> <span class="pre">stylesheet&gt;</span> <span class="pre">&lt;xml</span> <span class="pre">filename&gt;</span></code></p>
+<p>With <em>914b.xml</em> as the Docbook XML file and the Docbook XML stylesheets stored in the default openSUSE <code class="docutils literal notranslate"><span class="pre">/usr</span></code> folder, run the following command in a terminal:</p>
+<p><code class="docutils literal notranslate"><span class="pre">xsltproc</span> <span class="pre">/usr/share/xml/docbook/stylesheet/nwalsh5/1.76.1/epub/docbook.xsl</span> <span class="pre">914b.xml</span></code></p>
+<p>The command will produce two folders:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">META-INF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OEBPS</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="epub-images">
+<h2>EPUB images<a class="headerlink" href="#epub-images" title="Permalink to this headline">¶</a></h2>
+<p>Move your images into the <code class="docutils literal notranslate"><span class="pre">OEBPS</span></code> folder. If you placed the images in a folder, make sure your XML markup accurately points to the correct source folder.</p>
+</div>
+<div class="section" id="mimetype">
+<h2>Mimetype<a class="headerlink" href="#mimetype" title="Permalink to this headline">¶</a></h2>
+<p>Although this is an optional step, create a mimetype file using a plain text editor. To create a mimetype for your EPUB file:</p>
+<ol class="arabic simple">
+<li><p>Launch <strong>KWrite</strong> (or any text editor).</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">application/epub+zip</span></code>.</p></li>
+<li><p>Save the mimetype file in the same parent folder as <code class="docutils literal notranslate"><span class="pre">META-INF</span></code> and <code class="docutils literal notranslate"><span class="pre">OEBPS</span></code> with the filename <em>mimetype</em> (the file extension .txt is unnecessary). This ensures that an operating system/application recognizes the final EPUB as an EPUB or Zip file and will be associated with the correct application or service.</p></li>
+</ol>
+<div class="figure align-center">
+<img alt="_images/epub-docbook1.png" src="_images/epub-docbook1.png" />
+</div>
+</div>
+<div class="section" id="compressing-and-renaming">
+<h2>Compressing and renaming<a class="headerlink" href="#compressing-and-renaming" title="Permalink to this headline">¶</a></h2>
+<p>EPUB is nothing more than a zipped file with the file extension changed to EPUB. The XSLT stylesheet creates the <code class="docutils literal notranslate"><span class="pre">META-INF</span></code> and <code class="docutils literal notranslate"><span class="pre">OEBPS</span></code> folders and the necessary toc, XHTML, and <code class="docutils literal notranslate"><span class="pre">content.opf</span></code> files, but it won’t compress the files automatically into a zip. However, there are advantages to manually zipping the files, such as making sure all the images are in the <code class="docutils literal notranslate"><span class="pre">OEBPS</span></code> folder and adding a mimetype.</p>
+<p>To zip the necessary files into an EPUB in KDE:</p>
+<ol class="arabic simple">
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">META-INF</span></code>, <code class="docutils literal notranslate"><span class="pre">OEBPS</span></code> folders and the mimetype file. Do not include the original Docbook <strong>.xml</strong> file.</p></li>
+<li><p>Right-click and click <strong>Compress &gt; As ZIP Archive</strong>.</p></li>
+<li><p>To rename the file, right-click, then select <strong>Rename</strong>. Input an ebook name with an <strong>.epub</strong> file extension.</p></li>
+</ol>
+</div>
+<div class="section" id="editing-in-sigil">
+<h2>Editing in Sigil<a class="headerlink" href="#editing-in-sigil" title="Permalink to this headline">¶</a></h2>
+<p>It’s always a good idea to validate and test the EPUB using a variety of devices and another EPUB application. The developers of Sigil knew what they were doing when they wrote the excellent ebook editor, which can examine the contents of an EPUB file and validate the EPUB for compatibility.</p>
+<p>Open the newly created EPUB file using Sigil and use the <strong>Book Browser</strong> pane to preview the individual <strong>.xhtml</strong> files stored in the <strong>Text</strong> folder.</p>
+<p>If the images aren’t displayed when viewed using an EPUB Viewer, check the following:</p>
+<ol class="arabic simple">
+<li><p>Check if the <strong>Images</strong> folder contains all the necessary images of the document. If they aren’t, manually add the images using Sigil.</p></li>
+<li><p>Double-click the XHTML files in the <strong>Text</strong> folder and correct the path of the images if needed.</p></li>
+</ol>
+<p>To check if your EPUB is valid, click <strong>Tools</strong> on the toolbar then <strong>Validate With EPUB FlightCrew</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike the EPUB I created using <strong>Calligra</strong> and <strong>LyX</strong>, the EPUB produced from the Docbook XML EPUB stylesheets had only one error regarding the format of the date (the metadata required the <code class="docutils literal notranslate"><span class="pre">yyyy-mm-dd</span></code> format).</p>
+</div>
+<div class="figure align-center">
+<img alt="_images/docbook-epub2.png" src="_images/docbook-epub2.png" />
+</div>
+</div>
+<div class="section" id="testing-in-okular-and-calibre">
+<h2>Testing in Okular and Calibre<a class="headerlink" href="#testing-in-okular-and-calibre" title="Permalink to this headline">¶</a></h2>
+<p>Open the EPUB file using an ebook reader to check if the images and formatting are consistent. The Docbook XML document converted to EPUB in this example opened properly in Calibre E-Book Viewer and EPUBViewer for Mozilla Firefox, complete with an accurate Table of Comments and proper Docbook formatting. Okular, KDE’s document viewer, isn’t a dedicated ebook viewer so the application added unnecessary bullet points in the Package Contents section. However, issues didn’t appear when viewed in iOS iBooks and using Android apps.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="extract_vector_cdr.html" title="Extracting vector objects from a PDF using CorelDraw"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="acro_access.html" title="Smoothening fonts in Adobe Reader using the Accessibility Setup Assistant"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

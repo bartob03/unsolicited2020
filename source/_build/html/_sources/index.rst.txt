@@ -11,20 +11,58 @@ Offered But Unsolicited
    :caption: Contents:
 
    self
+   asciidoc_styling
    twriter_description
+   api_guidelines
    step_introduction
    apidoc_racidiagram
    releasenotes_creating
    writingpublishingsphinx
    msproject2016_float
    retext
+   fm_inlineimage
    confluence_pagevalue
    githubpages_javadoc
-
-.. contents:: Articles
-   :depth: 3
-
-// add the property ``:glob:`` and the item ``folder-name/*`` to add all contents of a folder.
-// use ``self`` to refer to the page with the toctree directive. ``.. contents`` is for the left navigation tab.
-// for all documents ``*``
-// You add a toctree to main headings like Linux for child pages!!! It makes sense!!
+   design_cdr_glyph-font
+   diaeditor_wbs
+   flare_dita
+   pdftables_word
+   tw_flare_epub
+   tw_pages_sectionsfront
+   fm_admonitions
+   tw_word_pdf-tabs
+   fm_tables
+   tw_word_toclinks
+   tw_doclifecycle
+   indesign_toc
+   tw_frame_images-word
+   cloud_drupal_azure
+   tw_apidoc_postman
+   design_indesign_anchoredobject
+   design_indesign_highlightfonts
+   design_indesign_openissue
+   tw_doc_requirediagrams
+   tools_grafana_setup
+   tw_redoc_html
+   tw_consumer_tw
+   tw_proofreaders
+   ts_onedrive_error
+   fm_structure_templates
+   fm_dita
+   tw_acro_initialview
+   ts_acro_error
+   tw_style_guide
+   tw_pm65_html
+   acro_okular_properties
+   fm_align_numbers
+   asciidoc_working
+   lyx_word
+   tellico_bibtex
+   smartart_break
+   word_webview
+   index_xmladd
+   acro_access
+   docbook_epub
+   extract_vector_cdr
+   lyx_bookmarks_toc
+   ill_cdr_export_objects

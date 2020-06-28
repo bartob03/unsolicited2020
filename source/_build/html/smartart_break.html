@@ -1,0 +1,129 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Breaking apart SmartArt in PowerPoint 2007 &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Web Layout view in Microsoft Office" href="word_webview.html" />
+    <link rel="prev" title="Using Tellico citations/Bibtex in LyX" href="tellico_bibtex.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="word_webview.html" title="Web Layout view in Microsoft Office"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tellico_bibtex.html" title="Using Tellico citations/Bibtex in LyX"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tellico_bibtex.html"
+                        title="previous chapter">Using Tellico citations/Bibtex in LyX</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="word_webview.html"
+                        title="next chapter">Web Layout view in Microsoft Office</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/smartart_break.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="breaking-apart-smartart-in-powerpoint-2007">
+<h1>Breaking apart SmartArt in PowerPoint 2007<a class="headerlink" href="#breaking-apart-smartart-in-powerpoint-2007" title="Permalink to this headline">¶</a></h1>
+<p><strong>Office 2007</strong>’s version of <strong>PowerPoint</strong> has a known issue regarding <strong>SmartArt</strong>.  As useful as SmartArt is, a known bug corrected by <strong>Office 2007 SP1</strong>, prevents users from modifying SmartArt objects and text individually.  Even resizing the SmartArt (which is contained in its bounding box) will result in destroying the nicely laid out text and shapes.  Even adding another box or arrow that doesn’t follow the general direction of the preset design is near impossible (adding a shape before and after any object in the preset SmartArt will only follow the “flow” of the preset layout).</p>
+<div class="figure align-center">
+<img alt="_images/smartart.png" src="_images/smartart.png" />
+</div>
+<p>Smart Art’s preset designs are extremely useful, but modifying it can be time consuming.  For instance, in the image above, adding another box linked to Mac OSX doesn’t work.  Instead, it will add another shape following the flow (i.e. the <strong>[Text]</strong> box).</p>
+<div class="figure align-center">
+<img alt="_images/smart1.png" src="_images/smart1.png" />
+</div>
+<p>Moving objects out of the border is impossible as the Smart Art was designed to remain within the bounding box.  Resizing will often ruin the structure too.</p>
+<div class="figure align-center">
+<img alt="_images/smart2.png" src="_images/smart2.png" />
+</div>
+<p>To be able to modify each object and text within the bounding box, users would have to select all the objects within the box, cut them out, and paste them outside the bounding box.</p>
+<div class="figure align-center">
+<img alt="images/smart3.png" src="images/smart3.png" />
+</div>
+<p>Cutting and pasting objects outside the bounding box won’t work if users don’t select ALL the objects inside.  Occasionally, <strong>CTRL+A</strong> (select all) even fails.  After pasting the objects outside the box, the bounding box can be deleted.</p>
+<div class="figure align-center">
+<img alt="_images/smart4.png" src="_images/smart4.png" />
+</div>
+<p>Individual text and objects can now be duplicated, edited, and changed once outside the bounding box.
+The solution can be found in Office online and involves selecting all the objects within the SmartArt bounding box, using the <strong>Cut</strong> command, deleting the bounding box, and pasting the objects on the PowerPoint slide.  The procedure allows users to now individually select arrows, objects, lines, text, and shapes individually and modify each separately.</p>
+<p><strong>Office 2010</strong> doesn’t suffer from this problem and upgrading to Office 2007 SP1 via an online update corrects this issue.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="word_webview.html" title="Web Layout view in Microsoft Office"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tellico_bibtex.html" title="Using Tellico citations/Bibtex in LyX"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

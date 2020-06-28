@@ -1,4 +1,4 @@
-Creating Navigation Notebook Tabs for PDFs from Word
+Creating navigation notebook tabs for PDFs from Word
 =======================================================
 
 Although it's somewhat redundant to add "hotspots" in **PDFs**, some technical writers use visual navigation aides in their publications because it's attractive and is easier to use on tablets and 2-in-1 laptops than text hyperlinks where you have to zoom in.
@@ -88,6 +88,6 @@ Timelines
 
 You can use the text hyperlink as a visual navigation on PDFs in a variety of designs, such as in timelines. The same principles apply. By adding shapes and making sure they don't intrude in the text, you can creatively employ the document links to navigate through a long PDF.
 
-In the following example, a company timeline illustration clicks to a different page describing the event for a particular year. Note that the Text Art inside the spheres are large enough so readers can easily tap on them on 5"-14" tablets, smartphones, and 2-in-1 PCs like the **Lenovo Yoga** and **Surface Pro 4**.
+In the following example, a company timeline illustration has areas that open to a different page describing the event for a particular year. Note that the text art inside the spheres are large enough so readers can easily tap on them on 5"-14" tablets, smartphones, and 2-in-1 PCs like the **Lenovo Yoga** and **Surface Pro 4**.
 
 .. image:: images/ubo_144.png

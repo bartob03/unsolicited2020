@@ -1,0 +1,175 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modifying FrameMaker 10 structure templates in Windows 8.1 &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started with a DITA topic in FrameMaker 10" href="fm_dita.html" />
+    <link rel="prev" title="JPEG error when downloading photos using OneDrive (iOS7)" href="ts_onedrive_error.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="fm_dita.html" title="Getting started with a DITA topic in FrameMaker 10"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ts_onedrive_error.html" title="JPEG error when downloading photos using OneDrive (iOS7)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Modifying FrameMaker 10 structure templates in Windows 8.1</a><ul>
+<li><a class="reference internal" href="#locating-the-template">Locating the Template</a></li>
+<li><a class="reference internal" href="#modifying-permissions-in-windows-8-1">Modifying Permissions in Windows 8.1</a></li>
+<li><a class="reference internal" href="#modifying-the-template">Modifying the Template</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ts_onedrive_error.html"
+                        title="previous chapter">JPEG error when downloading photos using OneDrive (iOS7)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fm_dita.html"
+                        title="next chapter">Getting started with a DITA topic in FrameMaker 10</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/fm_structure_templates.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="modifying-framemaker-10-structure-templates-in-windows-8-1">
+<h1>Modifying FrameMaker 10 structure templates in Windows 8.1<a class="headerlink" href="#modifying-framemaker-10-structure-templates-in-windows-8-1" title="Permalink to this headline">¶</a></h1>
+<p>If part of your work in <strong>Adobe FrameMaker 10</strong> involves modifying the template of a structured app, then you might encounter a permissions error message in <strong>Windows 8/8.1</strong> indicating you do not have access to the template/file.</p>
+<img alt="_images/fm1.png" src="_images/fm1.png" />
+<p>In this article, we’ll take a look at the basics of finding the location of a template, adding user permission access, and making a small modification to the FrameMaker structured template.</p>
+<div class="section" id="locating-the-template">
+<h2>Locating the Template<a class="headerlink" href="#locating-the-template" title="Permalink to this headline">¶</a></h2>
+<p>If you’re working on a document created in FrameMaker by a different writer, you may need to check the template location before making modification to the styles.</p>
+<p>To locate the template used in FrameMaker 10:</p>
+<ol class="arabic simple">
+<li><p>Open the file in FrameMaker 10.</p></li>
+<li><p>Click <strong>StructureTools</strong> then click <strong>Edit Application Definitions</strong>. The <code class="docutils literal notranslate"><span class="pre">structapps</span></code> file opens in a separate tab.</p></li>
+</ol>
+<img alt="_images/fm2.png" src="_images/fm2.png" />
+<ol class="arabic simple" start="3">
+<li><p>On the <strong>Structure View</strong> panel, locate the XML Application used for the document. In this example, the <code class="docutils literal notranslate"><span class="pre">DITA_1.2_machineryTask</span></code> is used. The full path of the template is highlighted in the <code class="docutils literal notranslate"><span class="pre">structapps</span></code> document.</p></li>
+</ol>
+<img alt="_images/fm3.png" src="_images/fm3.png" />
+</div>
+<div class="section" id="modifying-permissions-in-windows-8-1">
+<h2>Modifying Permissions in Windows 8.1<a class="headerlink" href="#modifying-permissions-in-windows-8-1" title="Permalink to this headline">¶</a></h2>
+<p>After you have the full path of the template, you can now navigate to the FrameMaker templates folder. Take note that you should always backup the original templates folder in case you want to use the original styles.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Normally, you shouldn’t have any permission problems opening and editing templates whether you’re using <strong>Windows 7 Home Premium</strong> or <strong>Windows 8/8.1</strong>. Modify the permissions only if FrameMaker indicates that you aren’t allowed to make changes.</p>
+</div>
+<p>To access the templates folder and add permissions:</p>
+<ol class="arabic simple">
+<li><p>In Windows 8.1, press <strong>Windows+E</strong> to open <strong>File Explorer</strong>.</p></li>
+<li><p>Navigate to the path provided by the <code class="docutils literal notranslate"><span class="pre">structapps</span></code> file.</p></li>
+<li><p>Right-click on the templates folder and click <strong>Properties</strong>.</p></li>
+<li><p>Click the <strong>Security</strong> tab then the <strong>Edit</strong> button.</p></li>
+<li><p>Click the <strong>Add</strong> button.</p></li>
+<li><p>In the <strong>Select Users or Groups</strong> window, input everyone on the text box and click <strong>Check Names</strong>.</p></li>
+<li><p>Click <strong>OK</strong>.</p></li>
+<li><p>In the <strong>Permissions for template</strong> window, select the <strong>Full control</strong> and <strong>Modify</strong> check boxes under the <strong>Allow</strong> column.</p></li>
+<li><p>Click <strong>Apply</strong> then <strong>OK</strong>.</p></li>
+<li><p>Click the <strong>General</strong> tab on the <strong>Properties</strong> window.</p></li>
+<li><p>Clear the <strong>Read-only</strong> box on the <strong>Attributes</strong> area. Click <strong>Apply</strong>.</p></li>
+<li><p>In the <strong>Confirm Attribute Changes</strong> window, select <strong>Apply changes to this folder, subfolders and files</strong> then click <strong>OK</strong>.</p></li>
+<li><p>Click <strong>OK</strong> to close the <strong>Properties</strong> window.</p></li>
+</ol>
+</div>
+<div class="section" id="modifying-the-template">
+<h2>Modifying the Template<a class="headerlink" href="#modifying-the-template" title="Permalink to this headline">¶</a></h2>
+<p>Using the original machinery task template, the <code class="docutils literal notranslate"><span class="pre">Short</span> <span class="pre">Description</span></code> text had a background color of light grey. We will modify the machinery task template to remove the background color.</p>
+<p>To edit the template:</p>
+<ol class="arabic simple">
+<li><p>Using the path listed in the <code class="docutils literal notranslate"><span class="pre">structapps</span></code> file, open the FrameMaker template. In this example, the file <code class="docutils literal notranslate"><span class="pre">machineryTask.template</span></code> is used.</p></li>
+<li><p>Since <code class="docutils literal notranslate"><span class="pre">Short</span> <span class="pre">Description</span></code> is a paragraph tag, click <strong>Ctrl+M</strong> to open the <strong>Paragraph Designer</strong>.</p></li>
+<li><p>On the <strong>Paragraph Tag item</strong>, select <code class="docutils literal notranslate"><span class="pre">short.description</span></code> on the list.</p></li>
+</ol>
+<img alt="_images/fm6.png" src="_images/fm6.png" />
+<ol class="arabic simple" start="4">
+<li><p>Clear the <strong>Background Color</strong> box.</p></li>
+<li><p>Click <strong>Update All</strong> then click <strong>Continue</strong> on the <strong>Paragraph Formatting</strong> message.</p></li>
+<li><p>Save the template. You should no longer see the error message indicating the file is locked.</p></li>
+</ol>
+<p>If you reopen the file that used the template, any changes you made on the template will be reflected on the document. In our example, the short description no longer has the light grey background.</p>
+<img alt="_images/fm6.png" src="_images/fm6.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="fm_dita.html" title="Getting started with a DITA topic in FrameMaker 10"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ts_onedrive_error.html" title="JPEG error when downloading photos using OneDrive (iOS7)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

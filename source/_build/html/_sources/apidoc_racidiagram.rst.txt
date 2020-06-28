@@ -1,4 +1,4 @@
-RACI Chart for API Documentation
+RACI chart for API documentation
 =====================================
 
 The following *Responsible-Accountable-Consulted-Informed* (RACI) chart lists the roles and level of responsibility for API documentation.

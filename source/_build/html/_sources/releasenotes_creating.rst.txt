@@ -66,4 +66,4 @@ CRNs can contain any of the following information:
 
 .. note::
 
-	Internal and external CRN templates are available as Confluence template pages, which can be exported to PDF or Word as needed, and a downloadable Word file.
+	Internal and external CRN templates are available as Confluence template pages, which can be exported to PDF or Word as needed.

@@ -1,4 +1,4 @@
-Technical Writer Job Description
+Technical Writer job description
 ==================================
 
 - Work with developer teams to produce internal or external API and software documentation using tools and services.

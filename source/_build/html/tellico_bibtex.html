@@ -1,0 +1,199 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Using Tellico citations/Bibtex in LyX &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Breaking apart SmartArt in PowerPoint 2007" href="smartart_break.html" />
+    <link rel="prev" title="LyX and Microsoft Word 2007/2010" href="lyx_word.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="smartart_break.html" title="Breaking apart SmartArt in PowerPoint 2007"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="lyx_word.html" title="LyX and Microsoft Word 2007/2010"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Using Tellico citations/Bibtex in LyX</a><ul>
+<li><a class="reference internal" href="#working-with-bibliography-in-lyx">Working with Bibliography in LyX</a></li>
+<li><a class="reference internal" href="#working-with-citations-in-lyx">Working with Citations in LyX</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="lyx_word.html"
+                        title="previous chapter">LyX and Microsoft Word 2007/2010</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="smartart_break.html"
+                        title="next chapter">Breaking apart SmartArt in PowerPoint 2007</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tellico_bibtex.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-tellico-citations-bibtex-in-lyx">
+<h1>Using Tellico citations/Bibtex in LyX<a class="headerlink" href="#using-tellico-citations-bibtex-in-lyx" title="Permalink to this headline">¶</a></h1>
+<p>KDE’s database manager <strong>Tellico</strong> and document processor <strong>LyX</strong> can be used together to write long documents with numerous citations and a bibliography. Any book database created in Tellico can be converted to a <strong>Bibtex</strong> file and then inserted into a LyX document.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This article uses LyX 2.0.3 and Tellico 2.3.5 installed on openSUSE 12.2 KDE.</p>
+</div>
+<p>To use a Tellico book collection for inserting citations in a LyX document, the Tellico file needs to be exported as a Bibtex file. A book collection created in Tellico, however, cannot be exported to Bibtex immediately and must be converted to a Bibliography first.</p>
+<p>To convert a book collection to a bibliography in Tellico:</p>
+<ol class="arabic simple">
+<li><p>With the book collection file open, click <strong>Collection &gt; Bibliography</strong>.</p></li>
+<li><p>Click <strong>Convert to Bibliography</strong>.</p></li>
+<li><p>Save the file using a different name to avoid losing the original book collection.</p></li>
+</ol>
+<p>Before using a book collection as a source for citations for a thesis, proposal, or literary work, check that the necessary fields are completed for every entry.</p>
+<p>If needed, customize the Bibtex key for each entry. The Bibtex key is used to insert citations in a document. The system will actually generate a Bibtex key for each book automatically but some writers prefer to customize the key for easy reading.</p>
+<p>The Bibtex key item is not found in the <strong>Entry Editor</strong> window when working with a standard book collection so if the Tellico book collection was converted to a bibliography, the Bibtex key field is empty and a key is automatically created once the Tellico file is exported as a Bibtex file.</p>
+<p>To edit book entries in Tellico and customize a Bibtex key:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Settings &gt; Show Entry View</strong>. Entry details will be displayed for each book entry on the main window.</p></li>
+<li><p>To edit a book entry, double-click an item from the left pane.</p></li>
+<li><p>On the <strong>General</strong> tab, enter a Bibtex Key.</p></li>
+</ol>
+<div class="figure align-center">
+<img alt="_images/tellico-lyx41.png" src="_images/tellico-lyx41.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Click <strong>Save Entry</strong>. Any edited information will now be updated for that book.</p></li>
+</ol>
+<p>The book collection/bibliography can now be exported to the Bibtex file format for use in LyX or any other Bibtex supported application.</p>
+<p>To export to Bibtex in Tellico:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>File &gt; Export</strong>.</p></li>
+<li><p>Click <strong>Export to Bibtex</strong>.</p></li>
+<li><p>On the <strong>Export Options</strong> window, make any necessary changes and click <strong>OK</strong>.</p></li>
+<li><p>Enter a filename and then click <strong>Save</strong>.</p></li>
+</ol>
+<div class="section" id="working-with-bibliography-in-lyx">
+<h2>Working with Bibliography in LyX<a class="headerlink" href="#working-with-bibliography-in-lyx" title="Permalink to this headline">¶</a></h2>
+<p>Using the Bibtex file exported from Tellico, a bibliography can now be added to a LyX document.</p>
+<p>To add a bibliography list to a LyX document:</p>
+<ol class="arabic simple">
+<li><p>Position the insertion point in the section where the bibliography will be added.</p></li>
+</ol>
+<p>2. Click <strong>Insert &gt; List/TOC</strong>.
+2. Click <strong>BibTeX Bibliography.</strong>
+3. In the <strong>LyX: BibTeX Bibliography</strong> window, click <strong>Add.</strong>
+4. In the <strong>LyX: Add Bibliography</strong> window, click <strong>Browse.</strong></p>
+<div class="figure align-center">
+<img alt="_images/tellico-lyx2.png" src="_images/tellico-lyx2.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Navigate to the Bibtex file exported from Tellico, and then click <strong>Open</strong>.</p></li>
+<li><p>Click <strong>Add</strong>. The Bibtex file will be displayed on the list of Databases.</p></li>
+<li><p>Click <strong>OK</strong>.</p></li>
+</ol>
+<p>The text <em>BibTeX Generated Bibliography</em> will be displayed as placeholder. If no citations have been added using the Bibtex file, previewing the PDF will display an empty area where the bibliography should be.</p>
+</div>
+<div class="section" id="working-with-citations-in-lyx">
+<h2>Working with Citations in LyX<a class="headerlink" href="#working-with-citations-in-lyx" title="Permalink to this headline">¶</a></h2>
+<p>With the bibliography inserted into the document, citations can now be added using two ways.</p>
+<p>To add citations from within LyX:</p>
+<ol class="arabic simple">
+<li><p>Place the insertion point to where the citation should be marked.</p></li>
+<li><p>Click <strong>Insert &gt; Citation</strong>.</p></li>
+<li><p>Use the <strong>Search</strong> field to look for a specific book or manually select a Bibtex key on the left pane. Click <strong>Add</strong>.</p></li>
+</ol>
+<div class="figure align-center">
+<img alt="_images/tellico-lyx3.png" src="_images/tellico-lyx3.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Click <strong>OK</strong>. The Bibtex key will be displayed as placeholder for the citation.</p></li>
+</ol>
+<p>If Tellico and LyX is set up properly on the system, citations can be inserted directly from Tellico, which is especially useful if the Bibtex keys are vague, the book doesn’t come up in the search results, or the writer is unsure of which book is referenced.</p>
+<p>To insert a citation from Tellico:</p>
+<ol class="arabic simple">
+<li><p>Place the insertion point to where the citation should be marked in the LyX document.</p></li>
+<li><p>Open the Tellico file and select the book entry from the left pane.</p></li>
+</ol>
+<p>3. Click <strong>Collection &gt; Bibliography</strong>.
+3. Click <strong>Cite Entry</strong> in LyX.</p>
+<div class="figure align-center">
+<img alt="_images/tellico-lyx4.png" src="_images/tellico-lyx4.png" />
+</div>
+<p>Before previewing the PDF version of the LyX document, save the LyX document first or the citations and bibliography list will not be displayed.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="smartart_break.html" title="Breaking apart SmartArt in PowerPoint 2007"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="lyx_word.html" title="LyX and Microsoft Word 2007/2010"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

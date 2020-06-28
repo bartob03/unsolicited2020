@@ -1,0 +1,125 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Identifying the PDF producer in Adobe Reader and Okular &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Aligning numbered paragraphs in FrameMaker" href="fm_align_numbers.html" />
+    <link rel="prev" title="Repurposing PageMaker 6.5/7.x files: Export to HTML" href="tw_pm65_html.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="fm_align_numbers.html" title="Aligning numbered paragraphs in FrameMaker"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tw_pm65_html.html" title="Repurposing PageMaker 6.5/7.x files: Export to HTML"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tw_pm65_html.html"
+                        title="previous chapter">Repurposing PageMaker 6.5/7.x files: Export to HTML</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fm_align_numbers.html"
+                        title="next chapter">Aligning numbered paragraphs in FrameMaker</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/acro_okular_properties.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="identifying-the-pdf-producer-in-adobe-reader-and-okular">
+<h1>Identifying the PDF producer in Adobe Reader and Okular<a class="headerlink" href="#identifying-the-pdf-producer-in-adobe-reader-and-okular" title="Permalink to this headline">¶</a></h1>
+<p>There are so many ways to create a PDF today that <strong>Adobe Acrobat</strong> and Adobe products no longer have monopoly over the file format. <strong>XSL-FO, Microsoft Office, Google Chrome</strong>, and most Linux applications are only some of the more popular ways of producing a PDF from a document or project.</p>
+<p>If you need to identify what application produced the PDF (for example to check the design or imitate the formatting), you can use the free Adobe Reader to check PDF properties. Adobe Reader has lost some of its gloss over the years due to security problems and lack of features compared to other open source or freeware offerings, but it can still be found installed in most enterprise Windows machines and a dated version is still available for Linux as of this writing (Adobe Reader 9).</p>
+<p>To check the PDF producer in <strong>Acrobat Reader</strong>:</p>
+<ol class="arabic simple">
+<li><p>Open the PDF in Adobe Reader.</p></li>
+<li><p>Click <strong>File &gt; Properties</strong>.</p></li>
+<li><p>On the <strong>Description</strong> tab, the <strong>Application</strong> and <strong>PDF Producer</strong> items indicate which applications/utilities were involved in creating the PDF.</p></li>
+</ol>
+<img alt="_images/pdf-properties.png" class="align-center" src="_images/pdf-properties.png" />
+<p>Unfortunately, complete PDF properties are only available on desktop versions of Adobe Reader and currently can’t be viewed from the <strong>iOS</strong> app release.</p>
+<p>Linux and <strong>KDE</strong> users can check the PDF producer of a document using the excellent document viewer <strong>Okular</strong>.</p>
+<p>To check the PDF producer in <strong>Okular</strong>:</p>
+<ol class="arabic simple">
+<li><p>Open the PDF in <strong>Okular</strong>.</p></li>
+<li><p>Click <strong>File &gt; Properties</strong>.</p></li>
+<li><p>On the <strong>Properties</strong> tab, the <strong>Creator</strong> and <strong>Producer</strong> items indicate which applications were used to create the PDF.</p></li>
+</ol>
+<img alt="_images/pdf-properties2.png" class="align-center" src="_images/pdf-properties2.png" />
+<p>Checking which PDF engine was used to create a PDF is a great way to learn about which industry standard applications are popular with today’s software and hardware manufacturers. The <em>Sony DOStudio</em> manual documentation, for example, was exported from <strong>MadCap Flare</strong> while AMD’s developer guides use an earlier version of <strong>Adobe FrameMaker</strong>. Lenovo, on the other hand, alternately uses <strong>Adobe InDesign CS3</strong> and <strong>XPP XML Publishing</strong> depending on their product line.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="fm_align_numbers.html" title="Aligning numbered paragraphs in FrameMaker"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tw_pm65_html.html" title="Repurposing PageMaker 6.5/7.x files: Export to HTML"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

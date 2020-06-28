@@ -20,7 +20,7 @@ To create a glyph in **CorelDraw X5** and then export it to a font:
    - Space Width
    - Leading
 
-Most designers already have preset guidelines on their CorelDraw templates to ensure their character or glyph does not exceed a certain amount of space when typed. Today, creating a glyph is more flexible because screens have a higher resolution and text consumption is done on a screen or using a digital document (such as PDF or EPUB) than on print. The usage of the glyph, whether for web, print, or PDF, plays a part in the design, but in general it's easier to check whether the glyph will look good in HTML, SVG, or PDF.
+Most designers already have preset guidelines on their CorelDraw templates to ensure their character or glyph does not exceed a certain amount of space when typed. Today, creating a glyph is more flexible because screens have a higher resolution and text consumption is done on a screen or using a digital document (such as PDF or EPUB). The usage of the glyph, whether for web, print, or PDF, plays a part in the design. In general it's easier to check whether the glyph will look good in HTML, SVG, or PDF.
 
 .. image:: images/ubo2021.PNG
 

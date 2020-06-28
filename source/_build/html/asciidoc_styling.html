@@ -1,0 +1,184 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Styling AsciiDoctor HTML output &#8212; Offered But Unsolicited  documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/bstyle.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Technical Writer job description" href="twriter_description.html" />
+    <link rel="prev" title="Offered But Unsolicited" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="twriter_description.html" title="Technical Writer job description"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Offered But Unsolicited"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Styling AsciiDoctor HTML output</a><ul>
+<li><a class="reference internal" href="#creating-a-docinfo-file-for-styling-html-output">Creating a docinfo file for styling HTML output</a></li>
+<li><a class="reference internal" href="#adding-style-related-attributes-to-an-adoc-file">Adding style-related attributes to an .adoc file</a></li>
+<li><a class="reference internal" href="#reviewing-output-using-a-specific-stylesheet">Reviewing output using a specific stylesheet</a></li>
+<li><a class="reference internal" href="#using-prebuilt-stylesheets-for-asciidoctor">Using prebuilt stylesheets for Asciidoctor</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Offered But Unsolicited</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="twriter_description.html"
+                        title="next chapter">Technical Writer job description</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/asciidoc_styling.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="styling-asciidoctor-html-output">
+<h1>Styling AsciiDoctor HTML output<a class="headerlink" href="#styling-asciidoctor-html-output" title="Permalink to this headline">¶</a></h1>
+<p>By default, HTML generated using Asciidoctor uses a set of predefined stylesheets.</p>
+<p>The simplest way to modify the HTML output appearance of the documentation is by creating a <strong>docinfo</strong> file that has formatting content within a style <code class="docutils literal notranslate"><span class="pre">&lt;tag&gt;</span></code> or a link to a <strong>.css</strong> stylesheet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For additional details regarding creating a docinfo file, refer to <a class="reference external" href="https://asciidoctor.org/docs/user-manual/#docinfo-file">Asciidoctor Docinfo Files</a>.</p>
+</div>
+<div class="section" id="creating-a-docinfo-file-for-styling-html-output">
+<h2>Creating a docinfo file for styling HTML output<a class="headerlink" href="#creating-a-docinfo-file-for-styling-html-output" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>docinfo</strong> file adds content header or footer content as needed.</p>
+<p>To create and apply a docinfo file to a set of <strong>.adoc</strong> files for HTML output:</p>
+<ol class="arabic simple">
+<li><p>Create a <strong>docinfo.html</strong> file in the same folder as the <strong>.adoc</strong> files.</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">docinfo</span></code> attribute to the <strong>index.adoc</strong> file. For this example, the <code class="docutils literal notranslate"><span class="pre">docinfo</span></code> attribute has the value of <code class="docutils literal notranslate"><span class="pre">shared</span></code>, which indicates that the <code class="docutils literal notranslate"><span class="pre">docinfo</span></code> applies to all files in the same folder.</p></li>
+</ol>
+<div class="highlight-AsciiDoc notranslate"><div class="highlight"><pre><span></span>= Index title
+  :toc: left
+  :toclevels: 5
+  :toc-title: Contents
+  :docinfo: Shared
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>To apply formatting using an external <strong>.css</strong> stylesheet, add a link tag pointing to the stylesheet on the <strong>docinfo.html</strong> file.</p></li>
+</ol>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;External documentation header by CMR&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;formatting_stylesheet_name.css&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>To apply formatting using the <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> tag, add the style element in the <strong>docinfo</strong> file.</p></li>
+</ol>
+<div class="highlight-HTML notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;External documentation header by CMR&quot;</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- Adjusting max-width expands the content area of the default stylesheet of Asciidoctor. The TomTom brand color #df1b12 is also applied to the Headings in this stle. --&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">#</span><span class="nn">header</span><span class="o">,</span> <span class="p">#</span><span class="nn">content</span><span class="o">,</span> <span class="p">#</span><span class="nn">footnotes</span><span class="o">,</span> <span class="p">#</span><span class="nn">footer</span> <span class="p">{</span>
+  <span class="k">max-width</span><span class="p">:</span> <span class="mi">67</span><span class="kt">em</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#df1b12</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-style-related-attributes-to-an-adoc-file">
+<h2>Adding style-related attributes to an .adoc file<a class="headerlink" href="#adding-style-related-attributes-to-an-adoc-file" title="Permalink to this headline">¶</a></h2>
+<p>The following attributes can be added to the .adoc file:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">:stylesdir:</span></code> - Specifies the stylesheet directory when applying stylesheets via the command line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:linkcss:</span></code> - Prevents any styles from being embedded in the HTML output.</p></li>
+</ul>
+</div>
+<div class="section" id="reviewing-output-using-a-specific-stylesheet">
+<h2>Reviewing output using a specific stylesheet<a class="headerlink" href="#reviewing-output-using-a-specific-stylesheet" title="Permalink to this headline">¶</a></h2>
+<p>Run the following command to generate HTML output that uses a specific stylesheet.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">asciidoctor</span> <span class="pre">-a</span> <span class="pre">stylesheet=&lt;name_of_stylesheet&gt;</span> <span class="pre">&lt;.adoc</span> <span class="pre">file&gt;</span></code></p>
+<p>The following example applies the <strong>readthedocs.css</strong> stylesheet to <strong>index.adoc</strong>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">asciidoctor</span> <span class="pre">-a</span> <span class="pre">stylesheet=readthedocs.css</span> <span class="pre">index.adoc</span></code></p>
+</div>
+<div class="section" id="using-prebuilt-stylesheets-for-asciidoctor">
+<h2>Using prebuilt stylesheets for Asciidoctor<a class="headerlink" href="#using-prebuilt-stylesheets-for-asciidoctor" title="Permalink to this headline">¶</a></h2>
+<p>Several stylesheets are available for producing formatted HTML using Asciidoctor. These <strong>.css</strong> files can be modified and referenced as needed.</p>
+<p>For additional details, refer to <a class="reference external" href="https://asciidoctor.org/docs/user-manual/#stylesheet-factory">Stylesheet Factory</a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="twriter_description.html" title="Technical Writer job description"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Offered But Unsolicited"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Offered But Unsolicited  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Scrawl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>
